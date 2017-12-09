@@ -1,3 +1,20 @@
-.navbar-item{
- 	margin: 10px; border-bottom: solid #ED5586;
- }
+header{
+    width: 100%;
+    height: 15.5vh;
+}
+.navbar-item {
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home_title {
+    font-size: 36px;
+    font-weight: 900;
+    border-bottom: 10px solid #ED5586;
+}
+
+.menu_title {
+    margin-top: 80px;
+    font-style: SemiBold;
+    border-bottom: 5px solid #ED5586;
+}
