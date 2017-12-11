@@ -1,20 +1,40 @@
 .bg-img {
-    background-image: url(dei.jpg);
+    display: inline-flex !important;
+    width: 100%;
+    /* flex-direction: row; */
+    height: 668px;
+    background-image: url(image.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(100, 196, 185, 0.6);
+    /* background: linear-gradient(to left, rgba(100, 196, 185, 0.41), #5CEDDD); */
+    box-shadow: inset 0 0 0 1000px rgba(100, 196, 185, 0.41);
+}
+
+.container-slogan {
+    margin-top: 147px;
+    margin-right: 64px;
 }
 
 .big_words {
+    height: 107px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
-    font-weight: 900;
+    font-size: 94px;
+    font-style: Bold;
+    line-height: 117px;
+    font-weight: 800;
+    color: white;
+}
+
+.space_between {
+    margin: 5px;
 }
 
 .container-sign {
-    height: calc(100vh - 15.5vh);
+    margin-top: 1.74vh;
+    width: 100%;
+    height: calc(100% - 174px);
     background-color: #64C4B9;
 }
 
@@ -49,6 +69,6 @@
     max-width: 500px;
 }
 
-.container-field{
+.container-field {
     margin-top: 305px;
 }
