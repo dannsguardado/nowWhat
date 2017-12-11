@@ -1,7 +1,6 @@
 .bg-img {
     display: inline-flex !important;
     width: 100%;
-    /* flex-direction: row; */
     height: 668px;
     background-image: url(image.jpeg);
     background-position: center center;
@@ -13,6 +12,7 @@
 }
 
 .container-slogan {
+    flex-direction: row;
     margin-top: 147px;
     margin-right: 64px;
 }
@@ -32,14 +32,15 @@
 }
 
 .container-sign {
-    margin-top: 1.74vh;
+    flex-direction: column;
+    display: flex !important;
     width: 100%;
-    height: calc(100% - 174px);
     background-color: #64C4B9;
+    height: calc(100vh - 174px);
 }
 
 .n {
-    position: absolute;
+    position: relative;
     width: 202px;
     height: 305px;
     font-family: Montserrat;
@@ -51,8 +52,8 @@
 }
 
 .w {
-    margin-left: 175px;
-    position: absolute;
+    /* margin-left: 175px; */
+    position: relative;
     width: 291px;
     height: 305px;
     font-family: Montserrat;
@@ -65,10 +66,15 @@
 
 .container-NW,
 .container-field {
-    margin: auto;
-    max-width: 500px;
+    margin-left: 473px;
+    display: flex !important;
 }
 
-.container-field {
-    margin-top: 305px;
+.container-field{
+    margin-top: 100px;
+}
+
+.row_login {
+    flex-direction: row;
+    width: 497px;
 }

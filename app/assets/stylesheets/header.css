@@ -39,7 +39,7 @@ header {
 
 .menu_title {
     margin-top: 73px;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
     width: auto;
     height: 60px;
     margin-right: 35px;
@@ -49,4 +49,3 @@ header {
     color: black !important;
     border-bottom: 5px solid #ED5586;
 }
-
