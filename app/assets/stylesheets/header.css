@@ -1,27 +1,16 @@
-body,
-html {
-    height: 100vh;
+html, body {
+    /* height: 100% !important; */
+    width: 100% !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 header {
-    width: 100%;
-    height: 174px;
+    height: 17.4vh;
+    padding-top: 2vh;
 }
 
-.navbar-brand {
-    margin-top: 39px;
-    margin-bottom: 39px;
-    margin-left: 58px;
-    height: 96px;
-    width: 145px;
-}
-
-.navbar-item {
-    display: inline-flex !important;
-    padding: 0 !important;
-    height: 96px;
-    width: 145px;
-    font-family: 'Montserrat', sans-serif;
+.is-first {
+    margin-top: 14vh;
 }
 
 .home_title {
@@ -30,7 +19,8 @@ header {
     line-height: 44px !important;
     color: black !important;
     text-decoration: none;
-    border-bottom: 17px solid #ED5586;
+    /* border-bottom: 17px solid #E65C73; */
+    border-bottom: 17px solid #F79F66;
 }
 
 .navbar-menu {
@@ -47,5 +37,11 @@ header {
     font-size: 24px;
     line-height: 29px;
     color: black !important;
-    border-bottom: 5px solid #ED5586;
+    /* border-bottom: 5px solid #E65C73; */
+    /* border-bottom: 5px solid #F79F66; */
+    border-bottom: 5px solid #F79F66;
+}
+
+.menu_title:active {
+    border-bottom: none !important;
 }
