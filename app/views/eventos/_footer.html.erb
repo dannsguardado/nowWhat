@@ -1,42 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<section class="hero is-fixed-top is-default is-bold">
-			<div class="hero-head">
-				<nav class="navbar">
-					<div class="container">
-						<div class="navbar-brand">
-							<a class="navbar-item home_title" href="../">
-									 Now
-									<br> What?
-							</a>
-							<span class="navbar-burger burger" data-target="navbarMenu">
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-						</div>
-						<div id="navbarMenu" class="navbar-menu">
-							<div class="navbar-end">
-								<a class="navbar-item menu_title border" href="../">Home</a>
-								<% if user_signed_in? %>
-										<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-									<% else %>
-										<a class="navbar-item menu_title border" href="/users/sign_in">Login</a>
-										<a class="navbar-item menu_title border" href="/users/sign_up">Register</a>
-								<% end %>
-							</div>
-						</div>
+	<head>
+		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+	</head>
+	<body>
+		<footer>
+			<section class="hero-foot">
+				<div class=" footer">
+					<div class="tabs is-centered">
+						<ul>
+							<li>
+								<a>And this at the bottom</a>
+							</li>
+						</ul>
 					</div>
-				</nav>
-			</div>
-	</header>
-</body>
+				</div>
+			</section>
+		</footer>
+	</body>
 </html>
 
 

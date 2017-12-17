@@ -126,7 +126,3 @@
     position: relative;
 }
 
-.footer {
-    background-color: #73DFF9 !important;
-    height: calc(100% - 5vh);
-}
