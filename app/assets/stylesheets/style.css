@@ -20,11 +20,11 @@
 }
 
 .big_words {
-    height: 107px;
+    height: 10.7vh;
     font-family: 'Montserrat', sans-serif;
-    font-size: 94px;
+    font-size: 9.4vh;
     font-style: Bold;
-    line-height: 117px;
+    /*line-height: 117px;*/
     font-weight: 800;
     color: white;
 }
@@ -126,3 +126,6 @@
     position: relative;
 }
 
+.is-first {
+    margin-top: 15vh !important;
+}
