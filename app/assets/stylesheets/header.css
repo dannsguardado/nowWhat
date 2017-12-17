@@ -1,6 +1,7 @@
 html, body {
     /* height: 100% !important; */
     width: 100% !important;
+    height: 100% !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -14,32 +15,32 @@ header {
 }
 
 .home_title {
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: Bold;
-    line-height: 44px !important;
+    line-height: 4.4vh !important;
     color: black !important;
     text-decoration: none;
     /* border-bottom: 17px solid #E65C73; */
-    border-bottom: 17px solid #F79F66;
+    border-bottom: 1.7vh solid #F79F66;
 }
 
 .navbar-menu {
-    margin-right: 57px;
+    margin-right: 5.7vh;
 }
 
 .menu_title {
-    margin-top: 73px;
-    margin-bottom: -10px;
+    margin-top: 7.3vh;
+    margin-bottom: -1vh;
     width: auto;
-    height: 60px;
-    margin-right: 35px;
+    height: 6vh;
+    margin-right: 3.5vh;
     font-style: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 2rem;
+    line-height: 2.9vh;
     color: black !important;
     /* border-bottom: 5px solid #E65C73; */
     /* border-bottom: 5px solid #F79F66; */
-    border-bottom: 5px solid #F79F66;
+    border-bottom: 0.5vh solid #F79F66;
 }
 
 .menu_title:active {
