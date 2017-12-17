@@ -15,13 +15,14 @@ header {
 }
 
 .home_title {
-    font-size: 3rem;
+    font-size: 5vh;
     font-weight: Bold;
     line-height: 4.4vh !important;
     color: black !important;
     text-decoration: none;
     /* border-bottom: 17px solid #E65C73; */
     border-bottom: 1.7vh solid #F79F66;
+    min-height: 5vh;
 }
 
 .navbar-menu {
@@ -35,7 +36,7 @@ header {
     height: 6vh;
     margin-right: 3.5vh;
     font-style: 400;
-    font-size: 2rem;
+    font-size: 3vh;
     line-height: 2.9vh;
     color: black !important;
     /* border-bottom: 5px solid #E65C73; */
