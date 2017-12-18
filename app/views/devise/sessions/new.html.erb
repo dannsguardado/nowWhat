@@ -8,39 +8,49 @@
 
   <body>
     <%= render "eventos/header" %>
-    <div class="container-sign">
-      <div class="row-login">
-        <div class="container-NW">
-          <h1 class="n">N</h1>
-          <h1 class="w">W?</h1>
-        </div>
-      
-       
-        <!-- </div> -->
+    <div class="hero-body container-sign">
+      <div class="container has-text-centered">
+        <h1 class="n">
+          N
+        </h1>
+        <h1 class="w">
+          W?
+        </h1>
+        <br>
       </div>
-      <!-- <div class="columns is-vcentered"> -->
-      <!-- <div class="column is-5">
-                <figure class="image is-4by3">
-                  <img src="http://placehold.it/800x600" alt="Description">
-                </figure>
-              </div> -->
-      <!-- <div class="column is-6 is-offset-1"> -->
-      <!-- <h1 class="n">N</h1>
-      <h1 class="w">W</h1> -->
-      
-      <!-- <p class="has-text-centered">
-                  <a class="button is-medium is-info is-outlined">
-                    Learn more
-                  </a>
-                </p> -->
-      <!-- </div> -->
-      <!-- </div> -->
-    </div>
-   
+
+      <div class="column is-4 is-offset-4">
+        <div class="box">
+          
+          <form>
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="email" placeholder="Your Email" autofocus="">
+              </div>
+            </div>
+    
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="password" placeholder="Your Password">
+              </div>
+            </div>
+            <div class="field">
+              <label class="checkbox">
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+            <a class="button is-block is-info is-large">Login</a>
+          </form>
+        </div>
+        <!-- <p class="has-text-grey">
+          <a href="../">Sign Up</a> &nbsp;·&nbsp;
+          <a href="../">Forgot Password</a> &nbsp;·&nbsp;
+          <a href="../">Need Help?</a>
+        </p> -->
+      </div>
+    
   </body>
 </html>
-
-
 
 
 <!-- <div class="container-sign">
