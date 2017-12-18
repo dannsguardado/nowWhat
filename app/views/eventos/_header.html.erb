@@ -19,11 +19,13 @@
 								<span></span>
 								<span></span>
 								<span></span>
+								<span></span>
 							</span>
 						</div>
 						<div id="navbarMenu" class="navbar-menu">
 							<div class="navbar-end">
 								<a class="navbar-item menu_title border" href="../">Home</a>
+								<a class="navbar-item menu_title border" href="/pages/objetivo">About</a>
 								<% if user_signed_in? %>
 										<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
 									<% else %>

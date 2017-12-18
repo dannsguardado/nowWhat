@@ -10,11 +10,15 @@
       <div class="row-login">
         <div class="container-NW">
           <h1 class="n">N</h1>
-          <h1 class="w">W</h1>
+          <h1 class="w">W?</h1>
         </div>
-      </div>
-      <div class="row-login">
-        <div class="container-field"> 
+      
+       <div class="container-field"> 
+          <div class="columns is-mobile is-multiline is-centered">
+            <div class="column">
+            <h2>LEARN.TALK.INITIATE</h2>
+          </div>
+          <div class="column ">
             <h2>Sign up</h2>
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <%= devise_error_messages! %>
@@ -41,8 +45,10 @@
               <%= f.submit "Sign up" %>
             </div>
           <% end %> 
+        </div>
           <%= render "devise/shared/links" %>
         </div>
+      </div>
       </div>
     </div>
   </body>
