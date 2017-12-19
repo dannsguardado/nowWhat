@@ -1,3 +1,7 @@
+/************************
+******* Homepage ********
+*************************/
+
 .bg-img {
     display: inline-flex !important;
     width: 100%;
@@ -10,11 +14,17 @@
     box-shadow: inset 0 0 0 1000px rgba(45, 167, 249, 0.41);
 }
 
+.is-first {
+    margin-top: 15vh !important;
+}
+
+
+/* NOT USED ?!
 .container-slogan {
     flex-direction: row;
     margin-top: 147px;
     margin-right: 64px;
-}
+} */
 
 .big_words {
     height: 10.7vh;
@@ -24,10 +34,13 @@
     color: white;
 }
 
+
+/************************
+****** Sign-in/up *******
+*************************/
+
 .container-sign {
-   /* 
-    width: 100% !important;*/
-    display: inline-flex !important;
+    /* display: inline-flex !important;
     /* background-color: #64C4B9; */
     background-color: #73DFF9;
     /* background-color: #0D7E83; */
@@ -39,7 +52,6 @@
 
 .n {
     display: inline-flex !important;
-    
     font-style: italic;
     font-weight: bold;
     font-size: 16em;
@@ -55,51 +67,19 @@
     margin-left: -2.5vh;
 }
 
-/* .container-NW {
-    display: flex !important;
-} */
-
-.container-field {
-    margin-left: 60vh;
-    display: flex !important;
-}
-
-.row-login {
-    flex-direction: row;
-    width: 100%;
-}
-
-.about-us {
-    background-color: #F2F2F2;
-    height: 55vh;
-    margin-top: 15vh;
-}
-
-.about-image {
-    z-index: -1;
-    margin-left: -10vh;
-}
-
-.hero-body {
-    padding: 0 !important;
-}
-
-.content {
-    height: calc(100vh - 20.1vh) !important;
-}
-
-.email-field{
+.email-field {
     height: 5.7vh;
     width: 55.7vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 3.4vh;
     font-weight: 300;
     color: #F79F66;
-    border:none;
+    border: none;
     border-bottom: 0.4vh solid #F79F66;
 }
-.btn-login{
-    background-color: #F79F66; 
+
+.btn-login {
+    background-color: #F79F66;
     border: none;
     color: white;
     padding: 1.5vh 2.4vh;
@@ -111,54 +91,95 @@
     width: 20vh;
 }
 
-.box-white{
+.box-white {
     padding: 2.5vh 2.5vh;
-    background-color: white; 
+    background-color: white;
     height: 35.7vh;
     width: 60.7vh;
 }
 
-.remember-text{
+.remember-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.9vh;
     font-weight: 300;
     color: #F79F66;
 }
-.checkbox-remember{
+
+.checkbox-remember {
     border-color: #F79F66;
 }
 
-.container-login{
+.container-login {
     margin-top: -10vh;
 }
-.container-nw{
+
+.container-nw {
     margin-top: -10vh;
 }
-.login-lema{
+
+.login-lema {
     display: inline-flex !important;
     font-family: 'Montserrat', sans-serif;
-    
     font-weight: bold;
     font-size: 2em;
-        
     color: white;
 }
-.talk{
+
+.talk {
     color: gray;
 }
 
-.init{
+.init {
     color: white;
+}
+
+
+/* NOT USED ?!
+.container-field {
+    margin-left: 60vh;
+    display: flex !important;
+} 
+.row-login {
+    flex-direction: row;
+    width: 100%;
+} */
+
+
+/************************
+***** Objetivo Page *****
+*************************/
+
+.hero-body {
+    padding: 0 !important;
+}
+
+.content {
+    height: calc(100vh - 20.1vh) !important;
+    /* margin: 2vh !important; */
+}
+
+.about-us {
+    background-color: #F2F2F2;
+    height: 55vh;
+    margin-top: 10vh;
+    z-index: 99; 
+}
+
+.about-image {
+    z-index: -1;
+    margin-left: -10vh;
+    margin-top: -10vh;
 }
 
 .arrow-down {
     width: 0vh;
     height: 0vh;
-    border-left: 5vh solid transparent;
-    border-right: 5vh solid transparent;
-    border-top: 10vh solid #f00;
+    border-left: 3.5vh solid transparent;
+    border-right: 3.5vh solid transparent;
+    border-top: 7vh solid #f00;
+    margin-top: -5vh;
     z-index: -1;
-    position: relative;
+    margin-left: 3vh;
 }
 
 .size-title {
@@ -169,6 +190,6 @@
     font-size: 3vh !important;
 }
 
-.is-first {
-    margin-top: 15vh !important;
+.inner{
+    width: 13vh;
 }
