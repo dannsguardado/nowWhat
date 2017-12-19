@@ -25,13 +25,16 @@
 }
 
 .container-sign {
-    flex-direction: column;
-    width: 100% !important;
+   /* 
+    width: 100% !important;*/
     display: inline-flex !important;
     /* background-color: #64C4B9; */
     background-color: #73DFF9;
     /* background-color: #0D7E83; */
-    height: calc(100vh - 17.4vh);
+    /*height: calc(100vh - 17.4vh);*/
+    height: 100% !important;
+    width: 100% !important;
+    flex-direction: column;
 }
 
 .n {
@@ -83,6 +86,69 @@
 
 .content {
     height: calc(100vh - 20.1vh) !important;
+}
+
+.email-field{
+    height: 5.7vh;
+    width: 55.7vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.4vh;
+    font-weight: 300;
+    color: #F79F66;
+    border:none;
+    border-bottom: 0.4vh solid #F79F66;
+}
+.btn-login{
+    background-color: #F79F66; 
+    border: none;
+    color: white;
+    padding: 1.5vh 2.4vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9vh;
+    font-weight: 300;
+    display: inline-block;
+    width: 20vh;
+}
+
+.box-white{
+    padding: 2.5vh 2.5vh;
+    background-color: white; 
+    height: 35.7vh;
+    width: 60.7vh;
+}
+
+.remember-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9vh;
+    font-weight: 300;
+    color: #F79F66;
+}
+.checkbox-remember{
+    border-color: #F79F66;
+}
+
+.container-login{
+    margin-top: -10vh;
+}
+.container-nw{
+    margin-top: -10vh;
+}
+.login-lema{
+    display: inline-flex !important;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-weight: bold;
+    font-size: 2em;
+        
+    color: white;
+}
+.talk{
+    color: gray;
+}
+
+.init{
+    color: white;
 }
 
 .arrow-down {
