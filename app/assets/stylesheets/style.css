@@ -44,25 +44,24 @@
     /* background-color: #64C4B9; */
     background-color: #73DFF9;
     /* background-color: #0D7E83; */
-    /*height: calc(100vh - 17.4vh);*/
     height: 100% !important;
     width: 100% !important;
     flex-direction: column;
+    padding: 2vh !important; 
 }
 
 .n {
     display: inline-flex !important;
     font-style: italic;
     font-weight: bold;
-    font-size: 16em;
-    /* color: #D9E7E5 !important; */
+    font-size: 35vh;
     color: white;
 }
 
 .w {
     display: inline-flex !important;
     font-weight: bold;
-    font-size: 16em;
+    font-size: 35vh;
     color: #F79F66;
     margin-left: -2.5vh;
 }
@@ -114,6 +113,8 @@
 }
 
 .container-nw {
+    height: 50.4vh;
+
     margin-top: -10vh;
 }
 
@@ -149,7 +150,7 @@
 ***** Objetivo Page *****
 *************************/
 
-.hero-body {
+.container-obj {
     padding: 0 !important;
 }
 
