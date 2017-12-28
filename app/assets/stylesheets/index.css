@@ -1,0 +1,36 @@
+/************************
+******* Homepage ********
+*************************/
+
+.bg-img {
+    display: inline-flex !important;
+    width: 100%;
+    height: calc(100% - 35vh);
+    background-image: url(image.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background: linear-gradient(to left, rgba(100, 196, 185, 0.41)); */
+    box-shadow: inset 0 0 0 1000px rgba(45, 167, 249, 0.41);
+}
+
+.is-first {
+    margin-top: 15vh !important;
+}
+
+
+/* NOT USED ?!
+.container-slogan {
+    flex-direction: row;
+    margin-top: 147px;
+    margin-right: 64px;
+} */
+
+.big_words {
+    height: 10.7vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9.4vh;
+    font-weight: 800;
+    color: white;
+}

@@ -1,0 +1,109 @@
+/************************
+****** Sign-in/up *******
+*************************/
+
+.container-sign {
+    /* display: inline-flex !important;
+    background-color: #64C4B9;
+    /* background-color: #73DFF9; */
+    /* background-color: #0D7E83; */
+    height: 100% !important;
+    width: 100% !important;
+    flex-direction: column;
+    padding: 2vh !important;
+    background-color: #64C4B9;
+}
+
+.n {
+    display: inline-flex !important;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 35vh;
+    color: white;
+}
+
+.w {
+    display: inline-flex !important;
+    font-weight: bold;
+    font-size: 35vh;
+    color: #F79F66;
+    margin-left: -2.5vh;
+}
+
+.email-field {
+    height: 5.7vh;
+    width: 55.7vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.4vh;
+    font-weight: 300;
+    color: #F79F66;
+    border: none;
+    border-bottom: 0.4vh solid #ED5586;
+}
+
+.btn-login {
+    background-color: #ED5586;
+    border: none;
+    color: white;
+    padding: 1.5vh 2.4vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9vh;
+    font-weight: 300;
+    display: inline-block;
+    width: 20vh;
+}
+
+.box-white {
+    padding: 2.5vh 2.5vh;
+    background-color: white;
+    height: 35.7vh;
+    width: 60.7vh;
+}
+
+.remember-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9vh;
+    font-weight: 300;
+    color: #ED5586;
+}
+
+.checkbox-remember {
+    border-color: #ED5586;
+}
+
+.container-login {
+    margin-top: -10vh;
+}
+
+.container-nw {
+    height: 50.4vh;
+    margin-top: -10vh;
+}
+
+.login-lema {
+    display: inline-flex !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+}
+
+.talk {
+    color: gray;
+}
+
+.init {
+    color: white;
+}
+
+
+/* NOT USED ?!
+.container-field {
+    margin-left: 60vh;
+    display: flex !important;
+} 
+.row-login {
+    flex-direction: row;
+    width: 100%;
+} */
