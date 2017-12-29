@@ -29,8 +29,8 @@
     border-left: 3vh solid transparent;
     border-right: 3vh solid transparent;
     border-top: 6vh solid #F2F2F2;
-    margin-top: -2.5vh;
     z-index: -1;
+    margin-top: -2.5vh;
     /* margin-left: -1.7vh; */
 }
 
@@ -58,7 +58,7 @@
 
 .fa {
     margin-left: 1.7vh;
-    /* margin-top: -2.5vh; */
+    /* margin-top: -12vh !important; */
 }
 
 

@@ -34,7 +34,8 @@ gem 'devise'
 gem "bulma-rails", "~> 0.6.1"
 
 # Jquery Javascript 
-gem 'jquery-ui-rails'
+gem 'jquery-rails'
+# gem 'jquery-ui-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
