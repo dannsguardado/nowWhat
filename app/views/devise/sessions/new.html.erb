@@ -8,29 +8,32 @@
 
 <body>
   <div class="hero-body container-sign">
-    <div class="container-nw has-text-centered">
-      <h1 class="n">
-        N
-      </h1>
-      <h1 class="w">
-        W?
-      </h1>
-      <br>
-    </div>
-    <div class="container-login has-text-centered">
-      <div class="login-lema">
-        Learn. 
-        <div class="talk"> Talk.</div>
-        <div class="talk"> Initiate</div>
+    <div class="columns is-mobile is-multiline">
+      <div class="column is-three-fifths is-offset-one-fifth has-text-centered container-nw ">
+
+        <a class="n">
+          N
+        </a>
+        <a class="w">
+          W?
+        </a>
       </div>
-    </div>
-    <div class="column is-4 is-offset-4">
-      <div class="actions has-text-centered">
-        <a class="btn-login " href="/users/sign_in">Login</a>
-        <a class=" btn-login border" href="/users/sign_up">Register</a>
+      <div class="column is-half is-offset-one-quarter has-text-centered container-nw">
+        <div class="login-lema container-nw" >
+          Learn. 
+          <div class="talk"> Talk.</div>
+          <div class="talk"> Initiate</div>
+        </div>
       </div>
-    </div>
-    <div class="column is-6 is-offset-3 has-text-centered box-white">
+      <div class="column is-6 is-offset-3 container-talk">
+        <div class="actions has-text-centered">
+          <a class="btn-login " href="/users/sign_in">Login</a>
+          <a class="btn-login " href="../">Forgot Password</a> 
+
+          <a class=" btn-login border" href="/users/sign_up">Register</a>
+        </div>
+      </div>
+      <div class="column is-4 is-offset-4 has-text-centered box-white">
 
         <form>
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -57,17 +60,12 @@
             </div>
           </div>
           <% end %>
-        </form>
-        <!-- <p class="has-text-grey">
-          <a href="../">Sign Up</a> &nbsp;·&nbsp;
-          <a href="../">Forgot Password</a> &nbsp;·&nbsp;
-          <a href="../">Need Help?</a>
-        </p> -->
+        </form>   
       </div>
     </div>
-
-  </body>
-  </html>
+  </div>
+</body>
+</html>
 
 
 <!-- 

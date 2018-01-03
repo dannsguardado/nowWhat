@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>NowWhat</title>
-  </head>
+<head>
+  <title>NowWhat</title>
 
-  <body>
-    <div class="container-sign">
-      <div class="row-login">
-        <div class="container-NW">
-          <h1 class="n">N</h1>
-          <h1 class="w">W?</h1>
-        </div>
-      
-       <div class="container-field"> 
-          <div class="columns is-mobile is-centered">
-            <div class="column">
-            <h2>LEARN.TALK.INITIATE</h2>
-          </div>
-          <div class="column ">
-            <h2>Sign up</h2>
-          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-            <%= devise_error_messages! %>
 
-            <div class="field">
-              <%= f.label :email %><br />
-              <%= f.email_field :email, autofocus: true %>
-            </div>
+</head>
 
-            <div class="field">
-              <%= f.label :password %>
-              <% if @minimum_password_length %>
-              <em>(<%= @minimum_password_length %> characters minimum)</em>
-              <% end %><br />
-              <%= f.password_field :password, autocomplete: "off" %>
-            </div>
+<body>
+  <div class="hero-body container-sign">
+    <div class="columns is-mobile is-multiline">
+      <div class="column is-three-fifths is-offset-one-fifth has-text-centered container-nw ">
 
-            <div class="field">
-              <%= f.label :password_confirmation %><br />
-              <%= f.password_field :password_confirmation, autocomplete: "off" %>
-            </div>
-
-            <div class="actions">
-              <%= f.submit "Sign up" %>
-            </div>
-          <% end %> 
-        </div>
-          <%= render "devise/shared/links" %>
-        </div>
-      </div>
+      <a class="n">
+        N
+      </a>
+      <a class="w">
+        W?
+      </a>
+    </div>
+    <div class="column is-half is-offset-one-quarter has-text-centered container-nw">
+      <div class="login-lema container-nw" >
+        Learn. 
+        <div class="talk"> Talk.</div>
+        <div class="talk"> Initiate</div>
       </div>
     </div>
+    <div class="column is-4 is-offset-4 container-talk">
+      <div class="actions has-text-centered">
+        <a class="btn-login " href="/users/sign_in">Login</a>
+        <a class=" btn-login border" href="/users/sign_up">Register</a>
+      </div>
+    </div>
+    <div class="column is-4 is-offset-4 has-text-centered box-white">
+
+        <form>
+           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= devise_error_messages! %>
+            <div class="field">
+              <div class="control">
+                <%= f.email_field :email, class: 'email-field' %>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em>
+              <% end %>
+              <%= f.password_field :password, class: 'email-field' %>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+              <%= f.password_field :password_confirmation, autocomplete: "off", class: 'email-field' %>
+            </div>
+            </div>
+            <div class="column is-4 is-offset-4">
+              <div class="actions">
+                <%= f.submit "Sign up", class: 'btn-login' %>
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </form>
+
+
+        </p>
+      </div>
+    </div>
+  </div>
   </body>
-</html>
+  </html>
