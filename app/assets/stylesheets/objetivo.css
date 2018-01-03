@@ -4,23 +4,26 @@
 
 .container-obj {
     padding: 0 !important;
+    top: 17.4vh;
+    position: relative;
+    height: calc(100vh - 17.4vh);
 }
 
 .content {
-    height: calc(100vh - 20.1vh) !important;
+    /* height: calc(100% - 4.01vh) !important; */
     /* margin: 2vh !important; */
 }
 
 .about-us {
     background-color: #F2F2F2;
     height: 55vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .about-image {
     z-index: -1;
     margin-left: -10vh;
-    margin-top: -10vh;
+    margin-top: -15vh;
 }
 
 .size-title {

@@ -64,10 +64,14 @@
 
 .dates {
     margin-top: 15vh;
-    font-size: 5vh;
+    /* font-size: 5vh; */
     color: white;
 }
 
-.date-left {}
+.date-left {
+    margin-right: 1vh;
+}
 
-.date-right: {}
+.date-right {
+    margin-left: 1vh;
+}
