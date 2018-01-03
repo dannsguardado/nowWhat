@@ -3,13 +3,13 @@
     padding: 0 !important;
     width: 100% !important;
     margin: 0 !important;
-    height: 4.01vh;
+    height: 5vh;
 }
 
 .text-footer {
     margin-right: 5vh;
-    height: 4.01vh;
+    height: 5vh;
     cursor: default !important;
-    font-size: 1.25vh;
+    font-size: 1.5vh;
     border-bottom: none !important;
 }
