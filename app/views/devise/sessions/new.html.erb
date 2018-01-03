@@ -40,24 +40,26 @@
           <div class="field">
             <div class="field">
               <div class="control">
-                <%= f.email_field :email, class: 'email-field'%>
+                <%= f.email_field :email, class: 'email-field',placeholder:'Email'%>
               </div>
             </div>
 
             <div class="field">
               <div class="control">
-                <%= f.password_field :password, class: 'email-field' %>
+                <%= f.password_field :password, class: 'email-field',placeholder:'Password' %>
               </div>
             </div>
             <div class="field">
               <%= f.check_box :remember_me, class: 'checkbox-remember' %>
               <%= f.label :remember_me, class: 'remember-text' %>
             </div>
-            <div class="column is-4 is-offset-4">
+            <div class="columns is-mobile ">
+            <div class="column is-half is-offset-one-quarter ">
               <div class="actions">
                 <%= f.submit "Log in", class: 'btn-login' %>
               </div>
             </div>
+          </div>
           </div>
           <% end %>
         </form>   

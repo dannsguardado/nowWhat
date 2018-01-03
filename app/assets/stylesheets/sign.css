@@ -83,6 +83,12 @@
 .container-talk {
     margin-top: -2vh;
 }
+.container-fields {
+    margin-top: 5vh;
+}
+.container-field {
+    margin-top: 2vh;
+}
 .login-lema {
     display: inline-flex !important;
     font-family: 'Montserrat', sans-serif;
