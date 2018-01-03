@@ -3,9 +3,11 @@
 *************************/
 
 .bg-img {
+    top: 17.4vh;
+    position: relative;
     display: inline-flex !important;
     width: 100%;
-    height: calc(100% - 35vh);
+    height: calc(100% - 17.4vh);
     background-image: url(image.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -19,18 +21,29 @@
     margin-top: 15vh !important;
 }
 
-
-/* NOT USED ?!
-.container-slogan {
-    flex-direction: row;
-    margin-top: 147px;
-    margin-right: 64px;
-} */
-
 .big_words {
     height: 10.7vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 9.4vh;
     font-weight: 800;
     color: white;
+}
+
+.rotate {
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Mic
+}
+
+.dates{
+    font-size: 1vh;
+    color: white;
+
 }

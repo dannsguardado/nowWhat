@@ -9,7 +9,21 @@ body {
 header {
     height: 17.4vh;
     padding-top: 2vh;
+    background-color: white !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
+
+/* .navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+} */
 
 .home_title {
     font-size: 5vh;
