@@ -7,7 +7,8 @@
     position: relative;
     display: inline-flex !important;
     width: 100%;
-    height: calc(100% - 17.4vh);
+    /* height: 100%; */
+    height: calc(100vh - 17.4vh);
     background-image: url(image.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -29,7 +30,13 @@
     color: white;
 }
 
-.rotate {
+
+/* .is-large{
+    top: 17.4vh;
+    position: relative;
+} */
+
+.rotate-left {
     /* Safari */
     -webkit-transform: rotate(-90deg);
     /* Firefox */
@@ -42,8 +49,25 @@
     filter: progid:DXImageTransform.Mic
 }
 
-.dates{
-    font-size: 1vh;
-    color: white;
-
+.rotate-right {
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+    /* IE */
+    -ms-transform: rotate(90deg);
+    /* Opera */
+    -o-transform: rotate(90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Mic
 }
+
+.dates {
+    margin-top: 15vh;
+    font-size: 5vh;
+    color: white;
+}
+
+.date-left {}
+
+.date-right: {}
