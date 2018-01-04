@@ -27,7 +27,14 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 9.4vh;
     font-weight: 800;
+}
+
+.white {
     color: white;
+}
+
+.gray {
+    color: rgba(242, 242, 242, 0.538);
 }
 
 .rotate-left {
@@ -67,7 +74,7 @@
     /* line-height: 0 !important; */
 }
 
-.address{
+.address {
     font-size: 2vh;
     font-weight: 600;
 }

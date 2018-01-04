@@ -1,0 +1,27 @@
+$(document).ready(function () {
+    function changeColor() {
+      console.log("HEY");
+
+      if ( $("#color1").hasClass("gray")) {
+        $("#color1").addClass("white").removeClass("gray");
+        $("#color2").addClass("gray").removeClass("white");
+      }
+      else if ( $("#color2").hasClass("gray")) {
+        $("#color2").addClass("white").removeClass("gray");
+        $("#color3").addClass("gray").removeClass("white");
+      }
+      else{
+        $("#color3").addClass("white").removeClass("gray");
+        $("#color1").addClass("gray").removeClass("white");
+      }
+    }
+  setInterval(changeColor, 2000);
+    
+  // function fade() {
+  //   $(".one").fadeTo("slow", 0.15);
+  //   $(".two").fadeTo("slow", 0.4);
+  //   $(".three").fadeTo("slow", 0.7);
+  // }
+  // setInterval(fade);
+
+});
