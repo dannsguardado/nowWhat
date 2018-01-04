@@ -33,9 +33,7 @@
 .size-subtitle {
     margin-left: 3vh;
     font-size: 3vh !important;
-    /* text-indent: 1.5em; */
     text-justify: inter-word;
-    /* line-height: 0 !important; */
 }
 
 .columns {
@@ -51,9 +49,7 @@
     border-top: 6vh solid #F2F2F2;
     z-index: -1;
     margin-top: -2vh;
-    /* margin-left: -1.7vh; */
-    /* margin-left: 2.7vh !important;
-    margin-right: 2.7vh !important; */
+    margin-right: 2.7vh !important;
 }
 
 .arrow-downT {
@@ -62,38 +58,6 @@
     height: 0vh;
     border-left: 3vh solid transparent;
     border-right: 3vh solid transparent;
-    /* border-top: 6vh solid #F2F2F2; */
     border-top: 6vh solid transparent;
-    /* z-index: -1; */
     margin-top: -3vh;
-    /* margin-left: -1.7vh; */
-    /* margin-left: 2.7vh !important;
-    margin-right: 2.7vh !important; */
 }
-
-
-/* .options {
-    margin-left: 1.7vh !important;
-} */
-
-
-/* .option {
-    margin-left: -3vh !important;
-} */
-
-
-/* .get1{
-    margin-left: 1.7vh;
-
-} */
-
-.fa {
-    margin-top: 2vh;
-    /* margin-right: 2vh;
-    margin-left: -4.4vh; */
-}
-
-
-/* .first{
-     margin-left: 0vh !important;
- } */
