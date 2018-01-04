@@ -1,9 +1,16 @@
 .footer {
+    height: 5vh;
+    position: relative;
     background-color: #73DFF9 !important;
     padding: 0 !important;
     width: 100% !important;
     margin: 0 !important;
-    height: 5vh;
+    /* height: 5vh; */
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
 
 .text-footer {

@@ -9,13 +9,17 @@ body {
 header {
     height: 17.4vh;
     padding-top: 2vh;
-    background-color: white !important;
+    /* background-color: #FAD58C !important; */
+    background-color: white;
     position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
+    /* background-color: rgb(159, 143, 132); */
+    border-bottom: 0.1vh solid rgb(159, 143, 132);
 }
+
 
 /* .navbar {
     position: fixed !important;
