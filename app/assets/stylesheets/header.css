@@ -1,6 +1,5 @@
 html,
 body {
-    /* height: 100% !important; */
     width: 100% !important;
     height: 100% !important;
     font-family: 'Montserrat', sans-serif !important;
@@ -9,14 +8,12 @@ body {
 header {
     height: 17.4vh;
     padding-top: 2vh;
-    /* background-color: #FAD58C !important; */
     background-color: white;
     position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
-    /* background-color: rgb(159, 143, 132); */
     border-bottom: 0.1vh solid rgb(159, 143, 132);
 }
 
@@ -24,23 +21,12 @@ header {
     max-height: 10vh !important;
 }
 
-
-/* .navbar {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-} */
-
 .home_title {
     font-size: 5vh;
     font-weight: Bold;
     line-height: 4.4vh !important;
     color: black !important;
     text-decoration: none;
-    /* border-bottom: 1.7vh solid #FAD58C; */
-    /* min-height: 5vh; */
 }
 
 .navbar-menu {
@@ -50,11 +36,10 @@ header {
 .menu_title {
     margin-top: 7.3vh;
     margin-bottom: -1vh;
-    width: auto;
     height: 6vh;
     margin-right: 3.5vh;
     font-weight: 400;
-    font-size: 2.5vh;
+    font-size: 1.3vw;
     line-height: 2.9vh;
     color: black !important;
     border-bottom: 0.5vh solid #FAD58C;
@@ -64,3 +49,4 @@ header {
 .menu_title:active {
     border-bottom: none !important;
 }
+
