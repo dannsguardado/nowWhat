@@ -2,12 +2,16 @@
 ******* Homepage ********
 *************************/
 
+main {
+    top: 17.4vh !important;
+    position: relative !important;
+}
+
 .bg-img {
     top: 17.4vh;
     position: relative;
     display: inline-flex !important;
     width: 100%;
-    /* height: 100%; */
     height: calc(100vh - 17.4vh);
     background-image: url(image.jpeg);
     background-position: center center;
@@ -30,7 +34,7 @@
 }
 
 .white {
-    color: white;
+    color: white !important;
 }
 
 .gray {
@@ -68,7 +72,7 @@
 
 .text-size {
     margin-left: 3vh;
-    font-size: 4vh !important;
+    font-size: 2vh !important;
     /* text-indent: 1.5em; */
     text-justify: inter-word;
     /* line-height: 0 !important; */
@@ -79,6 +83,33 @@
     font-weight: 600;
 }
 
-section{
-    /* z-index: 1; */
+.color1 {
+    background-color: #FAD58C;
+}
+
+.color2 {
+    background-color: rgb(219, 103, 104);
+}
+
+.secDates {
+    /* height: calc(100vh - 17.4vh); */
+    background-image: url(estagios_pic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background: linear-gradient(to left, rgba(100, 196, 185, 0.41)); */
+    box-shadow: inset 0 0 0 1000px rgba(96, 49, 34, 0.559);
+}
+
+.pic2 {
+    background-image: url(empreendedor.jpg);
+}
+
+.pic3 {
+    background-image: url(helloquence.jpg);
+}
+
+.pic4 {
+    background-image: url(climate.jpg);
 }

@@ -60,3 +60,8 @@
     border-top: 6vh solid transparent;
     margin-top: -3vh;
 }
+
+.icon {
+    height: 5vh !important;
+    width: 5vh !important;
+}
