@@ -1,4 +1,4 @@
-html,
+    html,
 body {
     width: 100% !important;
     height: 100% !important;
@@ -44,10 +44,17 @@ header {
     line-height: 2.9vh;
     color: black !important;
     border-bottom: 0.5vh solid #FAD58C;
-    ;
 }
 
 .menu_title:active {
     border-bottom: none !important;
 }
 
+@media screen and (min-width:800px) and (max-width: 1400p){
+    .menu_title{
+        margin-bottom: -1vh !important;
+        padding-bottom: 0 !important;
+        margin-right: 2vh;
+    }
+
+}

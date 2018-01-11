@@ -2,78 +2,134 @@
 ***** Objetivo Page *****
 *************************/
 
-.container-obj {
-    padding: 0 !important;
-    top: 17.4vh;
-    position: relative;
-    height: calc(100vh - 17.4vh);
-}
+    .container-obj {
+        padding: 0 !important;
+        top: 17.4vh;
+        position: relative;
+        height: calc(100vh - 17.4vh);
+    }
 
-.about-us {
-    background-color: #F2F2F2;
-    height: 50vh;
-    margin-top: 5vh;
-}
+    .about-us {
+        padding: 3vh;
+        background-color: #F2F2F2;
+        height: 50vh;
+        margin-top: 10vh;
+    }
 
-.about-image {
-    z-index: -1;
-    margin-left: -10vh;
-    margin-top: -15vh;
-}
+    .about-image {
+        z-index: -1;
+        margin-left: -10vh;
+        margin-top: 1vh;
+    }
 
-.size-title {
-    margin-left: 3vh;
-    padding-top: 3vh;
-    margin-bottom: 0 !important;
-    font-size: 4vh !important;
-    font-weight: Bold !important;
-    /* border-bottom: 0.5vh solid #F79F66; */
-}
+    .size-title {
+        /* margin-left: 3vh; */
+        /* padding-top: 3vh; */
+        margin-bottom: 0 !important;
+        font-size: 4vh !important;
+        font-weight: Bold !important;
+        /* border-bottom: 0.5vh solid #F79F66; */
+    }
 
-.size-subtitle {
-    margin-left: 3vh;
-    font-size: 2vh !important;
-    text-justify: inter-word;
-}
+    .size-subtitle {
+        /* margin-left: 3vh; */
+        font-size: 2vh !important;
+        text-justify: inter-word;
+    }
 
-.columns {
-    margin-left: 0vh !important;
-}
+    .columns {
+        margin-left: 0vh !important;
+    }
 
-.arrow-down {
-    display: block;
-    width: 0vh;
-    height: 0vh;
-    border-left: 3vh solid transparent;
-    border-right: 3vh solid transparent;
-    border-top: 6vh solid #F2F2F2;
-    z-index: -1;
-    margin-top: -3vh;
-}
+    .arrow-down {
+        display: block;
+        width: 0vh;
+        height: 0vh;
+        border-left: 3vh solid transparent;
+        border-right: 3vh solid transparent;
+        border-top: 6vh solid #F2F2F2;
+        z-index: -1;
+        margin-top: -3vh;
+    }
 
-.arrow-downT {
-    display: block;
-    width: 0vh;
-    height: 0vh;
-    border-left: 3vh solid transparent;
-    border-right: 3vh solid transparent;
-    border-top: 6vh solid transparent;
-    margin-top: -3vh;
-}
+    .arrow-downT {
+        display: block;
+        width: 0vh;
+        height: 0vh;
+        border-left: 3vh solid transparent;
+        border-right: 3vh solid transparent;
+        border-top: 6vh solid transparent;
+        margin-top: -3vh;
+    }
 
-.icon {
-    height: 5vh !important;
-    width: 5vh !important;
-}
+    .position-icon {
+        margin-right: 15vh !important;
+        margin-left: -2.45vh !important;
+        margin-top: 1vh !important;
+    }
 
-#border {
-    margin-left: 3vh;
-    width: 15vh;
-    border-bottom: 0.5vh solid #FAD58C;
-}
+    .icon {
+        height: 5vh !important;
+        width: 5vh !important;
+    }
 
-@media screen and (min-width:800px) and (max-width: 1410px) {
+    #border {
+        /* margin-left: 3vh; */
+        width: 15vh;
+        border-bottom: 0.5vh solid #FAD58C;
+    }
+
+    @media only screen and (min-width: 1224px) {
+        /* Styles */
+    
+
     .about-us {
         height: 40vh;
+        margin-top: 7vh;
+    }
+
+    .size-title {
+        font-size: 2.5vh !important;
+    }
+
+    .size-subtitle {
+        font-size: 1.5vh !important;
+    }
+
+    .about-image {
+        /* margin-left: -3vh; */
+    }
+    /* HEADER */
+
+    .menu_title {
+        padding-bottom: 0vh !important;
+        margin-right: 2vh;
+        font-size: 1.5vh;
+    }
+}
+@media screen and (min-width:600px) and (max-width: 800px) {
+    .icon {
+        height: 3vh !important;
+        width: 3vh !important;
+    }
+
+    .position-icon {
+        margin-left: -1.50vh !important;
+        margin-right: 15vh !important;
+        margin-top: 0.5vh !important;
+    }
+
+    .arrow-down {
+        margin-top: -1.5vh;
+        border-left: 2vh solid transparent;
+        border-right: 2vh solid transparent;
+        border-top: 4vh solid #F2F2F2;
+    }
+
+    .arrow-downT {
+        margin-top: -1.5vh;
+        border-left: 2vh solid transparent;
+        border-right: 2vh solid transparent;
+        border-top: 4vh solid transparent;
     }
 }
