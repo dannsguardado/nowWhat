@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+jQuery(document).on('turbolinks:load',function () {
   $("#first").click(function () {
     $(".arrow-down").addClass("arrow-downT").removeClass("arrow-down");
     $("#first").addClass("arrow-down").removeClass("arrow-downT");
