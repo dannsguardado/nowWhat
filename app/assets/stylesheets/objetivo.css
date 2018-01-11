@@ -73,8 +73,7 @@
 }
 
 @media screen and (min-width:800px) and (max-width: 1410px) {
-    .about-us{
+    .about-us {
         height: 40vh;
     }
-
 }

@@ -6,6 +6,9 @@ main {
     top: 17.4vh !important;
     position: relative !important;
 }
+section{
+    width: 100%;
+}
 
 .bg-img {
     top: 17.4vh;
