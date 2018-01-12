@@ -6,7 +6,8 @@ main {
     top: 17.4vh !important;
     position: relative !important;
 }
-section{
+
+section {
     width: 100%;
 }
 
@@ -25,6 +26,11 @@ section{
     box-shadow: inset 0 0 0 1000px rgba(96, 49, 34, 0.559);
 }
 
+.position-text{
+    padding: 15vh;
+}
+
+    
 .is-first {
     margin-top: 15vh !important;
 }
@@ -81,13 +87,8 @@ section{
     /* line-height: 0 !important; */
 }
 
-.address {
-    font-size: 2vh;
-    font-weight: 600;
-}
-
 .color1 {
-    background-color: #FAD58C;
+    background-color: rgba(250, 213, 140, 0.655) ;
 }
 
 .color2 {
