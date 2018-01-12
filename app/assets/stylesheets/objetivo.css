@@ -23,16 +23,12 @@
 }
 
 .size-title {
-    /* margin-left: 3vh; */
-    /* padding-top: 3vh; */
     margin-bottom: 0 !important;
     font-size: 4vh !important;
     font-weight: Bold !important;
-    /* border-bottom: 0.5vh solid #F79F66; */
 }
 
 .size-subtitle {
-    /* margin-left: 3vh; */
     font-size: 2vh !important;
     text-justify: inter-word;
 }
@@ -71,11 +67,12 @@
 .icon {
     height: 5vh !important;
     width: 5vh !important;
+    cursor: pointer !important;
 }
 
 #border {
-    /* margin-left: 3vh; */
-    width: 22vh;
+    /* width: 22vh; */
+    /* position: absolute !important; */
     border-bottom: 0.5vh solid #FAD58C;
 }
 

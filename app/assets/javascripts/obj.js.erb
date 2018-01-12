@@ -2,63 +2,64 @@ jQuery(document).on('turbolinks:load',function () {
   $("#first").click(function () {
     $(".arrow-down").addClass("arrow-downT").removeClass("arrow-down");
     $("#first").addClass("arrow-down").removeClass("arrow-downT");
-    $(".title").html("ABOUT US");
+    $(".title").html("<span id='border'> ABOUT US </span>");
+    console.log($(".title").width());
     $(".text").html("Com esta feira planeamos dar a conhecer, aos estudantes da nossa faculdade, todas as hipóteses que têm ao seu dispor durante e após o seu percurso académico. Assim planeamos expor e clarificar o mundo do empreendedorismo, bem como promover uma interação com as várias estruturas empregadoras.");
-    $("#border").css({"width":"15vh", "border-bottom": "0.5vh solid #FAD58C"});
+    $("#border").css({"border-bottom": "0.5vh solid #FAD58C"});
     $("#image").attr("src", "<%= image_path 'Component(9).png', :id => 'image' %>");
   });
 
   $("#second").click(function () {
     $(".arrow-down").addClass("arrow-downT").removeClass("arrow-down");
     $("#second").addClass("arrow-down").removeClass("arrow-downT");
-    $(".title").html("ESTÁGIOS");
+    $(".title").html("<span id='border'> ESTÁGIOS </span>");
     $(".text").html("Nada melhor que a experiência, desta modo irá decorrer a promoção dos estágios que existem propostos na área da informática e do design e multimédia.Assim as entidades que nos visitarem poderão promover as suas propostas durante o evento e e breve também aqui!");
-    $("#border").css({ "width": "21vh", "border-bottom": "0.5vh solid rgb(219, 103, 104)"});
+    $("#border").css({"border-bottom": "0.5vh solid rgb(219, 103, 104)"});
     $("#image").attr("src", "<%= image_path 'Component(11).png', :id => 'image' %>");
   });
 
   $("#third").click(function () {
     $(".arrow-down").addClass("arrow-downT").removeClass("arrow-down");
     $("#third").addClass("arrow-down").removeClass("arrow-downT");
-    $(".title").html("EMPREENDEDOR VS <br> COLABORADOR");
+    $(".title").html("EMPREENDEDOR VS <br> <span id='border'> COLABORADOR </span>");
     $(".text").html("Em breve muitos de nós terminarão o seu percurso académico sem saber o que esperar do mundo do trabalho.Pretendemos assim clarificar essa experiência, introduzindo diferentes áreas e métodos de trabalho");
-    $("#border").css({"width": "33.7vh", "border-bottom":"0.5vh solid #FAD58C"});
+    $("#border").css({"border-bottom": "0.5vh solid #FAD58C"});
     $("#image").attr("src", "<%= image_path 'Component(13).png', :id => 'image' %>");
   });
 
   $("#fourth").click(function () {
     $(".arrow-down").addClass("arrow-downT").removeClass("arrow-down");
     $("#fourth").addClass("arrow-down").removeClass("arrow-downT");
-    $(".title").html("SOFT SKILLS");
+    $(".title").html("<span id='border'> SOFT SKILLS</span>");
     $(".text").html("Existem várias capacidades importantes numa pessoa, que não se limitam ao conhecimento conceitual. Deste modo irão decorrer sessões de capacitação de características pessoais (soft skills) que vão para além do intelectual.");
-    $("#border").css({ "width": "26.3vh", "border-bottom": "0.5vh solid rgb(219, 103, 104)"});
+    $("#border").css({"border-bottom": "0.5vh solid rgb(219, 103, 104)"});
     $("#image").attr("src", "<%= image_path 'Component(12).png', :id => 'image' %>");
   });
 
   $("#fifth").click(function () {
     $(".arrow-down").addClass("arrow-downT").removeClass("arrow-down");
     $("#fifth").addClass("arrow-down").removeClass("arrow-downT");
-    $(".title").html("EMPREENDEDORISMO");
+    $(".title").html("<span id='border'> EMPREENDEDORISMO </span>");
     $(".text").html("Numa área em constante evolução e repleta de novas oportunidades a inovação é um grande aliado. Pretendemos inspirar os estudantes com casos tanto de sucesso como de falha na perseverança de encarar e acreditar nas suas ideias.");
-    $("#border").css({ "width": "47vh", "border-bottom": "0.5vh solid #FAD58C"});
+    $("#border").css({"border-bottom": "0.5vh solid #FAD58C"});
     $("#image").attr("src", "<%= image_path 'Component(14).png', :id => 'image' %>");
   });
 
   $("#sixth").click(function () {
     $(".arrow-down").addClass("arrow-downT").removeClass("arrow-down");
     $("#sixth").addClass("arrow-down").removeClass("arrow-downT");
-    $(".title").html("HARD SKILLS");
+    $(".title").html("<span id='border'> HARD SKILLS </span>");
     $(".text").html("Irão decorrer momentos de capacitação sobre áreas tecnológicas do interesse dos participantes, complementando o seu conhecimentos em áreas menos abordadas no percurso académico.");
-    $("#border").css({ "width": "27.8vh", "border-bottom": "0.5vh solid  rgb(219, 103, 104)"});
+    $("#border").css({"border-bottom": "0.5vh solid  rgb(219, 103, 104)"});
     $("#image").attr("src", "<%= image_path 'Component(10).png', :id => 'image' %>");
   });
 
   $("#seventh").click(function () {
     $(".arrow-down").addClass("arrow-downT").removeClass("arrow-down");
     $("#seventh").addClass("arrow-down").removeClass("arrow-downT");
-    $(".title").html("CONTINUAÇÃO DA VIDA <br> ACADÉMICA");
+    $(".title").html("CONTINUAÇÃO DA VIDA <br> <span id='border'> ACADÉMICA </span>");
     $(".text").html("A abertura para a contínua formação é um requisito para a área. Assim ocorrerão sessões de esclarecimento das hipóteses académicas ao dispor na nossa faculdade.");
-    $("#border").css({ "width": "26.3vh", "border-bottom": "0.5vh solid  #FAD58C"});
+    $("#border").css({"border-bottom": "0.5vh solid  #FAD58C"});
     $("#image").attr("src", "<%= image_path 'Component(16).png', :id => 'image' %>");
   });
 });
