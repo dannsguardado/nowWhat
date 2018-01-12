@@ -2,57 +2,57 @@
 ****** Sign-in/up *******
 *************************/
 
+.body {
+    width: 100% !important;
+    height: 100% !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 .container-sign {
-    /* display: inline-flex !important;
-    background-color: #64C4B9;
-    /* background-color: #73DFF9; */
-    /* background-color: #0D7E83; */
     height: 100% !important;
     width: 100% !important;
     flex-direction: column;
     padding: 2vh !important;
-    background-color: #64C4B9;
+    background-color: #FAD58C;
 }
 
 .n {
     width: auto;
     display: inline-flex !important;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 35vh;
     color: white;
     pointer-events: none;
-   cursor: default;
+    cursor: default;
 }
 
 .w {
     width: auto;
     display: inline-flex !important;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 35vh;
-    color: #F79F66;
+    color: rgb(219, 103, 104);
     margin-left: -2.5vh;
     pointer-events: none;
-   cursor: default;
+    cursor: default;
 }
 
 .email-field {
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
     font-size: 3.4vh;
     font-weight: 300;
     color: #F79F66;
     border: none;
-    border-bottom: 0.4vh solid #ED5586;
+    border-bottom: 0.4vh solid #FAD58C;
 }
 
 .btn-login {
-    background-color: #ED5586;
+    background-color: rgb(219, 103, 104);
     border: none;
     color: white;
     padding: 1.2vh 1.2vh;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 2vh;
     font-weight: bold;
     display: inline-block;
@@ -60,45 +60,45 @@
 }
 
 .box-white {
-    padding: 2.5vh 2.5vh;
+    margin-top: 2vh !important;
+    padding: 4.5vh 4.5vh !important;
     background-color: white;
-    height: 35.7vh;
-    width: 60.7vh;
 }
 
 .remember-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.9vh;
+    font-size: 1.9vh;
     font-weight: 300;
-    color: #ED5586;
+    color: rgb(219, 103, 104);
 }
 
 .checkbox-remember {
-    border-color: #ED5586;
+    border-color: #FAD58C;
 }
 
 .container-nw {
-    margin-top: -10vh;
+    margin-top: -10vh !important;
+    display: inline-block;
 }
+
 .container-talk {
-    margin-top: -2vh;
+    margin-top: -12vh !important;
+}
+
+.container-buttons {
+    margin-top: 1vh !important;
 }
 
 *:focus {
     outline: none;
 }
+
 .login-lema {
     display: inline-flex !important;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 5vh;
     color: white;
 }
 
-.talk {
-    color: gray;
-}
-
-.init {
-    color: white;
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
 }

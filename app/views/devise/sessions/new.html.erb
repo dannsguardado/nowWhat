@@ -8,63 +8,72 @@
 
 <body>
   <div class="hero-body container-sign">
-    <div class="columns is-mobile is-multiline">
-      <div class="column is-three-fifths is-offset-one-fifth has-text-centered container-nw ">
-
-        <a class="n" href="../">
+    <div class="columns container-nw"> <!-- is-mobile is-multiline -->
+      <div class="column is-5 has-text-right">
+         <!-- is-three-fifths is-offset-one-fifth has-text-centered -->
+        <span class="n">
           N
-        </a>
-        <a class="w" href="../">
+        </span>
+      </div>
+      <div class="column is-7 has-text-left">
+        <span class="w">
           W?
-        </a>
+        </span>
       </div>
-      <div class="column is-half is-offset-one-quarter has-text-centered container-nw">
-        <div class="login-lema container-nw" >
-          Learn. 
-          <div class="talk"> Talk.</div>
-          <div class="talk"> Initiate</div>
-        </div>
-      </div>
-      <div class="column is-6 is-offset-3 container-talk">
-        <div class="actions has-text-centered">
-          <a class="btn-login " href="/users/sign_in">Login</a>
-          <a class="btn-login " href="../">Forgot Password</a> 
+    </div>
 
-          <a class=" btn-login border" href="/users/sign_up">Register</a>
-        </div>
+    <div class="container has-text-centered container-talk">
+      <!-- is-half is-offset-one-quarter has-text-centered -->
+      <div class="login-lema">
+        <span>learn.</span>
+        <span style="color: #999999;">talk.</span>
+        <span style="color: #555555;">initiate</span>
       </div>
-      <div class="column is-4 is-offset-4 has-text-centered box-white">
+    </div>
 
-        <form>
-          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="container has-text-centered container-buttons">
+      <!-- <div class="actions has-text-centered"> -->
+        <a class="btn-login " href="/users/sign_in">Login</a>
+        <!-- <a class="btn-login " href="../">Forgot Password</a>  -->
+        <a class="btn-login border" href="/users/sign_up">Register</a>
+      <!-- </div> -->
+    </div>
+
+    <div class="column is-4 is-offset-4 has-text-centered box-white">
+      <form>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
           <div class="field">
-            <div class="field">
-              <div class="control">
-                <%= f.email_field :email, class: 'email-field',placeholder:'Email'%>
-              </div>
+            <div class="control">
+              <%= f.email_field :email, class: 'email-field',placeholder:'Email'%>
             </div>
+          </div>
 
-            <div class="field">
-              <div class="control">
-                <%= f.password_field :password, class: 'email-field',placeholder:'Password' %>
-              </div>
+          <div class="field">
+            <div class="control">
+              <%= f.password_field :password, class: 'email-field',placeholder:'Password' %>
             </div>
-            <div class="field">
-              <%= f.check_box :remember_me, class: 'checkbox-remember' %>
-              <%= f.label :remember_me, class: 'remember-text' %>
-            </div>
-            <div class="columns is-mobile ">
+          </div>
+          <div class="field">
+            <%= f.check_box :remember_me, class: 'checkbox-remember' %>
+            <%= f.label :remember_me, class: 'remember-text' %>
+          </div>
+          <div class="columns is-mobile ">
             <div class="column is-half is-offset-one-quarter ">
               <div class="actions">
                 <%= f.submit "Log in", class: 'btn-login' %>
+                
               </div>
             </div>
           </div>
+          <div class="has-text-right">
+            <a class="remember-text" href="../">Forgot Password</a>
           </div>
-          <% end %>
-        </form>   
-      </div>
+        </div>
+        <% end %>
+      </form>   
     </div>
+  
   </div>
 </body>
 </html>
