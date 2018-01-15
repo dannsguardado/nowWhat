@@ -13,7 +13,20 @@
     color: black !important;
 }
 
+.first-link {
+    margin-left: 1vh !important;
+}
+
 .text-footer {
     font-size: 1.5vh;
     border-bottom: none !important;
+    margin-left: 1vh !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+.left-side {
+    margin-right:5vh !important; 
+    cursor: default !important;
+
 }
