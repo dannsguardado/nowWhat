@@ -10,36 +10,17 @@ main {
 section {
     width: 100%;
 }
-.nei {
-    width: 40% !important;
-    height: 40% !important;
-}
-
-.smallicon {
-    width: 5% !important;
-    height: 5% !important;
-}
 
 .bg-img {
-    /* top: 17.4vh;
-    position: relative; */
     display: inline-flex !important;
     width: 100% !important;
     height: calc(100vh - 17.4vh);
-    background-image: url(image.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    /* background: linear-gradient(to left, rgba(100, 196, 185, 0.41)); */
-    box-shadow: inset 0 0 0 1000px rgba(96, 49, 34, 0.559);
 }
 
-.position-text{
+.position-text {
     padding: 15vh;
 }
 
-    
 .is-first {
     margin-top: 15vh !important;
 }
@@ -91,13 +72,11 @@ section {
 .text-size {
     margin-left: 3vh;
     font-size: 2vh !important;
-    /* text-indent: 1.5em; */
     text-justify: inter-word;
-    /* line-height: 0 !important; */
 }
 
 .color1 {
-    background-color: rgba(250, 213, 140, 0.655) ;
+    background-color: rgba(250, 213, 140, 0.655);
 }
 
 .color2 {
@@ -105,24 +84,35 @@ section {
 }
 
 .secDates {
-    /* height: calc(100vh - 17.4vh); */
-    background-image: url(estagios_pic.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /* background: linear-gradient(to left, rgba(100, 196, 185, 0.41)); */
+    box-shadow: inset 0 0 0 1000px rgba(96, 49, 34, 0.559);
+}
+
+.pic1 {
+    background-image: url(image.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(96, 49, 34, 0.559);
 }
 
 .pic2 {
-    background-image: url(empreendedor.jpg);
+    background-image: url(empreendedor.png);
 }
 
 .pic3 {
-    background-image: url(helloquence.jpg);
+    background-image: url(helloquence.png);
 }
 
 .pic4 {
-    background-image: url(climate.jpg);
+    background-image: url(climate.png);
+}
+
+.nei {
+    width: 40% !important;
+    height: 40% !important;
 }

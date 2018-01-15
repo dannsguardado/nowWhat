@@ -16,26 +16,31 @@
     background-color: #FAD58C;
 }
 
-.n {
-    width: auto;
-    display: inline-flex !important;
-    font-style: italic;
-    font-weight: 800;
-    font-size: 35vh;
-    color: white;
-    pointer-events: none;
-    cursor: default;
+.nw {
+    width: 60% !important;
 }
 
-.w {
-    width: auto;
+.lema-position{
+    margin-top: -4vh !important;
+}
+
+.options-sign {
+    margin-top: 2vh !important;
+}
+
+.login-lema {
     display: inline-flex !important;
-    font-weight: 800;
-    font-size: 35vh;
-    color: rgb(219, 103, 104);
-    margin-left: -2.5vh;
-    pointer-events: none;
-    cursor: default;
+    font-weight: bold;
+    font-size: 5vh;
+    color: white;
+}
+
+.talk-color {
+    color: #999999 !important;
+}
+
+.initiate-color {
+    color: #555555 !important;
 }
 
 .email-field {
@@ -75,30 +80,14 @@
     border-color: #FAD58C;
 }
 
-.container-nw {
-    margin-top: -10vh !important;
-    display: inline-block;
-}
-
-.container-talk {
-    margin-top: -12vh !important;
-}
-
-.container-buttons {
-    margin-top: 1vh !important;
-}
-
 *:focus {
     outline: none;
 }
 
-.login-lema {
-    display: inline-flex !important;
-    font-weight: bold;
-    font-size: 5vh;
-    color: white;
-}
-
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.forgot {
+    margin-top: 1vh;
 }

@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<!-- <head>
-		<title>NowWhat</title>
-	</head> -->
 	<body>	
 		<%= render "header" %>
 		<main>
-			<section class="hero bg-img">
-				<div class="hero-body" style="padding:0;">
+			<section class="hero bg-img pic1">
+				<div class="hero-body">
 					<div class="container has-text-right position-text">
 						<h1 id=color1 class="big_words gray">
 								LEARN.
@@ -19,17 +16,6 @@
 							INITIATE.
 						</h1>
 					</div>
-					<!-- <div class="container has-text-centered">
-						<div class="one">
-							<i class="fa fa-angle-down fa-5x" aria-hidden="true"></i>
-						</div>
-						<div class="two" style="margin-top:-6vh;">
-							<i class="fa fa-angle-down fa-5x" aria-hidden="true"></i>
-						</div>
-						<div class="three" style="margin-top:-6vh;">
-							<i class="fa fa-angle-down fa-5x" aria-hidden="true"></i>
-						</div>
-					</div> -->
 				</div>
 			</section>
 	
@@ -43,7 +29,7 @@
 				</div>
 			</section>
 
-			<section class="hero is-medium secDates pic1">
+			<section class="hero is-medium secDates pic2">
 				<div class="hero-body">
 					<div class="columns">
 						<div id=dates class="column is-6 has-text-right">
@@ -102,20 +88,25 @@
 
 							</h2>
 							<h2>
-								<a class="white" href="mailto:nei.academia@gmail.com">
-									 nei.academia@gmail.com
-								</a><%= image_tag("phone.png", :class => "smallicon")%>
-								<br>
-
-								<i class="fa fa-phone white size-subtitle" aria-hidden="true"></i>
-								<a class="white" style="margin-left: 0.4vh; margin-top: 2vh;"> 239 790 002 </a><%= image_tag("Mail.png", :class => "smallicon")%>
+								<div class="size-subtitle">
+									<div style="display: inline-block;">
+										<a class="white" href="mailto:nei.academia@gmail.com"> <span>nei.academia@gmail.com</span>
+										<i class="fa fa-envelope white" aria-hidden="true"></i></a>
+										
+									</div>
+									<br>
+									<div style="display: inline-block;">
+										<span class="white"> 239 790 002 
+											<i class="fa fa-phone white" style="margin-left:0.5vh; margin-right:0.5vh;" aria-hidden="true"></i>
+										</span>
+										
+									</div>
+								</div>
 							</h2>
 						</div>
 						<div class="column is-6 has-text-centered" >
 							<h1>
-								<%= link_to(image_tag("NEIAAC.png", :class => "nei"), "https://nei.dei.uc.pt/")%>
-								<i class="fa fa-envelope white size-subtitle" aria-hidden="true"></i><br>
-								
+								<%= link_to(image_tag("NEIAAC.png", :class => "nei"), "https://nei.dei.uc.pt/")%>								
 							</h1>
 						</div>
 					</div>
