@@ -10,6 +10,15 @@ main {
 section {
     width: 100%;
 }
+.nei {
+    width: 40% !important;
+    height: 40% !important;
+}
+
+.smallicon {
+    width: 5% !important;
+    height: 5% !important;
+}
 
 .bg-img {
     /* top: 17.4vh;

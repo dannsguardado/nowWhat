@@ -9,16 +9,9 @@
 <body>
   <div class="hero-body container-sign">
     <div class="columns container-nw"> <!-- is-mobile is-multiline -->
-      <div class="column is-5 has-text-right">
+       <div class="column is-half is-offset-one-quarter has-text-right">
          <!-- is-three-fifths is-offset-one-fifth has-text-centered -->
-        <span class="n">
-          N
-        </span>
-      </div>
-      <div class="column is-7 has-text-left">
-        <span class="w">
-          W?
-        </span>
+          <%= link_to(image_tag("ComponentNW.png"), "/")%>
       </div>
     </div>
 
@@ -34,52 +27,36 @@
     <div class="container has-text-centered container-buttons">
       <!-- <div class="actions has-text-centered"> -->
         <a class="btn-login " href="/users/sign_in">Login</a>
+        <a class="btn-login border" href="/users/password/new">Forgot Password</a>
         <!-- <a class="btn-login " href="../">Forgot Password</a>  -->
         <a class="btn-login border" href="/users/sign_up">Register</a>
       <!-- </div> -->
     </div>
 
-    <div class="column is-4 is-offset-4 has-text-centered box-white">
-      <form>
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <div class="field">
-          <div class="field">
-            <div class="control">
-              <%= f.email_field :email, class: 'email-field',placeholder:'Email'%>
-            </div>
-          </div>
+    <div class="column is-half is-offset-one-quarter has-text-centered box-white">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'email-field',placeholder:'Email' %>
+  </div>
 
-          <div class="field">
-            <div class="control">
-              <%= f.password_field :password, class: 'email-field',placeholder:'Password' %>
-            </div>
-          </div>
-          <div class="field">
-            <%= f.check_box :remember_me, class: 'checkbox-remember' %>
-            <%= f.label :remember_me, class: 'remember-text' %>
-          </div>
-          <div class="columns is-mobile ">
-            <div class="column is-half is-offset-one-quarter ">
-              <div class="actions">
-                <%= f.submit "Log in", class: 'btn-login' %>
-                
-              </div>
-            </div>
-          </div>
-          <div class="has-text-right">
-            <a class="remember-text" href="../">Forgot Password</a>
-          </div>
-        </div>
-        <% end %>
-      </form>   
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "off", class: 'email-field',placeholder:'Password' %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me, class: 'checkbox-remember' %>
+      <%= f.label :remember_me, class: 'remember-text' %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Log in", class: 'btn-login' %>
+  </div>
+<% end %>
     </div>
   
   </div>
 </body>
 </html>
 
-
-<!-- 
-              <%= render "devise/shared/links" %>
-
-</div> -->
