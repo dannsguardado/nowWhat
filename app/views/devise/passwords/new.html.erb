@@ -2,42 +2,30 @@
 <html>
 <head>
 	<title>NowWhat</title>
-
-
 </head>
 
 <body>
 	<div class="hero-body container-sign">
-		<div class="columns container-nw"> <!-- is-mobile is-multiline -->
-			<div class="column is-6 is-offset-3 has-text-right">
-				<!-- is-three-fifths is-offset-one-fifth has-text-centered -->
-				<%= link_to(image_tag("ComponentNW.png"), "/")%>
-			</div>
+		<div class="container has-text-centered">
+			<%= link_to(image_tag("ComponentNW.png", :class => 'nw'), "/")%>
 		</div>
-
-		<div class="container has-text-centered container-talk">
-			<!-- is-half is-offset-one-quarter has-text-centered -->
+		<div class="container has-text-centered lema-position">
 			<div class="login-lema">
 				<span>learn.</span>
-				<span style="color: #999999;">talk.</span>
-				<span style="color: #555555;">initiate</span>
+				<span class="talk-color">talk.</span>
+				<span class="initiate-color">initiate.</span>
 			</div>
 		</div>
 
-		<div class="container has-text-centered container-buttons">
-			<!-- <div class="actions has-text-centered"> -->
-				<a class="btn-login " href="/users/sign_in">Login</a>
-				<!-- <a class="btn-login " href="../">Forgot Password</a>  -->
-				<a class="btn-login border" href="/users/password/new">Forgot Password</a>
-				<a class="btn-login border" href="/users/sign_up">Register</a>
-				<!-- </div> -->
-			</div>
+		<div class="container has-text-centered options-sign">
+			<a class="btn-login " href="/users/sign_in">Login</a>
+			<a class="btn-login border" href="/users/sign_up">Register</a>
+		</div>
 
-			<div class="column is-4 is-offset-4 has-text-centered box-white">
-
-				<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+		<div class="column is-4 is-offset-4 has-text-centered box-white">
+			<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
 				<%= devise_error_messages! %>
-
+				
 				<div class="field">
 					<%= f.email_field :email, autofocus: true, autocomplete: "email", class: "email-field", placeholder: "Insert your email" %>
 				</div>
@@ -45,10 +33,7 @@
 				<div class="actions">
 					<%= f.submit "Send email", class:"btn-login" %>
 				</div>
-				<% end %>
-
-			</div>
-
+			<% end %>
 		</div>
 	</div>
 </body>
