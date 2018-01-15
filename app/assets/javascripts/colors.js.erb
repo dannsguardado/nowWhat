@@ -13,5 +13,20 @@ $(document).ready(function () {
         $("#color1").addClass("gray").removeClass("white");
       }
     }
+    function changeDatesColor(){
+      if( $("#date1").hasClass("white")){
+        $("#date1").addClass("gray").removeClass("white");
+        $("#date4").addClass("gray").removeClass("white");
+        $("#date2").addClass("white").removeClass("gray");
+        $("#date3").addClass("white").removeClass("gray");
+      }
+      else{
+        $("#date1").addClass("white").removeClass("gray");
+        $("#date4").addClass("white").removeClass("gray");
+        $("#date2").addClass("gray").removeClass("white");
+        $("#date3").addClass("gray").removeClass("white");
+      }
+    }
   setInterval(changeColor, 1000);
+  setInterval(changeDatesColor, 1000);
 });
