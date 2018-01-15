@@ -3,15 +3,14 @@
 	<body>
 		<%= render "home/header" %>
 		<section class="hero container-obj" >
-			<div class="hero-body" style="padding-bottom:0;">
+			<div class="hero-body">
 				<div class="container">
 					<div class="columns is-vcentered">
-						<div class="column is-7 ">
-							<div class="about-us ">
+						<div class="column is-7">
+							<div class="about-us">
 								<h1 class="title size-title">
 									<span id="border">ABOUT US</span>
 								</h1>
-								<!-- <div id="border"></div> -->
 								<br>
 								<br>
 								<h2 class="text subtitle size-subtitle">
@@ -26,44 +25,44 @@
 								<p>
 									<div id=first class="arrow-down">
 										<div class="position-icon icon">
-											<%= image_tag("1-01.png") %>
+											<%= image_tag("ay0-00.png", :id => "icon1") %>
 										</div>
 									</div>
 									<div  id=second class="arrow-downT" >
 										<div class="position-icon icon">
-											<%= image_tag("1-01.png") %>
+											<%= image_tag("red1-01.png", :id => "icon2") %>
 										</div>										
 									</div>
 									<div id=third class="arrow-downT">
 										<div class="position-icon icon">
-											<%= image_tag("2-02.png") %>
+											<%= image_tag("red2-02.png", :id => "icon3") %>
 										</div>
 									</div>
 									<div id=fourth class="arrow-downT">
 										<div class="position-icon icon">
-											<%= image_tag("3-03.png") %>
+											<%= image_tag("red3-03.png", :id => "icon4") %>
 										</div>
 									</div>
 									<div id=fifth class="arrow-downT">
 										<div class="position-icon icon">
-											<%= image_tag("4-04.png") %>
+											<%= image_tag("red4-04.png", :id => "icon5") %>
 										</div>
 									</div>
 									<div id=sixth class="arrow-downT">
 										<div class="position-icon icon">
-											<%= image_tag("5-05.png") %>
+											<%= image_tag("red5-05.png", :id => "icon6") %>
 										</div>
 									</div>
 									<div id=seventh class="arrow-downT">
 										<div class="position-icon icon">
-											<%= image_tag("6-06.png") %>
+											<%= image_tag("red6-06.png", :id => "icon7") %>
 										</div>
 									</div>
 								</p>
 							</div>
 						</div>
 						<div class="column is-6 about-image">
-							<figure class="image ">
+							<figure class="image">
 								<%= image_tag("Component(9).png", :id => "image") %>
 							</figure>
 						</div>
@@ -71,7 +70,7 @@
 				</div>
 			</div>
 		</section>
-		<section style="padding-top: 12.3vh;">
+		<section class="footer-about">
 			<%= render "home/footer" %>
 		</section>
 	</body>
