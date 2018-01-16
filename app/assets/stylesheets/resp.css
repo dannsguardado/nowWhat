@@ -85,16 +85,12 @@
         margin: 0 !important;
         /* border-bottom: none !important; */
     }
-    .first-link {
-        margin-left: 2vh !important;
-    }
     .left-side {
         margin-right: 0vh !important;
     }
     .footer {
         padding: 1vh !important;
     }
-
     #footer.column{
         width: 45% !important;
     }
@@ -168,14 +164,15 @@
     .navbar-item {
         line-height: 4!important;
     }
-    .first-link {
-        margin-left: -3.5vh !important;
-    }
     .left-side {
         margin-right: 11vh !important;
     }
     .footer {
         padding: 1.5vh !important;
+    }
+
+    .text-footer{
+        margin-left: -5vh !important;
     }
 }
 
