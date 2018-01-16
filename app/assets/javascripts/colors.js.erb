@@ -1,3 +1,16 @@
+const toggleBurger = () => {
+  document.querySelector('.navbar-menu').classList.toggle('is-active');
+  $(document).ready(function () {
+    $("#navbar-nav a").click(function (e) {
+      var isActive = $(this).hasClass('is-active');
+      $('.is-active').removeClass('is-active');
+      if (!isActive) {
+        $(this).addClass('is-active');
+      }
+    });
+  });
+};
+
 $(document).ready(function () {
     function changeColor() {
       if ( $("#color1").hasClass("gray")) {

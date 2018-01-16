@@ -53,3 +53,27 @@
     .navbar-item.home_title:hover {
         background-color: transparent !important;
     }
+
+    .burger {
+        margin-right: 2vh !important;
+        height: 4rem !important;
+        width: 4rem !important;
+    }
+
+    .navbar-burger span {
+        height: 8px !important;
+        width: 5vw !important;
+        left: calc(15% - 1px) !important;
+    }
+
+    .navbar-burger span:nth-child(1) {
+        top: calc(50% - 16px) !important;
+    }
+
+    .navbar-burger span:nth-child(2) {
+        top: calc(50% - 2px) !important;
+    }
+
+    .navbar-burger span:nth-child(3) {
+        top: calc(50% + 12px) !important;
+    }

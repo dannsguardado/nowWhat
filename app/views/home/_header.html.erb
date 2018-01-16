@@ -14,9 +14,16 @@
 									<%= image_tag("1.png", :class => "logo1")%>
 								</a>
 							</div>
-							<div id="navbarMenu" class="navbar-menu">
+							<div class="burger navbar-burger" id="burger" onclick="toggleBurger()">
+								<span ></span>
+								<span></span>
+								<span></span>
+							</div>
+
+							<div id="navbarMenu" class="navbar-menu has-text-right">
 								<div class="navbar-end">
-									<a class="navbar-item menu_title" href="../">Home</a>
+									<a class="navbar-item menu_title" href="../">Home</a> 
+									<!-- <span id="border">Home</span> -->
 									<a class="navbar-item menu_title" href="/about/aboutus">About</a>
 									<% if user_signed_in? %>
 											<%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'navbar-item menu_title') %>
