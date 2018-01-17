@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.2.6'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -34,7 +33,9 @@ gem "bulma-rails", "~> 0.6.2"
 gem "font-awesome-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem "mysql"
+group :production do
+  gem "mysql"
+end
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
