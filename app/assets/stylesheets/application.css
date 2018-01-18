@@ -12,12 +12,9 @@
  *
  *
  *= require font-awesome
+ *= require bulma
  *= require_tree .
  *= require_self
- */
-
-
-/* @import "bulma";
  */
 
 html,
