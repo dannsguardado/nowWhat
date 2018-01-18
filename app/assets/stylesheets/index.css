@@ -3,8 +3,10 @@
 *************************/
 
 main {
-    top: 17.4vh !important;
+    /* top: 17.4vh !important; */
     position: relative !important;
+    width: 100%;
+    display: block;
 }
 
 section {
@@ -125,7 +127,7 @@ section {
 }
 
 .pic1 {
-    background-image: url(estagios_pic.png);
+    background-image: url(estagios_pic.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -134,15 +136,15 @@ section {
 }
 
 .pic2 {
-    background-image: url(empreendedor.png);
+    background-image: url(empreendedor.jpg);
 }
 
 .pic3 {
-    background-image: url(helloquence.png);
+    background-image: url(helloquence.jpg);
 }
 
 .pic4 {
-    background-image: url(climate.png);
+    background-image: url(climate.jpg);
 }
 
 .nei {

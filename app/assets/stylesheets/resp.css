@@ -91,14 +91,15 @@
     .footer {
         padding: 1vh !important;
     }
-    #footer.column{
+    #footer.column {
         width: 45% !important;
     }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 736px) {
     .position-text {
-        padding: 5vh !important;
+        padding: 2vh !important;
+        padding-top: 5vh !important;
     }
     .column {
         display: inline-block !important;
@@ -170,9 +171,55 @@
     .footer {
         padding: 1.5vh !important;
     }
-
-    .text-footer{
+    .text-footer {
         margin-left: -5vh !important;
+    }
+    .navbar-burger {
+        margin-top: -6.5vh;
+    }
+    .navbar-end {
+        margin-top: 0 !important;
+    }
+    .navbar-menu {
+        margin-top: -0.7vh;
+        padding: 0 !important;
+        background-color: white !important;
+        float: right;
+        width: 25%;
+        margin-right: 0 !important;
+    }
+    .menu_title:hover {
+        background-color: #999999 !important;
+    }
+    .navbar-item {
+        line-height: 4!important;
+    }
+    .menu_title {
+        margin: 0 !important;
+        font-size: 0.5em !important;
+        /* border-bottom: none !important; */
+    }
+    .navbar-burger span {
+        width: 10vw !important;
+    }
+    #month.big_words {
+        font-size: 3.5vh !important;
+        margin-left: 3vh !important;
+    }
+    #date1.big_words,
+    #date2.big_words,
+    #date3.big_words,
+    #date4.big_words {
+        font-size: 3.5vh !important;
+    }
+    #dates.column {
+        width: 25% !important;
+    }
+    #date-column.column {
+        width: 5% !important;
+    }
+    #last-text.column {
+        width: 75% !important;
     }
 }
 
@@ -196,7 +243,7 @@
         font-size: 1.5vh !important;
     }
     .navbar-burger {
-        margin-top: -4vh;
+        margin-top: -6vh;
     }
     .navbar-end {
         margin-top: 0vh;

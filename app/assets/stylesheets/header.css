@@ -1,79 +1,73 @@
-    html,
-    body {
-        width: 100% !important;
-        height: 100% !important;
-        font-family: 'Montserrat', sans-serif !important;
-    }
+header {
+    width: 100%;
+    height: 17.4vh;
+    padding-top: 2vh;
+    background-color: white;
+    /* position: fixed !important; */
+    position: relative !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 0.1vh solid rgb(159, 143, 132);
+}
 
-    header {
-        width: 100%;
-        height: 17.4vh;
-        padding-top: 2vh;
-        background-color: white;
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 99;
-        border-bottom: 0.1vh solid rgb(159, 143, 132);
-    }
+.navbar-item img {
+    max-height: 10vh !important;
+}
 
-    .navbar-item img {
-        max-height: 10vh !important;
-    }
+.home_title {
+    font-size: 5vh;
+    font-weight: Bold;
+    line-height: 4.4vh !important;
+    color: black !important;
+    text-decoration: none;
+}
 
-    .home_title {
-        font-size: 5vh;
-        font-weight: Bold;
-        line-height: 4.4vh !important;
-        color: black !important;
-        text-decoration: none;
-    }
+.navbar-menu {
+    margin-right: 5.7vh;
+}
 
-    .navbar-menu {
-        margin-right: 5.7vh;
-    }
+.menu_title {
+    margin-top: 7.3vh;
+    margin-bottom: -1vh;
+    height: 6vh;
+    margin-right: 3.5vh;
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 2.9vh;
+    color: black !important;
+    border-bottom: 0.5vh solid #FAD58C;
+}
 
-    .menu_title {
-        margin-top: 7.3vh;
-        margin-bottom: -1vh;
-        height: 6vh;
-        margin-right: 3.5vh;
-        font-weight: 400;
-        font-size: 1.3vw;
-        line-height: 2.9vh;
-        color: black !important;
-        border-bottom: 0.5vh solid #FAD58C;
-    }
+.menu_title:active {
+    border-bottom: none !important;
+}
 
-    .menu_title:active {
-        border-bottom: none !important;
-    }
+.navbar-item.home_title:hover {
+    background-color: transparent !important;
+}
 
-    .navbar-item.home_title:hover {
-        background-color: transparent !important;
-    }
+.burger {
+    margin-right: 2vh !important;
+    height: 4rem !important;
+    width: 4rem !important;
+}
 
-    .burger {
-        margin-right: 2vh !important;
-        height: 4rem !important;
-        width: 4rem !important;
-    }
+.navbar-burger span {
+    height: 8px !important;
+    width: 5vw !important;
+    left: calc(15% - 1px) !important;
+}
 
-    .navbar-burger span {
-        height: 8px !important;
-        width: 5vw !important;
-        left: calc(15% - 1px) !important;
-    }
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 16px) !important;
+}
 
-    .navbar-burger span:nth-child(1) {
-        top: calc(50% - 16px) !important;
-    }
+.navbar-burger span:nth-child(2) {
+    top: calc(50% - 2px) !important;
+}
 
-    .navbar-burger span:nth-child(2) {
-        top: calc(50% - 2px) !important;
-    }
-
-    .navbar-burger span:nth-child(3) {
-        top: calc(50% + 12px) !important;
-    }
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 12px) !important;
+}

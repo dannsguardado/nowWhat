@@ -16,4 +16,15 @@
  *= require_self
  */
 
-@import "bulma";
+
+/* @import "bulma";
+ */
+
+html,
+body {
+    width: 100% !important;
+    height: 100% !important;
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
