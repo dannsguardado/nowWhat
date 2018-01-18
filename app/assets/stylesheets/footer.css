@@ -1,12 +1,11 @@
 .footer {
     height: 5vh;
-    /* position: relative; */
     background-color: rgb(219, 103, 104) !important;
     padding: 0 !important;
     width: 100% !important;
     margin: 0 !important;
     position: fixed !important;
-    bottom: 0;
+    bottom: 0 !important;
     left: 0;
     right: 0;
     z-index: 99;

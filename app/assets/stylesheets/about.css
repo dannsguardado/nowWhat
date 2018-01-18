@@ -3,10 +3,10 @@
 *************************/
 
 .container-obj {
+    top:17.4vh;
     padding: 0 !important;
-    top: 17.4vh;
     position: relative;
-    height: calc(100vh - 17.4vh);
+    height: calc(100% - 22vh);
 }
 
 .about-us {
@@ -77,8 +77,4 @@
 .image {
     width: 100% !important;
     height: 45vh !important;
-}
-
-.footer-about {
-    padding-top: 12.3vh !important;
 }

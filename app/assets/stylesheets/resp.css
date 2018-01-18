@@ -83,7 +83,6 @@
     }
     .menu_title {
         margin: 0 !important;
-        /* border-bottom: none !important; */
     }
     .left-side {
         margin-right: 0vh !important;
@@ -94,9 +93,16 @@
     #footer.column {
         width: 45% !important;
     }
+    .nw {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 736px) {
+    #about.hero-body {
+        padding: 0 !important;
+        padding-top: 5vh !important;
+    }
     .position-text {
         padding: 2vh !important;
         padding-top: 5vh !important;
@@ -105,11 +111,12 @@
         display: inline-block !important;
         width: 50% !important;
         padding: 0 !important;
-        margin-left: 5vh;
+        margin-left: 4vh;
     }
     .about-us {
-        height: 40vh !important;
-        margin-top: 3vh !important;
+        height: 45vh !important;
+        width: 100%;
+        margin-top: 5vh !important;
     }
     .about-image {
         margin-top: 5vh !important;
@@ -150,7 +157,6 @@
     }
     .menu_title {
         margin: 0 !important;
-        /* border-bottom: none !important; */
     }
     .navbar-menu {
         padding: 0 !important;
@@ -164,12 +170,6 @@
     }
     .navbar-item {
         line-height: 4!important;
-    }
-    .left-side {
-        margin-right: 11vh !important;
-    }
-    .footer {
-        padding: 1.5vh !important;
     }
     .text-footer {
         margin-left: -5vh !important;
@@ -197,7 +197,6 @@
     .menu_title {
         margin: 0 !important;
         font-size: 0.5em !important;
-        /* border-bottom: none !important; */
     }
     .navbar-burger span {
         width: 10vw !important;
@@ -220,6 +219,32 @@
     }
     #last-text.column {
         width: 75% !important;
+    }
+    #footer.column {
+        width: 40% !important;
+    }
+    .footer {
+        padding-top: 0.5vh !important;
+        position: relative !important; 
+    }
+    .fa-facebook {
+        margin-left: 1vh !important;
+    }
+    .footer-about {
+        position: fixed !important;
+        bottom: 3vh !important;
+    }
+    .nw {
+        width: 100% !important;
+    }
+    .lema-position{
+        margin-top: 0vh !important;
+    }
+    .options-sign{
+        margin-top: 1vh !important;
+    }
+    .box-white{
+        width: 85% !important;
     }
 }
 
@@ -263,6 +288,8 @@
     }
     .menu_title {
         margin: 0 !important;
-        /* border-bottom: none !important; */
+    }
+    .nw {
+        width: 100% !important;
     }
 }

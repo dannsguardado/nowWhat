@@ -3,7 +3,7 @@
 *************************/
 
 main {
-    /* top: 17.4vh !important; */
+    top: 17.4vh;
     position: relative !important;
     width: 100%;
     display: block;
@@ -70,7 +70,6 @@ section {
 }
 
 .dates {
-    /* display: inline-block; */
     font-size: 5vh;
     color: black;
     font-weight: 600;
