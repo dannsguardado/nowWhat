@@ -263,7 +263,7 @@
     }
 }
 
-@media only screen and (min-width:766px) and (max-width: 1210px) {
+@media only screen and (min-width:766px) and (max-width: 1023px) {
     .menu_title {
         padding-bottom: 0vh !important;
         margin-right: 2vh;
