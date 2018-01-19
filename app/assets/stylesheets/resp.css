@@ -99,6 +99,11 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 736px) {
+    header {
+        padding-top: 3vh !important;
+        padding-left: 3vh !important;
+        padding-right: 3vh !important;
+    }
     #about.hero-body {
         padding: 0 !important;
         padding-top: 5vh !important;
@@ -111,17 +116,17 @@
         display: inline-block !important;
         width: 50% !important;
         padding: 0 !important;
-        margin-left: 4vh;
+        margin-left: 5vh;
     }
     .about-us {
-        height: 45vh !important;
+        height: 50vh !important;
         width: 100%;
-        margin-top: 5vh !important;
+        margin-top: -5vh !important;
     }
     .about-image {
-        margin-top: 5vh !important;
+        margin-top: 3vh !important;
         margin-left: -10vh !important;
-        margin-bottom: 0vh !important;
+        margin-bottom: 10vh !important;
     }
     .icon {
         height: 3vh !important;
@@ -148,15 +153,14 @@
     }
     .image {
         z-index: -1 !important;
+        width: 45vw !important;
+        height: 55vh !important;
     }
     .size-title {
         font-size: 1.5.5vh !important;
     }
     .size-subtitle {
         font-size: 1.75vh !important;
-    }
-    .menu_title {
-        margin: 0 !important;
     }
     .navbar-menu {
         padding: 0 !important;
@@ -170,6 +174,7 @@
     }
     .navbar-item {
         line-height: 4!important;
+        padding: 0 !important;
     }
     .text-footer {
         margin-left: -5vh !important;
@@ -191,15 +196,17 @@
     .menu_title:hover {
         background-color: #999999 !important;
     }
-    .navbar-item {
-        line-height: 4!important;
-    }
     .menu_title {
         margin: 0 !important;
-        font-size: 0.5em !important;
+        font-size: 0.7em !important;
+        border-bottom: none !important;
     }
     .navbar-burger span {
         width: 10vw !important;
+        left: calc(25% - 1px) !important;
+    }
+    .burger {
+        margin-right: 0 !important
     }
     #month.big_words {
         font-size: 3.5vh !important;
@@ -225,26 +232,34 @@
     }
     .footer {
         padding-top: 0.5vh !important;
-        position: relative !important; 
+        position: relative !important;
     }
     .fa-facebook {
-        margin-left: 1vh !important;
+        margin-left: 2vh !important;
     }
     .footer-about {
         position: fixed !important;
-        bottom: 3vh !important;
     }
     .nw {
         width: 100% !important;
     }
-    .lema-position{
+    .lema-position {
         margin-top: 0vh !important;
     }
-    .options-sign{
+    .options-sign {
         margin-top: 1vh !important;
     }
-    .box-white{
+    .box-white {
         width: 85% !important;
+    }
+    .container-obj {
+        height: calc(100vh - 22.4vh) !important;
+    }
+    #about2.columns {
+        width: 100% !important;
+    }
+    #about2 {
+        margin-left: 0 !important;
     }
 }
 
@@ -256,10 +271,11 @@
     }
     .about-us {
         height: 35vh;
-        margin-top: 8vh;
+        margin-top: 0vh;
     }
     .about-image {
-        margin-top: 5vh;
+        margin-top: 5vh !important;
+        margin-bottom: 1vh !important;
     }
     .size-title {
         font-size: 2.5vh !important;
@@ -291,5 +307,21 @@
     }
     .nw {
         width: 100% !important;
+    }
+    .image {
+        z-index: -1 !important;
+        width: 45vw !important;
+        height: 55vh !important;
+    }
+    
+    .lema-position {
+        margin-top: 0vh !important;
+    }
+    .options-sign {
+        margin-top: 1vh !important;
+    }
+    .box-white {
+        margin-left: 5vh !important;
+        width: 85% !important;
     }
 }

@@ -3,7 +3,6 @@
 *************************/
 
 .container-obj {
-    top:17.4vh;
     padding: 0 !important;
     position: relative;
     height: calc(100% - 22vh);
@@ -18,7 +17,7 @@
 
 .about-image {
     z-index: -1;
-    margin-left: -10vh;
+    margin-left: -10vh !important;
     margin-top: -3vh;
 }
 
@@ -75,6 +74,10 @@
 }
 
 .image {
-    width: 100% !important;
+    width: 35vw !important;
     height: 45vh !important;
+}
+
+#about2{
+    margin-left: 10vh !important;
 }
