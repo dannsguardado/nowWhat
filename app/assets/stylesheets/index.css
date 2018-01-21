@@ -126,7 +126,7 @@ section {
 }
 
 .pic1 {
-    background-image: url(estagios_pic.jpg);
+    background-image: url(empreendedor.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -135,15 +135,15 @@ section {
 }
 
 .pic2 {
-    background-image: url(empreendedor.jpg);
+    background-image: url(estagios_pic.jpg);
 }
 
 .pic3 {
-    background-image: url(helloquence.jpg);
+    background-image: url(helloquence.png);
 }
 
 .pic4 {
-    background-image: url(climate.jpg);
+    background-image: url(climate.png);
 }
 
 .nei {
