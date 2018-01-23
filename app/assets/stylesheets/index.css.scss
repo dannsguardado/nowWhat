@@ -126,7 +126,7 @@ section {
 }
 
 .pic1 {
-    background-image: url(empreendedor.png);
+    // background-image: image-url("empreendedor.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -139,11 +139,11 @@ section {
 }
 
 .pic3 {
-    background-image: url(helloquence.png);
+    background-image: image-url("helloquence.png");
 }
 
 .pic4 {
-    background-image: url(climate.png);
+    background-image: image-url("climate.png");
 }
 
 .nei {
