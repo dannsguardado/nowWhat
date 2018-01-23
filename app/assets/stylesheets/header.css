@@ -55,7 +55,7 @@ header {
 
 .navbar-burger span {
     height: 8px !important;
-    width: 5vw !important;
+    width: 4.8vw !important;
     left: calc(15% - 1px) !important;
 }
 
