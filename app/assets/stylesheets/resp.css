@@ -337,3 +337,19 @@
         width: 85% !important;
     }
 }
+
+@media only screen and (min-width:1024px) and (max-width: 1366px) {
+    .nw {
+        width: 90% !important;
+    }
+    .lema-position {
+        margin-top: 0vh !important;
+    }
+    .options-sign{
+        margin-top: 2vh !important;
+    }
+    .box-white {
+        margin-left: 5vh !important;
+        width: 85% !important;
+    }
+}
