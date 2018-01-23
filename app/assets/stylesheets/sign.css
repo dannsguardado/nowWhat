@@ -17,15 +17,15 @@
 }
 
 .nw {
-    width: 60% ;
+    width: 60%;
 }
 
-.lema-position{
+.lema-position {
     margin-top: -8vh;
 }
 
 .options-sign {
-    margin-top: 0vh ;
+    margin-top: 0vh;
 }
 
 .login-lema {
@@ -54,7 +54,7 @@
 
 .btn-login {
     background-color: rgb(219, 103, 104) !important;
-    border: none ;
+    border: none;
     color: white;
     padding: 1.2vh 1.2vh !important;
     text-align: center;
@@ -62,6 +62,7 @@
     font-weight: bold;
     display: inline-block;
     width: 20vh;
+    -webkit-appearance: none !important;
 }
 
 .box-white {
