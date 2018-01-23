@@ -126,16 +126,12 @@ section {
 }
 
 .pic1 {
-    // background-image: image-url("empreendedor.png");
+    background-image: image-url("empreendedor.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(96, 49, 34, 0.559);
-}
-
-.pic2 {
-    background-image: url(estagios_pic.jpg);
 }
 
 .pic3 {
