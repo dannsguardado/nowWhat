@@ -53,10 +53,10 @@
 }
 
 .btn-login {
-    background-color: rgb(219, 103, 104);
-    border: none;
+    background-color: rgb(219, 103, 104) !important;
+    border: none ;
     color: white;
-    padding: 1.2vh 1.2vh;
+    padding: 1.2vh 1.2vh !important;
     text-align: center;
     font-size: 2vh;
     font-weight: bold;
