@@ -63,7 +63,7 @@
         font-size: 1.75vh !important;
     }
     .navbar-burger {
-        margin-top: -4vh;
+        top: -10.4vh !important;
     }
     .navbar-burger span {
         width: 7vw !important;
@@ -103,6 +103,102 @@
     }
     .nw {
         width: 100% !important;
+    }
+}
+
+@media only screen and (min-width:766px) and (max-width: 1023px) {
+    .menu_title {
+        padding: 0 !important;
+        padding-bottom: 0vh !important;
+        margin-right: 2vh;
+        font-size: 1.5vh;
+    }
+    .about-us {
+        height: 35vh;
+        margin-top: 0vh;
+    }
+    .about-image {
+        margin-top: 5vh !important;
+        margin-bottom: 1vh !important;
+    }
+    .size-title {
+        font-size: 2.5vh !important;
+    }
+    .size-subtitle {
+        font-size: 1.5vh !important;
+    }
+    /* .navbar-burger {
+        top: -10.4vh !important;
+    } */
+    .navbar-end {
+        margin-top: 0vh;
+    }
+    .navbar-menu {
+        margin-top: -10vh !important;
+        padding: 0 !important;
+        background-color: white !important;
+        float: right;
+        width: 35%;
+        margin-right: -3vh !important;
+    }
+    .menu_title:hover {
+        background-color: #999999 !important;
+    }
+    .navbar-item {
+        line-height: 4!important;
+    }
+    .menu_title {
+        margin: 0 !important;
+        font-size: 0.9em !important;
+        border-bottom: none !important;
+    }
+    .nw {
+        width: 100% !important;
+    }
+    .image {
+        z-index: -1 !important;
+        width: 45vw !important;
+        height: 55vh !important;
+    }
+    .lema-position {
+        margin-top: 0vh !important;
+    }
+    .options-sign {
+        margin-top: 1vh !important;
+    }
+    .box-white {
+        margin-left: 5vh !important;
+        width: 85% !important;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width: 1366px) {
+    .position-text {
+        padding: 4vh !important;
+        padding-top: 10vh !important;
+    }
+    #month.big_words {
+        font-size: 7vh !important;
+        /* margin-left: 3vh !important; */
+    }
+    #date1.big_words,
+    #date2.big_words,
+    #date3.big_words,
+    #date4.big_words {
+        font-size: 7vh !important;
+    }
+    .nw {
+        width: 90% !important;
+    }
+    .lema-position {
+        margin-top: 0vh !important;
+    }
+    .options-sign {
+        margin-top: 2vh !important;
+    }
+    .box-white {
+        margin-left: 5vh !important;
+        width: 85% !important;
     }
 }
 
@@ -175,7 +271,8 @@
         background-color: white !important;
         float: right;
         width: 25%;
-        margin-right: 0 !important;
+        margin-top: -10vh !important;
+        margin-right: -3vh !important;
     }
     .menu_title:hover {
         background-color: #999999 !important;
@@ -187,9 +284,9 @@
     .text-footer {
         margin-left: -5vh !important;
     }
-    .navbar-burger {
+    /* .navbar-burger {
         margin-top: -6.5vh;
-    }
+    } */
     .navbar-burger span {
         width: 12.5vw !important;
         left: calc(15% - 1px) !important;
@@ -215,7 +312,7 @@
         border-bottom: none !important;
     }
     .burger {
-        margin-right: 0 !important
+        /* margin-right: 2vh !important */
     }
     #month.big_words {
         font-size: 3.5vh !important;
@@ -269,87 +366,5 @@
     }
     #about2 {
         margin-left: 0 !important;
-    }
-}
-
-@media only screen and (min-width:766px) and (max-width: 1023px) {
-    .menu_title {
-        padding: 0 !important;
-        padding-bottom: 0vh !important;
-        margin-right: 2vh;
-        font-size: 1.5vh;
-    }
-    .about-us {
-        height: 35vh;
-        margin-top: 0vh;
-    }
-    .about-image {
-        margin-top: 5vh !important;
-        margin-bottom: 1vh !important;
-    }
-    .size-title {
-        font-size: 2.5vh !important;
-    }
-    .size-subtitle {
-        font-size: 1.5vh !important;
-    }
-    .navbar-burger {
-        margin-top: -6vh;
-    }
-    .navbar-end {
-        margin-top: 0vh;
-    }
-    .navbar-menu {
-        margin-top: 1.7vh !important;
-        padding: 0 !important;
-        background-color: white !important;
-        float: right;
-        width: 35%;
-        margin-right: -3vh !important;
-    }
-    .menu_title:hover {
-        background-color: #999999 !important;
-    }
-    .navbar-item {
-        line-height: 4!important;
-    }
-    .menu_title {
-        margin: 0 !important;
-        font-size: 0.9em !important;
-        border-bottom: none !important;
-    }
-    .nw {
-        width: 100% !important;
-    }
-    .image {
-        z-index: -1 !important;
-        width: 45vw !important;
-        height: 55vh !important;
-    }
-    .lema-position {
-        margin-top: 0vh !important;
-    }
-    .options-sign {
-        margin-top: 1vh !important;
-    }
-    .box-white {
-        margin-left: 5vh !important;
-        width: 85% !important;
-    }
-}
-
-@media only screen and (min-width:1024px) and (max-width: 1366px) {
-    .nw {
-        width: 90% !important;
-    }
-    .lema-position {
-        margin-top: 0vh !important;
-    }
-    .options-sign{
-        margin-top: 2vh !important;
-    }
-    .box-white {
-        margin-left: 5vh !important;
-        width: 85% !important;
     }
 }

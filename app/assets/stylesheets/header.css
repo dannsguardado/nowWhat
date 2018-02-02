@@ -48,7 +48,7 @@ header {
 }
 
 .burger {
-    margin-right: 2vh !important;
+    /* margin-right: 2vh !important; */
     height: 4rem !important;
     width: 4rem !important;
 }
