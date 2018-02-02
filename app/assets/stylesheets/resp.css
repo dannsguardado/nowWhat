@@ -69,7 +69,6 @@
         width: 7vw !important;
         left: calc(15% - 1px) !important;
     }
-
     .navbar-menu {
         margin-top: -10.4vh !important;
         padding: 0 !important;
@@ -129,7 +128,6 @@
         margin-right: 2vh !important;
         top: -10.4vh !important;
     }
-
     .navbar-menu {
         margin-top: -10vh !important;
         padding: 0 !important;
@@ -356,5 +354,31 @@
     }
     #about2 {
         margin-left: 0 !important;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    .big_words {
+        font-size: 8vh !important;
+    }
+    #month.big_words {
+        font-size: 3.5vh !important;
+        margin-left: 3vh !important;
+    }
+    #date1.big_words,
+    #date2.big_words,
+    #date3.big_words,
+    #date4.big_words {
+        font-size: 3.5vh !important;
+        height: 5vh !important;
+    }
+    #dates.column {
+        width: 35% !important;
+    }
+    #date-column.column {
+        width: 35% !important;
+    }
+    #last-text.column {
+        width: 75% !important;
     }
 }
