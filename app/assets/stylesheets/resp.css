@@ -127,9 +127,9 @@
     .size-subtitle {
         font-size: 1.5vh !important;
     }
-    /* .navbar-burger {
-        top: -10.4vh !important;
-    } */
+    .navbar-burger {
+        margin-right: 2vh !important;
+    }
     .navbar-end {
         margin-top: 0vh;
     }
@@ -179,7 +179,6 @@
     }
     #month.big_words {
         font-size: 7vh !important;
-        /* margin-left: 3vh !important; */
     }
     #date1.big_words,
     #date2.big_words,
@@ -284,9 +283,6 @@
     .text-footer {
         margin-left: -5vh !important;
     }
-    /* .navbar-burger {
-        margin-top: -6.5vh;
-    } */
     .navbar-burger span {
         width: 12.5vw !important;
         left: calc(15% - 1px) !important;
@@ -310,9 +306,6 @@
         margin: 0 !important;
         font-size: 0.7em !important;
         border-bottom: none !important;
-    }
-    .burger {
-        /* margin-right: 2vh !important */
     }
     #month.big_words {
         font-size: 3.5vh !important;
