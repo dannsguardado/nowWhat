@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'applications/apply'
+
   get 'about/aboutus'
 
   root 'home#index'
