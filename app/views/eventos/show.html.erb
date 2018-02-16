@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="hero-body container-sign">
+        <div class="container has-text-centered">
+            <%= link_to(image_tag("ComponentNW.png", :class => 'nw'), "/")%>
+        </div>
+        <div class="container has-text-centered lema-position">
+            <div class="login-lema">
+                <span>learn.</span>
+                <span class="talk-color">talk.</span>
+                <span class="initiate-color">initiate.</span>
+            </div>
+        </div>
+        <div class="column is-4 is-offset-4 has-text-centered box-white">
+            <h1>Listing evento</h1>
+            <p>
+                <strong>Nome:</strong>
+                <%= @evento.name %>
+            </p>
+            <strong>type:</strong>
+            <%= @evento.tipo %>
+            </p>
+            <strong>date:</strong>
+            <%= @evento.date %>
+            </p>
+            <strong>description:</strong>
+            <%= @evento.description %>
+            </p>
+            <strong>theme:</strong>
+            <%= @evento.theme %>
+                </p>
+            </p>
+
+            <%= link_to 'Edit', edit_evento_path(@evento) %> |
+            <%= link_to 'Back', eventos_path %>
+        </div>
+    </div>
+</body>
+
+</html>

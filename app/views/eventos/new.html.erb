@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="hero-body container-sign">
+        <div class="container has-text-centered">
+            <%= link_to(image_tag("ComponentNW.png", :class => 'nw'), "/")%>
+        </div>
+        <div class="container has-text-centered lema-position">
+            <div class="login-lema">
+                <span>learn.</span>
+                <span class="talk-color">talk.</span>
+                <span class="initiate-color">initiate.</span>
+            </div>
+        </div>
+        <div class="column is-4 is-offset-4 has-text-centered box-white">
+            <h1>New Evento</h1>
+
+<%= render 'form', evento: @evento %>
+
+<%= link_to 'Back', eventos_path %>
+</div>
+</div>
+</body>
+
+</html>
