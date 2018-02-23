@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   
   
   root 'home#index'
-  post 'subscrive' => 'eventos#subscrive', as: :subscrive
 
   devise_for :users, controllers: { registrations: "registrations" } 
   get '*path' => redirect("/")

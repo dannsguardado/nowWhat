@@ -37,12 +37,6 @@ class EventosController < ApplicationController
     end
   end
 
-  def subscrive
-    @evento = current_evento
-    @user = current_user
-    Subscription.create!(user: current_user.id, event: @evento.id)
-  end
-
   # PATCH/PUT /eventos/1
   # PATCH/PUT /eventos/1.json
   def update
