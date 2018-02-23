@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_one :perfil
+  has_many :subscriptions
+  has_many :users, :through => :subscriptions
 end
