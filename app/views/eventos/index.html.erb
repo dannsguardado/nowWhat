@@ -1,25 +1,45 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Eventos</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @eventos.each do |evento| %>
-      <tr>
+<!DOCTYPE html>
+<html>
+  <body>
+    
+<%= render "home/header" %>
+<main>
+  <div class="container has-text-centered">
+      <%= image_tag("12_segunda.png")%>
+      
+      <% @eventos.each do |evento| %>
+        <ul>
+          <li class="event-date">
+            <%= h evento.date -%>
+          </li>
+          <li class="event-theme">
+            <%= h evento.name-%>
+          </li>
+          <li class="event-name">
+            <%= h evento.tipo -%>
+          </li>
+            <%= check_box_tag 'role_ids[]', evento.id -%>
+          <br>
+          <li id="content" class="event-desc">
+              <%=h evento.description-%>
+          </li>
+      </ul>
+      <!-- <tr>
         <td><%= link_to 'Show', evento %></td>
         <td><%= link_to 'Edit', edit_evento_path(evento) %></td>
         <td><%= link_to 'Destroy', evento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      </tr> -->
+      <% end %>
+      <h1>Eventos</h1>
+      
+      
+      
 
 <br>
 
 <%= link_to 'New Evento', new_evento_path %>
+</div>
+</main>
+</body>
+
+</html>
