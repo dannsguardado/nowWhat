@@ -32,6 +32,30 @@
             </p>
         </p>
 
+
+<% @eventos.each do |evento| %>
+        <ul>
+          <li class="event-date">
+            <%= h evento.date -%>
+          </li>
+          <li class="event-theme">
+            <%= h evento.name -%>
+          </li>
+          <li class="event-name">
+            <%= h evento.tipo -%>
+            <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %> |
+
+          </li>
+            <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+            <% end %>
+          <br>
+          <li id="content" class="event-desc">
+              <%=h evento.description-%>
+          </li>
+      </ul>
+     
+      <% end %>
+
 <%= link_to 'Edit', edit_perfil_path(@perfil) %> |
 
 <%= link_to 'Back', perfils_path %>

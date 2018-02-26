@@ -37,10 +37,19 @@ class EventosController < ApplicationController
     end
   end
 
-  def subscrive
-    @evento = current_evento
-    @user = current_user
-    Subscription.create!(user: current_user.id, event: @evento.id)
+  def subscribe
+    eventos = Evento.where(id: params['role_ids'])
+
+    eventos.each do |e|
+      current_user.subscriptions.create(evento_id: e.id)
+    end
+    redirect_to :back 
+  end
+
+  def unsubscribe
+    current_user.subscriptions.find_by(evento_id: params['evento_id']).destroy
+    
+    redirect_to perfil_path(current_user.perfil) 
   end
 
   # PATCH/PUT /eventos/1

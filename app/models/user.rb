@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   has_one :perfil
   has_many :subscriptions
-  has_many :users, :through => :subscriptions
+  has_many :eventos, :through => :subscriptions
 end

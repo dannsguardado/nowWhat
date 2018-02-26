@@ -5,6 +5,8 @@
 <%= render "home/header" %>
 <main>
   <div class="container has-text-centered">
+
+    <%= form_tag('/eventos/subscribe') do %>
       <%= image_tag("12_segunda.png")%>
       
       <% @eventos.each do |evento| %>
@@ -13,32 +15,27 @@
             <%= h evento.date -%>
           </li>
           <li class="event-theme">
-            <%= h evento.name-%>
+            <%= h evento.name -%>
           </li>
           <li class="event-name">
             <%= h evento.tipo -%>
           </li>
-            <%= check_box_tag 'role_ids[]', evento.id -%>
+            <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+              <%= check_box_tag 'role_ids[]', evento.id -%>
+            <% end %>
           <br>
           <li id="content" class="event-desc">
               <%=h evento.description-%>
           </li>
       </ul>
-      <!-- <tr>
-        <td><%= link_to 'Show', evento %></td>
-        <td><%= link_to 'Edit', edit_evento_path(evento) %></td>
-        <td><%= link_to 'Destroy', evento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr> -->
+     
       <% end %>
-      <h1>Eventos</h1>
-      
-      
-      
 
-<br>
-
-<%= link_to 'New Evento', new_evento_path %>
-</div>
+      <%= submit_tag 'Subscribe' %>
+    <% end %>
+      
+    <br>
+  </div>
 </main>
 </body>
 
