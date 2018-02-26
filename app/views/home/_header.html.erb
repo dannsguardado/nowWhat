@@ -20,9 +20,9 @@
 								<div class="navbar-end">
 									<a class="navbar-item menu_title" href="../">Home</a> 
 									<!-- <span id="border">Home</span> -->
-									<a class="navbar-item menu_title" href="/about/aboutus">About</a>
+									<a class="navbar-item menu_title" href="/about/aboutus">Sobre nós</a>
 									<% if user_signed_in? %>
-									<a class="navbar-item menu_title" href="/applications/apply">Applications</a>
+									<a class="navbar-item menu_title" href="/eventos">Inscrições</a>
 									<%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'navbar-item menu_title') %>
 									<% else %>
 									<a class="navbar-item menu_title" href="/users/sign_in">Login</a>
