@@ -49,20 +49,24 @@
     font-weight: 300;
     color: #F79F66;
     border: none;
-    border-bottom: 0.4vh solid #FAD58C;
+    border-bottom: 0.3vh solid #FAD58C !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-left: none !important;
 }
 
 .btn-login {
     background-color: rgb(219, 103, 104) !important;
     border: none;
-    color: white;
+    color: white !important;
     padding: 1.2vh 1.2vh !important;
     text-align: center;
-    font-size: 2vh;
+    font-size: 1.75em;
     font-weight: bold;
     display: inline-block;
     width: 20vh;
     -webkit-appearance: none !important;
+    text-decoration: none !important;
 }
 
 .box-white {
@@ -75,6 +79,7 @@
     font-size: 1.9vh;
     font-weight: 300;
     color: rgb(219, 103, 104);
+    margin-left: 1vh;
 }
 
 .checkbox-remember {
@@ -87,4 +92,37 @@
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+form input[type=submit],
+form input[type=button],
+form button {
+    background-color: rgb(219, 103, 104) !important;
+    border: none !important;
+    color: white !important;
+    padding: 1.2vh 1.2vh !important;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    display: inline-block;
+    width: 20vh;
+    -webkit-appearance: none !important;
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif !important;
+    border-radius: 0 !important;
+    background-image: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important
+}
+
+input[type=email] {
+    font-size: 1.75em !important;
+}
+
+input:-webkit-autofill {
+    background-color: green !important;
+}
+
+a:visite{
+    color: transparent !important;
 }

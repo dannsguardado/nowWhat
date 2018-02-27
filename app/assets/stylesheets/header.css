@@ -37,6 +37,7 @@ header {
     line-height: 2.9vh;
     color: black !important;
     border-bottom: 0.5vh solid #FAD58C;
+    text-decoration: none !important;
 }
 
 .menu_title:active {

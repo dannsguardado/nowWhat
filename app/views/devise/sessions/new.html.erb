@@ -17,7 +17,7 @@
       <a class="btn-login" href="/users/sign_in">Login</a>
       <a class="btn-login" href="/users/sign_up">Register</a>
     </div>
-    <div class="column is-4 is-offset-4 has-text-centered box-white">
+    <div class="column is-4 has-text-centered box-white">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="field">
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'email-field',placeholder:'Email' %>
@@ -28,7 +28,7 @@
         </div>
 
         <% if devise_mapping.rememberable? -%>
-          <div class="field">
+          <div class="field" style="display: inline-flex; ">
             <%= f.check_box :remember_me, class: 'checkbox-remember' %>
             <%= f.label :remember_me, class: 'remember-text' %>
           </div>
