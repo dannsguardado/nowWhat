@@ -1,15 +1,18 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :eventos
-  resources :perfils
+  resources :eventos do
+    get 'unsubscribe'
+  	collection do 
+  		post 'subscribe'
+  	end
+  end
+  resources :perfils, except: ['index', 'destroy']
   get 'applications/apply'
 
   get 'about/aboutus'
   
-  
   root 'home#index'
-  post 'subscrive' => 'eventos#subscrive', as: :subscrive
 
   devise_for :users, controllers: { registrations: "registrations" } 
   get '*path' => redirect("/")

@@ -10,6 +10,7 @@ class PerfilsController < ApplicationController
   # GET /perfils/1
   # GET /perfils/1.json
   def show
+    @eventos = current_user.eventos
   end
 
   # GET /perfils/new
