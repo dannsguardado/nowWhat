@@ -101,10 +101,6 @@
     .nw {
         width: 100% !important;
     }
-    .box-white {
-        margin-left: 17% !important;
-        width: 65% !important;
-    }
 }
 
 @media only screen and (min-width:766px) and (max-width: 1023px) {
@@ -196,7 +192,7 @@
         margin-top: 2vh !important;
     }
     .box-white {
-        margin-left: 17% !important;
+        margin-left: 21vh !important;
         width: 65% !important;
     }
 }

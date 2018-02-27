@@ -8,39 +8,22 @@
       <%= image_tag("12_segunda.png")%>
       
       <% @eventos.each do |evento| %>
-      <div class="columns">
-        <div class="column is-4 has-text-left"> 
-          <ul>
-            <li class="event-date">
-              <%= h evento.date -%>
-            </li>
-          </ul>
-            </div>
-            <div class="column is-4 has-text-left">
-              <ul>
-                <li class="event-theme">
-                  <%= h evento.name-%>
-                </li>
-              </ul>
-            </div>
-            <div class="column is-4 has-text-left">
-              <ul>  
-                <li class="event-name">
-                  <%= h evento.tipo -%>
-                </li>
-              </ul>
-            </div>
-            <div class="column is-2 has-text-left">
-              <ul>
-                <%= check_box_tag 'role_ids[]', evento.id -%>
-              </ul>
-            </div>
-            <br>
-          </ul>
-        </div>
-        <li id="content" class="event-desc">
-            <%=h evento.description-%>
-        </li>
+        <ul>
+          <li class="event-date">
+            <%= h evento.date -%>
+          </li>
+          <li class="event-theme">
+            <%= h evento.name-%>
+          </li>
+          <li class="event-name">
+            <%= h evento.tipo -%>
+          </li>
+            <%= check_box_tag 'role_ids[]', evento.id -%>
+          <br>
+          <li id="content" class="event-desc">
+              <%=h evento.description-%>
+          </li>
+      </ul>
       <!-- <tr>
         <td><%= link_to 'Show', evento %></td>
         <td><%= link_to 'Edit', edit_evento_path(evento) %></td>
