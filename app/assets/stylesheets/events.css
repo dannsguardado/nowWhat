@@ -13,7 +13,9 @@ ul {
     font-size: 1.8em;
 }
 
-.event-name {}
+.event-name {
+    font-size: 1.2em;
+}
 
 .event-desc {}
 

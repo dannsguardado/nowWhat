@@ -6,76 +6,18 @@
 
     <main>
       <div class="container has-text-centered">
-
-        <%= form_tag('/eventos/subscribe') do %>
-          <!-- <%= image_tag("12_segunda.png")%> -->
+        <br>
+        <%= image_tag("12_segunda.png") %>
+          <%= form_tag('/eventos/subscribe') do %>
 
             <% @eventos.each do |evento| %>
-
               <% if evento.date.day == 12 %>
-                <%= image_tag("12_segunda.png") %>
-              <div class="columns">
-                <div class="column is-4 has-text-left">
-                  <ul><li class="event-date"><%= h evento.date.hour -%>:<%= evento.date.min -%>0 </li></ul>
-                </div>
-                <div class="column is-4 has-text-left">
-                  <ul><li class="event-theme"><%= h evento.name-%></li></ul>
-                </div>
-                <div class="column is-4 has-text-left"><ul><li class="event-name"><%= h evento.tipo -%></li></ul>
-                </div>
-                <div class="column is-2 has-text-left"><ul><%= check_box_tag 'role_ids[]', evento.id -%></ul>
-                </div>  
-              </div>
-              <br>
-              <ul><li class="event-desc"><%= h evento.description-%></li></ul>
-                  
-
-
-
-              
-            
-              <%elsif evento.date.day == 13 %>
-              <%= image_tag("13_terca.png") %>
-              <div class="columns">
-                <div class="column is-4 has-text-left">
-                  <ul>
-                    <li class="event-date">
-                      <%= h evento.date.hour -%>:<%= evento.date.min -%>0
-                    </li>
-                  </ul>
-                </div>
-                <div class="column is-4 has-text-left">
-                  <ul>
-                    <li class="event-theme">
-                      <%= h evento.name-%>
-                    </li>
-                  </ul>
-                </div>
-                <div class="column is-4 has-text-left">
-                  <ul>
-                    <li class="event-name">
-                      <%= h evento.tipo -%>
-                    </li>
-                  </ul>
-                </div>
-                <div class="column is-2 has-text-left">
-                  <ul>
-                    <%= check_box_tag 'role_ids[]', evento.id -%>
-                  </ul>
-                </div>
-              </div>
-              <br>
-              <br>
-              <ul><li class="event-desc"><%= h evento.description-%></li></ul>
-            
-            <%elsif evento.date.day == 14 %>
-              <%= image_tag("14_quarta.png") %>
                 <div class="columns">
-                  <div class="column is-4 has-text-left">
+                  <div class="column is-2 has-text-left">
                     <ul>
                       <li class="event-date">
-                      <%= h evento.date.hour -%>:<%= evento.date.min -%>0
-                      </li>
+                        <%= h evento.date.hour -%>:
+                          <%= evento.date.min -%>0 </li>
                     </ul>
                   </div>
                   <div class="column is-4 has-text-left">
@@ -94,56 +36,156 @@
                   </div>
                   <div class="column is-2 has-text-left">
                     <ul>
-                      <%= check_box_tag 'role_ids[]', evento.id -%>
+                      <%= submit_tag 'Subscribe' %>
                     </ul>
                   </div>
                 </div>
-                <br>
-                <ul><li class="event-desc"><%= h evento.description-%></li></ul>
-                
-                <%elsif evento.date.day == 15 %>
-                  <%= image_tag("15_quinta.png") %>
-                    <div class="columns">
-                      <div class="column is-4 has-text-left">
-                        <ul>
-                          <li class="event-date">
-                          <%= h evento.date.hour -%>:<%= evento.date.min -%>0
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="column is-4 has-text-left">
-                        <ul>
-                          <li class="event-theme">
-                            <%= h evento.name-%>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="column is-4 has-text-left">
-                        <ul>
-                          <li class="event-name">
-                            <%= h evento.tipo -%>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="column is-2 has-text-left">
-                        <ul>
-                          <%= check_box_tag 'role_ids[]', evento.id -%>
-                        </ul>
-                      </div>
-                    </div>
-                    <br>
-                    <ul><li class="event-desc"><%= h evento.description-%></li></ul>
-                
-                
-                <% end %>
-            
-            <%end%>
-                <br>
-                <br>
-                <%= submit_tag 'Subscribe' %>
-          <% end %>
 
-     <!-- <br> -->
+                <ul>
+                  <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                    <%= h evento.description-%>
+                  </li>
+                </ul>
+                <br>
+                <br>
+                <%end%>
+                  <% end %>
+
+                <%= image_tag("13_terca.png") %>
+                      <% @eventos.each do |evento| %>
+                        <% if evento.date.day == 13 %>
+
+                          <div class="columns">
+                            <div class="column is-2 has-text-left">
+                              <ul>
+                                <li class="event-date">
+                                  <%= h evento.date.hour -%>:
+                                    <%= evento.date.min -%>0 </li>
+                              </ul>
+                            </div>
+                            <div class="column is-4 has-text-left">
+                              <ul>
+                                <li class="event-theme">
+                                  <%= h evento.name-%>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="column is-4 has-text-left">
+                              <ul>
+                                <li class="event-name">
+                                  <%= h evento.tipo -%>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="column is-2 has-text-left">
+                              <ul>
+                                <%= submit_tag 'Subscribe' %>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <ul>
+                            <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                              <%= h evento.description-%>
+                            </li>
+                          </ul>
+                          <br>
+                          <br>
+                          <%end%>
+                            <% end %>
+
+                              <%= image_tag("14_quarta.png") %>
+                                <% @eventos.each do |evento| %>
+                                  <% if evento.date.day == 14 %>
+
+                                    <div class="columns">
+                                      <div class="column is-2 has-text-left">
+                                        <ul>
+                                          <li class="event-date">
+                                            <%= h evento.date.hour -%>:
+                                              <%= evento.date.min -%>0 </li>
+                                        </ul>
+                                      </div>
+                                      <div class="column is-4 has-text-left">
+                                        <ul>
+                                          <li class="event-theme">
+                                            <%= h evento.name-%>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="column is-4 has-text-left">
+                                        <ul>
+                                          <li class="event-name">
+                                            <%= h evento.tipo -%>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="column is-2 has-text-left">
+                                        <ul>
+                                          <%= submit_tag 'Subscribe' %>
+                                        </ul>
+                                      </div>
+                                    </div>
+
+                                    <ul>
+                                      <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                                        <%= h evento.description-%>
+                                      </li>
+                                    </ul>
+                                    <br>
+                                    <br>
+                                    <%end%>
+                                      <% end %>
+
+
+
+
+                                        <%= image_tag("15_quinta.png") %>
+                                          <% @eventos.each do |evento| %>
+                                            <% if evento.date.day == 14 %>
+
+                                              <div class="columns">
+                                                <div class="column is-2 has-text-left">
+                                                  <ul>
+                                                    <li class="event-date">
+                                                      <%= h evento.date.hour -%>:
+                                                        <%= evento.date.min -%>0 </li>
+                                                  </ul>
+                                                </div>
+                                                <div class="column is-4 has-text-left">
+                                                  <ul>
+                                                    <li class="event-theme">
+                                                      <%= h evento.name-%>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                                <div class="column is-4 has-text-left">
+                                                  <ul>
+                                                    <li class="event-name">
+                                                      <%= h evento.tipo -%>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                                <div class="column is-2 has-text-left">
+                                                  <ul>
+                                                    <%= submit_tag 'Subscribe' %>
+                                                  </ul>
+                                                </div>
+                                              </div>
+
+                                              <ul>
+                                                <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                                                  <%= h evento.description-%>
+                                                </li>
+                                              </ul>
+                                              <br>
+                                              <br>
+                                              <%end%>
+                                                <% end %>
+
+
+                                                  <% end%>
+
       </div>
     </main>
 </body>
