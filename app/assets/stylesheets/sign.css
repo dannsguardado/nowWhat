@@ -21,7 +21,7 @@
 }
 
 .lema-position {
-    margin-top: -4vh !important;
+    margin-top: -4vh ;
 }
 
 .options-sign {
@@ -45,14 +45,16 @@
 
 .email-field {
     width: 100%;
-    font-size: 3.4vh;
+    /* font-size: 3.4vh; */
     font-weight: 300;
     color: #F79F66;
     border: none;
-    border-bottom: 0.3vh solid #FAD58C !important;
+    border-bottom: 0.2vh solid #FAD58C !important;
     border-right: none !important;
     border-top: none !important;
     border-left: none !important;
+    padding-top: 1.2vh !important;
+    padding-bottom: 1.2vh !important;
 }
 
 .btn-login {
@@ -125,4 +127,8 @@ input:-webkit-autofill {
 
 a:visite {
     color: transparent !important;
+}
+
+.remember {
+    display: inline-flex !important;
 }

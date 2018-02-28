@@ -23,7 +23,7 @@ li {
     display: inline-block;
 }
 
-#content {
+/* #content {
     width: 800px;
     clear: both;
     clip: auto;
@@ -34,7 +34,7 @@ li {
     background: white;
     /* Strange problem in ie8 where the sliding animation goes too far
                             if revealText doesn't have a background color!  */
-}
+/* }
 
 .hiddenText {}
 
@@ -45,4 +45,4 @@ li {
 
 .ellipsis {
     color: black;
-}
+} */

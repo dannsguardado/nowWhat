@@ -11,19 +11,26 @@
       </div>
     <% end %>
 
-    <%= f.label :nome %>
-    <%= f.text_field :nome %>
-    <br>
-    <%= f.label :ano_de_licenciatura %>
-    <%= f.text_field :ano_de_licenciatura %>
-    <br>
-    <%= f.label :instituto %>
-    <%= f.text_field :instituto %>
-    <br>
-    <%= f.label :curso %>
-    <%= f.text_field :curso %>
-    
-    <div class="actions">
-      <%= f.submit %>
+    <div class="field">
+      <%= f.text_field :nome, class: 'field-perfil', placeholder:'Nome' %>
     </div>
+    <br>
+    
+    <div class="field">
+      <%= f.text_field :ano_de_licenciatura, class: 'field-perfil', placeholder:'Ano Inscrito' %>
+    </div>
+      <br>
+    <div class="field">
+      <%= f.text_field :instituto, class: 'field-perfil', placeholder:'Instituto' %>
+    </div>
+      <br>
+    <div class="field">
+      <%= f.text_field :curso, class: 'field-perfil', placeholder:'Curso' %>
+    </div>
+      <br>
+      <br>
+      <div class="actions a-perfil">
+        <%= f.submit %>
+      </div>
+    
   <% end %>

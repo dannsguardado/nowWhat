@@ -98,10 +98,13 @@
     #footer.column {
         width: 45% !important;
     }
-    .nw {
+    .lema-position{
+        margin-top: 1vh !important;
+    }
+    .nw, .nw-perfil {
         width: 100% !important;
     }
-    .box-white {
+    .box-white, .box-white-perfil {
         margin-left: 17% !important;
         width: 65% !important;
     }
