@@ -1,39 +1,46 @@
-<p id="notice"><%= notice %></p>
 <!DOCTYPE html>
 <html>
 
 <body>
-    <div class="hero-body container-sign">
-        <div class="container has-text-centered">
-            <%= link_to(image_tag("ComponentNW.png", :class => 'nw'), "/")%>
-        </div>
-        <div class="container has-text-centered lema-position">
-            <div class="login-lema">
-                <span>learn.</span>
-                <span class="talk-color">talk.</span>
-                <span class="initiate-color">initiate.</span>
+    <%= render "home/header" %>
+<main>
+    <div class="hero-body container has-text-centered">
+            
+        <div class="column is-12 has-text-left box-gray-perfil">
+            <h1 class="email-field">Perfil</h1>
+
+            <div class="between-info-perfil">
+                <strong class="show-perfil">Nome:</strong>
+                <div class="show-content-perfil">
+                    <%= @perfil.nome%>
+                </div>
+            </div>
+            <br>
+            <div class="between-info-perfil">
+                <strong class="show-perfil">Ano Inscrito: </strong>
+                <div class="show-content-perfil">
+                    <%= @perfil.ano_de_licenciatura %>
+                </div>
+            </div>
+            <br>
+            <div class="between-info-perfil">
+                <strong class="show-perfil">Instituto:</strong>
+                <div class="show-content-perfil">
+                    <%= @perfil.instituto %>
+                </div>
+            </div>
+            <br>
+            <div class="between-info-perfil">
+                <strong class="show-perfil">Curso:</strong>
+                <div class="show-content-perfil">
+                    <%= @perfil.curso %>
+                </div>
             </div>
         </div>
-        <div class="column is-4 is-offset-4 has-text-centered box-white">
-            <h1>Listing perfil</h1>
 
-            <p>
-                <strong>Nome:</strong>
-                <%= @perfil.nome %>
-            </p>
-                <strong>Ano Matr:</strong>
-                <%= @perfil.ano_de_licenciatura %>
-            </p>
-                <strong>instituto:</strong>
-                <%= @perfil.instituto %>
-            </p>
-                <strong>curso:</strong>
-                <%= @perfil.curso %>
-            </p>
-        </p>
+        <%= image_tag("12_segunda.png") %>
 
-
-<% @eventos.each do |evento| %>
+        <% @eventos.each do |evento| %>
         <ul>
           <li class="event-date">
             <%= h evento.date -%>
@@ -56,11 +63,13 @@
      
       <% end %>
 
-<%= link_to 'Edit', edit_perfil_path(@perfil) %> |
-
-<%= link_to 'Back', perfils_path %>
-</div>
-</div>
+        
+        <!-- <%= link_to 'Edit', edit_perfil_path(@perfil) %> |
+            
+            <%= link_to 'Back', perfils_path %> -->
+            
+    </div>
+</main>
 </body>
 
 </html>

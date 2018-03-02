@@ -1,3 +1,7 @@
+p {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 .nw-perfil {
     width: 40% !important;
 }
@@ -27,6 +31,26 @@ form input[type=text] {
     padding-bottom: 1.2vh !important;
 }
 
-.a-perfil {
-    
+.box-gray-perfil {
+    padding-left: 4.5vh !important;
+    padding-right: 4.5vh !important;
+    padding-bottom: 4.5vh !important;
+    background-color: #F2F2F2;
+}
+
+.show-perfil {
+    padding-right: 1vh !important;
+    font-size: 1.5em;
+    color: rgb(219, 103, 104);
+    font-weight: 600 !important;
+}
+
+.show-content-perfil {
+    font-size: 1.5em;
+}
+
+.between-info-perfil {
+    display: inline-flex;
+    margin-left: 1vh;
+    margin-top: 1.5vh;
 }
