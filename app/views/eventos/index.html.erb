@@ -12,12 +12,40 @@
 
             <% @eventos.each do |evento| %>
               <% if evento.date.day == 12 %>
+              <% if evento.name == "coffee break"%>
+              <div class="columns">
+                <div class="column is-2 has-text-left">
+                  <ul>
+                    <li class="event-date">
+                      <%= h evento.date.hour -%>:
+                        <%= evento.date.min -%>0</li>
+                  </ul>
+                    </div>
+                  <div class="column is-8">
+                    <%= image_tag("cb.png") %>
+                  </div>
+                </div>
+
+                <% elsif evento.name == "almoco"%>
+                  <div class="columns">
+                    <div class="column is-2 has-text-left">
+                      <ul>
+                        <li class="event-date">
+                          <%= h evento.date.hour -%>:
+                            <%= evento.date.min -%>0</li>
+                      </ul>
+                    </div>
+                    <div class="column is-8">
+                      <%= image_tag("almoco.png") %>
+                    </div>
+                  </div>
+                
+              <% else%>
                 <div class="columns">
                   <div class="column is-2 has-text-left">
                     <ul>
                       <li class="event-date">
-                        <%= h evento.date.hour -%>:
-                          <%= evento.date.min -%>0 </li>
+                        <%= h evento.date.hour -%>:<%= evento.date.min -%>0</li>
                     </ul>
                   </div>
                   <div class="column is-4 has-text-left">
@@ -50,6 +78,7 @@
                 <br>
                 <%end%>
                   <% end %>
+                  <%end%>
 
                 <%= image_tag("13_terca.png") %>
                       <% @eventos.each do |evento| %>
