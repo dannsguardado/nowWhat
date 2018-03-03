@@ -110,7 +110,7 @@
             margin-left: 10% !important;
             width: 80% !important;
         }
-        form input[type=submit] {
+        form input[type=submit], .un-btn {
             font-size: 1.5em !important;
         }
     }
@@ -376,7 +376,7 @@
         .event-name {
             font-size: 1em !important;
         }
-        form input[type=submit] {
+        form input[type=submit], .un-btn {
             font-size: 1em !important;
         }
         .event-desc {
@@ -426,7 +426,7 @@
             width: 80% !important;
             margin-left: 10% !important;
         }
-        form input[type=submit] {
+        form input[type=submit], .un-btn {
             font-size: 1.5em !important;
         }
         .lema-position {

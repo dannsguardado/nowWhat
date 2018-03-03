@@ -8,7 +8,10 @@
         <div class="columns has-text-centered">
             <div class="column is-12 has-text-left box-gray-perfil">
                 <h1 class="email-field">Perfil</h1>
-
+                    <div class="has-text-right">
+                        <%= link_to 'Edit', edit_perfil_path(@perfil) %>
+                    </div>
+                
                 <div class="between-info-perfil">
                     <strong class="show-perfil">Nome:</strong>
                     <div class="show-content-perfil">
@@ -36,9 +39,10 @@
                         <%= @perfil.curso %>
                     </div>
                 </div>
+                
             </div>
-                    
         </div>
+
         <div class="column is-12 has-text-centered">
             
             <%= image_tag("inscricoes.png") %>
@@ -46,31 +50,320 @@
 
                 <%= image_tag("12_segunda.png") %>
                 
+                
                     <% @eventos.each do |evento| %>
-                        <ul>
-                            <li class="event-date">
-                                <%= h evento.date -%>
-                            </li>
-                            <li class="event-theme">
-                                <%= h evento.name -%>
-                            </li>
-                            <li class="event-name">
-                                <%= h evento.tipo -%>
-                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %> |
+                        <% if evento.date.day == 12 %>
+                            <% if evento.name == "coffee break"%>
+                                <div class="columns">
+                                    <div class="column is-2 has-text-left">
+                                        <ul>
+                                            <li class="event-date">
+                                                <%= h evento.date.hour -%>:
+                                                    <%= evento.date.min -%>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-8">
+                                        <%= image_tag("cb.png") %>
+                                    </div>
+                                </div>
                 
-                            </li>
-                            <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-                                <% end %>
-                                    <br>
-                                    <li id="content" class="event-desc">
-                                        <%=h evento.description-%>
-                                    </li>
-                        </ul>
+                                <% elsif evento.name == "almoco"%>
+                                    <div class="columns">
+                                        <div class="column is-2 has-text-left">
+                                            <ul>
+                                                <li class="event-date">
+                                                    <%= h evento.date.hour -%>:
+                                                        <%= evento.date.min -%>0</li>
+                                            </ul>
+                                        </div>
+                                        <div class="column is-8">
+                                            <%= image_tag("almoco.png") %>
+                                        </div>
+                                    </div>
                 
-                        <% end %>
+                                    <% else%>
+                                        <div class="columns">
+                                            <div class="column is-2 has-text-left">
+                                                <ul>
+                                                    <li class="event-date">
+                                                        <%= h evento.date.hour -%>:
+                                                            <%= evento.date.min -%>0</li>
+                                                </ul>
+                                            </div>
+                                            <div class="column is-4 has-text-left">
+                                                <ul>
+                                                    <li class="event-theme">
+                                                        <%= h evento.name-%>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="column is-4 has-text-left">
+                                                <ul>
+                                                    <li class="event-name">
+                                                        <%= h evento.tipo -%>
+                                                    </li>
+                
+                                                </ul>
+                                            </div>
+                                            <div class="column is-2 has-text-left">
+                                                <ul >
+                                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %>
+                                                </ul>
+                                                <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                                                    <% end %>
+                                            </div>
+                                        </div>
+                
+                                        <ul>
+                                            <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                                                <%= h evento.description-%>
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <br>
+                                        <%end%>
+                                            <% end %>
+                                                <%end%>
 
-    <%= link_to 'Edit', edit_perfil_path(@perfil) %> |
+
+                                                <%= image_tag("13_terca.png") %>
+                                                
+                                                
+                                                    <% @eventos.each do |evento| %>
+                                                        <% if evento.date.day == 13 %>
+                                                            <% if evento.name == "coffee break"%>
+                                                                <div class="columns">
+                                                                    <div class="column is-2 has-text-left">
+                                                                        <ul>
+                                                                            <li class="event-date">
+                                                                                <%= h evento.date.hour -%>:
+                                                                                    <%= evento.date.min -%>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="column is-8">
+                                                                        <%= image_tag("cb.png") %>
+                                                                    </div>
+                                                                </div>
+                                                
+                                                                <% elsif evento.name == "almoco"%>
+                                                                    <div class="columns">
+                                                                        <div class="column is-2 has-text-left">
+                                                                            <ul>
+                                                                                <li class="event-date">
+                                                                                    <%= h evento.date.hour -%>:
+                                                                                        <%= evento.date.min -%>0</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="column is-8">
+                                                                            <%= image_tag("almoco.png") %>
+                                                                        </div>
+                                                                    </div>
+                                                
+                                                                    <% else%>
+                                                                        <div class="columns">
+                                                                            <div class="column is-2 has-text-left">
+                                                                                <ul>
+                                                                                    <li class="event-date">
+                                                                                        <%= h evento.date.hour -%>:
+                                                                                            <%= evento.date.min -%>0</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="column is-4 has-text-left">
+                                                                                <ul>
+                                                                                    <li class="event-theme">
+                                                                                        <%= h evento.name-%>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="column is-4 has-text-left">
+                                                                                <ul>
+                                                                                    <li class="event-name">
+                                                                                        <%= h evento.tipo -%>
+                                                                                    </li>
+                                                
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="column is-2 has-text-left">
+                                                                                <ul>
+                                                                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %>
+                                                                                </ul>
+                                                                                <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                                                                                    <% end %>
+                                                                            </div>
+                                                                        </div>
+                                                
+                                                                        <ul>
+                                                                            <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                                                                                <%= h evento.description-%>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <br>
+                                                                        <br>
+                                                                        <%end%>
+                                                                            <% end %>
+                                                                                <%end%>
+                                                                                <%= image_tag("14_quarta.png") %>
+                                                                                
+                                                                                
+                                                                                    <% @eventos.each do |evento| %>
+                                                                                        <% if evento.date.day == 14 %>
+                                                                                            <% if evento.name == "coffee break"%>
+                                                                                                <div class="columns">
+                                                                                                    <div class="column is-2 has-text-left">
+                                                                                                        <ul>
+                                                                                                            <li class="event-date">
+                                                                                                                <%= h evento.date.hour -%>:
+                                                                                                                    <%= evento.date.min -%>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                    <div class="column is-8">
+                                                                                                        <%= image_tag("cb.png") %>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                
+                                                                                                <% elsif evento.name == "almoco"%>
+                                                                                                    <div class="columns">
+                                                                                                        <div class="column is-2 has-text-left">
+                                                                                                            <ul>
+                                                                                                                <li class="event-date">
+                                                                                                                    <%= h evento.date.hour -%>:
+                                                                                                                        <%= evento.date.min -%>0</li>
+                                                                                                            </ul>
+                                                                                                        </div>
+                                                                                                        <div class="column is-8">
+                                                                                                            <%= image_tag("almoco.png") %>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                
+                                                                                                    <% else%>
+                                                                                                        <div class="columns">
+                                                                                                            <div class="column is-2 has-text-left">
+                                                                                                                <ul>
+                                                                                                                    <li class="event-date">
+                                                                                                                        <%= h evento.date.hour -%>:
+                                                                                                                            <%= evento.date.min -%>0</li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                            <div class="column is-4 has-text-left">
+                                                                                                                <ul>
+                                                                                                                    <li class="event-theme">
+                                                                                                                        <%= h evento.name-%>
+                                                                                                                    </li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                            <div class="column is-4 has-text-left">
+                                                                                                                <ul>
+                                                                                                                    <li class="event-name">
+                                                                                                                        <%= h evento.tipo -%>
+                                                                                                                    </li>
+                                                                                
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                            <div class="column is-2 has-text-left">
+                                                                                                                <ul>
+                                                                                                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %>
+                                                                                                                </ul>
+                                                                                                                <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                                                                                                                    <% end %>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                
+                                                                                                        <ul>
+                                                                                                            <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                                                                                                                <%= h evento.description-%>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                        <br>
+                                                                                                        <br>
+                                                                                                        <%end%>
+                                                                                                            <% end %>
+                                                                                                                <%end%>
+                                                                                                                <%= image_tag("15_quinta.png") %>
+                                                                                                                
+                                                                                                                
+                                                                                                                    <% @eventos.each do |evento| %>
+                                                                                                                        <% if evento.date.day == 15 %>
+                                                                                                                            <% if evento.name == "coffee break"%>
+                                                                                                                                <div class="columns">
+                                                                                                                                    <div class="column is-2 has-text-left">
+                                                                                                                                        <ul>
+                                                                                                                                            <li class="event-date">
+                                                                                                                                                <%= h evento.date.hour -%>:
+                                                                                                                                                    <%= evento.date.min -%>
+                                                                                                                                            </li>
+                                                                                                                                        </ul>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="column is-8">
+                                                                                                                                        <%= image_tag("cb.png") %>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                
+                                                                                                                                <% elsif evento.name == "almoco"%>
+                                                                                                                                    <div class="columns">
+                                                                                                                                        <div class="column is-2 has-text-left">
+                                                                                                                                            <ul>
+                                                                                                                                                <li class="event-date">
+                                                                                                                                                    <%= h evento.date.hour -%>:
+                                                                                                                                                        <%= evento.date.min -%>0</li>
+                                                                                                                                            </ul>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="column is-8">
+                                                                                                                                            <%= image_tag("almoco.png") %>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                
+                                                                                                                                    <% else%>
+                                                                                                                                        <div class="columns">
+                                                                                                                                            <div class="column is-2 has-text-left">
+                                                                                                                                                <ul>
+                                                                                                                                                    <li class="event-date">
+                                                                                                                                                        <%= h evento.date.hour -%>:
+                                                                                                                                                            <%= evento.date.min -%>0</li>
+                                                                                                                                                </ul>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="column is-4 has-text-left">
+                                                                                                                                                <ul>
+                                                                                                                                                    <li class="event-theme">
+                                                                                                                                                        <%= h evento.name-%>
+                                                                                                                                                    </li>
+                                                                                                                                                </ul>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="column is-4 has-text-left">
+                                                                                                                                                <ul>
+                                                                                                                                                    <li class="event-name">
+                                                                                                                                                        <%= h evento.tipo -%>
+                                                                                                                                                    </li>
+                                                                                                                
+                                                                                                                                                </ul>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="column is-2 has-text-left">
+                                                                                                                                                <ul>
+                                                                                                                                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %>
+                                                                                                                                                </ul>
+                                                                                                                                                <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                                                                                                                                                    <% end %>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                
+                                                                                                                                        <ul>
+                                                                                                                                            <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                                                                                                                                                <%= h evento.description-%>
+                                                                                                                                            </li>
+                                                                                                                                        </ul>
+                                                                                                                                        <br>
+                                                                                                                                        <br>
+                                                                                                                                        <%end%>
+                                                                                                                                            <% end %>
+                                                                                                                                                <%end%>
+    
     </div>
+
+
+    
+
 
 </main>
 </body>
