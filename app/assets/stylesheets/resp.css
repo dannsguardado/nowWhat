@@ -173,7 +173,7 @@
         .options-sign {
             margin-top: 1vh !important;
         }
-        .box-white {
+        .box-white, .box-white-perfil {
             margin-left: 5vh !important;
             width: 85% !important;
         }
@@ -203,7 +203,7 @@
         .options-sign {
             margin-top: 2vh !important;
         }
-        .box-white {
+        .box-white, .box-white-perfil {
             margin-left: 17% !important;
             width: 65% !important;
         }
@@ -455,9 +455,6 @@
         }
         .event-name {
             font-size: 1em !important;
-        }
-        form input[type=submit] {
-            width: 15vh !important;
         }
         .event-desc {
             text-align: justify !important;
