@@ -12,13 +12,13 @@
         <span class="initiate-color">initiate.</span>
       </div>
     </div>
-  
+  <br>
     <div class="container has-text-centered options-sign">
       <a class="btn-login " href="/users/sign_in">Login</a>
       <a class="btn-login border" href="/users/sign_up">Register</a>
     </div>
-
-    <div class="column is-4 is-offset-4 has-text-centered box-white">
+<br>
+    <div class="column is-4 has-text-centered box-white">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= devise_error_messages! %>
         <div class="field">
@@ -32,6 +32,8 @@
         <div class="field">
           <%= f.password_field :password_confirmation, autocomplete: "off", class: 'email-field',placeholder:'Password Confirmation' %>
         </div>
+
+        <br>
 
         <div class="actions">
           <%= f.submit "Sign up", class: 'btn-login' %>

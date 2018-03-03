@@ -1,0 +1,48 @@
+ul {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.event-date {
+    color: #FAD58C;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.event-theme {
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.event-name {
+    font-size: 1.2em;
+}
+
+.event-desc {}
+
+li {
+    display: inline-block;
+}
+
+/* #content {
+    width: 800px;
+    clear: both;
+    clip: auto;
+    overflow: hidden;
+}
+
+.revealText {
+    background: white;
+    /* Strange problem in ie8 where the sliding animation goes too far
+                            if revealText doesn't have a background color!  */
+/* }
+
+.hiddenText {}
+
+.readMore {
+    cursor: pointer;
+    color: blue;
+}
+
+.ellipsis {
+    color: black;
+} */

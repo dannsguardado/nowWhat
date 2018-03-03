@@ -1,0 +1,56 @@
+p {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.nw-perfil {
+    width: 40% ;
+}
+
+.box-white-perfil {
+    margin-top: 2vh !important;
+    padding: 4.5vh 4.5vh !important;
+    background-color: white;
+    margin-left: 30% !important;
+    margin-top: 7%;
+}
+
+form input[type=text] {
+    font-size: 1.50em !important;
+}
+
+.field-perfil {
+    width: 100%;
+    font-weight: 300;
+    color: #F79F66;
+    border: none;
+    border-bottom: 0.3vh solid rgb(219, 103, 104) !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    padding-top: 1.2vh !important;
+    padding-bottom: 1.2vh !important;
+}
+
+.box-gray-perfil {
+    padding-left: 4.5vh !important;
+    padding-right: 4.5vh !important;
+    padding-bottom: 4.5vh !important;
+    background-color: #F2F2F2;
+}
+
+.show-perfil {
+    padding-right: 1vh !important;
+    font-size: 1.5em;
+    color: rgb(219, 103, 104);
+    font-weight: 600 !important;
+}
+
+.show-content-perfil {
+    font-size: 1.5em;
+}
+
+.between-info-perfil {
+    display: inline-flex;
+    margin-left: 1vh;
+    margin-top: 1.5vh;
+}

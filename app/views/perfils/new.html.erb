@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="hero-body container-sign">
+        <br>
+        <br>
+        <div class="container has-text-centered">
+            <%= link_to(image_tag("ComponentNW.png", :class => 'nw-perfil'), "/")%>
+        </div>
+        <div class="column is-5 has-text-centered box-white-perfil">
+            <%= render 'form', perfil: @perfil %>
+        </div>
+    </div>
+</body>
+</html>

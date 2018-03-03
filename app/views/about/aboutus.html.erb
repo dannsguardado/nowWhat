@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html>
-	<body>
-		<%= render "home/header" %>
-<main>
-		<section class="hero container-obj" >
+
+<body>
+	<%= render "home/header" %>
+	<main>
+		<section class="hero container-obj">
 			<div id="about" class="hero-body">
 				<!-- <div class="container"> -->
-					<div id="about2" class="columns is-vcentered">
-						<div class="column is-7">
-							<div class="about-us">
-								<h1 class="title size-title">
-									<span id="border">ABOUT US</span>
-								</h1>
-								<br>
-								<br>
-								<h2 class="text subtitle size-subtitle">
-									Com esta feira planeamos dar a conhecer, aos estudantes da nossa faculdade, todas as hipóteses que têm ao seu dispor durante
-									e após o seu percurso académico. Assim planeamos expor e clarificar o mundo do empreendedorismo, bem como promover uma interação
-									com as várias estruturas empregadoras.	
-								</h2>
-								<br>
-							</div>
-							
-							<div class="columns options">
-								<p>
-									<div id=first class="arrow-down">
-										<div class="position-icon icon">
-											<%= image_tag("red0-00.png", :id => "icon1") %>
-										</div>
-									</div>
-									<div  id=second class="arrow-downT" >
-										<div class="position-icon icon">
-											<%= image_tag("y1-01.png", :id => "icon2") %>
-										</div>										
-									</div>
-									<div id=third class="arrow-downT">
-										<div class="position-icon icon">
-											<%= image_tag("y2-02.png", :id => "icon3") %>
-										</div>
-									</div>
-									<div id=fourth class="arrow-downT">
-										<div class="position-icon icon">
-											<%= image_tag("y3-03.png", :id => "icon4") %>
-										</div>
-									</div>
-									<div id=fifth class="arrow-downT">
-										<div class="position-icon icon">
-											<%= image_tag("y4-04.png", :id => "icon5") %>
-										</div>
-									</div>
-									<div id=sixth class="arrow-downT">
-										<div class="position-icon icon">
-											<%= image_tag("y5-05.png", :id => "icon6") %>
-										</div>
-									</div>
-									<div id=seventh class="arrow-downT">
-										<div class="position-icon icon">
-											<%= image_tag("y6-06.png", :id => "icon7") %>
-										</div>
-									</div>
-								</p>
-							</div>
+				<div id="about2" class="columns is-centered">
+					<div class="column is-7">
+						<div class="about-us">
+							<h1 class="title size-title">
+								<span id="border">ABOUT US</span>
+							</h1>
+							<br>
+							<br>
+							<h2 class="text subtitle size-subtitle">
+								Com esta feira planeamos dar a conhecer, aos estudantes da nossa faculdade, todas as hipóteses que têm ao seu dispor durante
+								e após o seu percurso académico. Assim planeamos expor e clarificar o mundo do empreendedorismo, bem como promover
+								uma interação com as várias estruturas empregadoras.
+							</h2>
+						<br>
 						</div>
-						<div class="column is-6 about-image">
-							<figure class="image">
-								<%= image_tag("Component(23).png", :id => "image") %>
-							</figure>
+
+						<div class="columns options">
+					
+								<div id=first class="arrow-down">
+									<div class="position-icon icon">
+										<%= image_tag("red0-00.png", :id => "icon1") %>
+									</div>
+								</div>
+								<div id=second class="arrow-downT">
+									<div class="position-icon icon">
+										<%= image_tag("y1-01.png", :id => "icon2") %>
+									</div>
+								</div>
+								<div id=third class="arrow-downT">
+									<div class="position-icon icon">
+										<%= image_tag("y2-02.png", :id => "icon3") %>
+									</div>
+								</div>
+								<div id=fourth class="arrow-downT">
+									<div class="position-icon icon">
+										<%= image_tag("y3-03.png", :id => "icon4") %>
+									</div>
+								</div>
+								<div id=fifth class="arrow-downT">
+									<div class="position-icon icon">
+										<%= image_tag("y4-04.png", :id => "icon5") %>
+									</div>
+								</div>
+								<div id=sixth class="arrow-downT">
+									<div class="position-icon icon">
+										<%= image_tag("y5-05.png", :id => "icon6") %>
+									</div>
+								</div>
+								<div id=seventh class="arrow-downT">
+									<div class="position-icon icon">
+										<%= image_tag("y6-06.png", :id => "icon7") %>
+									</div>
+								</div>
+				
 						</div>
 					</div>
+					<div class="column is-6 about-image">
+						<figure class="image">
+							<%= image_tag("Component(23).png", :id => "image") %>
+						</figure>
+					</div>
+				</div>
 				<!-- </div> -->
 			</div>
 		</section>
 		<section class="footer-about">
 			<%= render "home/footer" %>
 		</section>
-		</main>
-	</body>
+	</main>
+</body>
 
 </html>

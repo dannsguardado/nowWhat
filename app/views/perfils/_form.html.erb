@@ -1,0 +1,36 @@
+  <%= form_for(perfil) do |f| %>
+    <% if perfil.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(perfil.errors.count, "error") %> prohibited this perfil from being saved:</h2>
+
+        <ul>
+        <% perfil.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.text_field :nome, class: 'field-perfil', placeholder:'Nome' %>
+    </div>
+    <br>
+    
+    <div class="field">
+      <%= f.text_field :ano_de_licenciatura, class: 'field-perfil', placeholder:'Ano Inscrito' %>
+    </div>
+      <br>
+    <div class="field">
+      <%= f.text_field :instituto, class: 'field-perfil', placeholder:'Instituto' %>
+    </div>
+      <br>
+    <div class="field">
+      <%= f.text_field :curso, class: 'field-perfil', placeholder:'Curso' %>
+    </div>
+      <br>
+      <br>
+      <div class="actions a-perfil">
+        <%= f.submit %>
+      </div>
+    
+  <% end %>
