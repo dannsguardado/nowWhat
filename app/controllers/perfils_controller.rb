@@ -17,6 +17,13 @@ class PerfilsController < ApplicationController
   def new
     @perfil = Perfil.new
   end
+  def unsubscribe
+      puts params['perfil_id']
+    if !params['perfil_id'].blank?
+    current_user.subscriptions.find_by(evento_id: params['perfil_id']).destroy
+    end
+    redirect_to perfil_path(current_user.perfil) 
+  end
 
   # GET /perfils/1/edit
   def edit

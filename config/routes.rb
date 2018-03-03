@@ -2,10 +2,12 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :eventos do
-    get 'unsubscribe'
     get 'subscribe'
   end
-  resources :perfils, except: ['index', 'destroy']
+  resources :perfils do
+    get 'unsubscribe'
+   #except: ['index', 'destroy']
+  end
   get 'applications/apply'
 
   get 'about/aboutus'

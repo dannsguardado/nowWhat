@@ -38,16 +38,15 @@ class EventosController < ApplicationController
   end
 
   def subscribe
-
+    if current_user.subscriptions.find_by(evento_id: params['evento_id']).blank?
       current_user.subscriptions.create(evento_id: params['evento_id'])
 
-    redirect_to :back 
-  end
-
-  def unsubscribe
-    current_user.subscriptions.find_by(evento_id: params['evento_id']).destroy
+    else
+      current_user.subscriptions.find_by(evento_id: params['evento_id']).destroy
     
-    redirect_to perfil_path(current_user.perfil) 
+    end
+    redirect_to :back 
+  
   end
 
   # PATCH/PUT /eventos/1
