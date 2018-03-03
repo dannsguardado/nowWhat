@@ -1,392 +1,466 @@
-@media screen and (min-width:300px) and (max-width: 790px) {
-    .position-text {
-        padding-right: 1vh !important;
-        padding-left: 0vh;
+    @media screen and (min-width:300px) and (max-width: 790px) {
+        .position-text {
+            padding-right: 1vh !important;
+            padding-left: 0vh;
+        }
+        #date.big_words,
+        #month.big_words {
+            font-size: 7vh !important;
+        }
+        #month.big_words {
+            padding-top: 9vh;
+            margin-left: 15vh !important;
+        }
+        #dates.column {
+            display: inline-block;
+            width: 25% !important;
+        }
+        .column {
+            display: inline-block !important;
+            width: 50% !important;
+            padding: 0 !important;
+        }
+        .about-us {
+            height: 50vh;
+            margin-top: 7vh !important;
+        }
+        .about-image {
+            margin-top: -10vh !important;
+            margin-left: -10vh !important;
+            margin-bottom: 15vh !important;
+        }
+        .icon {
+            height: 3vh !important;
+            width: 3vh !important;
+        }
+        .position-icon {
+            margin-left: -1.50vh !important;
+            margin-right: -2.5vh !important;
+            margin-top: 0.75vh !important;
+        }
+        .arrow-down {
+            display: inline-block;
+            margin-top: -0.4vh;
+            border-left: 2vh solid transparent;
+            border-right: 2vh solid transparent;
+            border-top: 4vh solid #F2F2F2;
+            z-index: 99 !important;
+        }
+        .arrow-downT {
+            display: inline-block;
+            margin-top: -0.4vh;
+            border-left: 2vh solid transparent;
+            border-right: 2vh solid transparent;
+            border-top: 4vh solid transparent;
+        }
+        .image {
+            z-index: -1 !important;
+        }
+        .size-title {
+            font-size: 2.5vh !important;
+        }
+        .size-subtitle {
+            font-size: 1.75vh !important;
+        }
+        .navbar-burger {
+            top: -10.4vh !important;
+        }
+        .navbar-burger span {
+            width: 7vw !important;
+            left: calc(15% - 1px) !important;
+        }
+        .navbar-menu {
+            margin-top: -10.4vh !important;
+            padding: 0 !important;
+            background-color: white !important;
+            float: right;
+            width: 35%;
+            margin-right: -3vh !important;
+        }
+        .menu_title:hover {
+            background-color: #999999 !important;
+        }
+        .navbar-item {
+            line-height: 4!important;
+        }
+        .menu_title {
+            padding: 0 !important;
+            margin: 0 !important;
+            font-size: 0.8em !important;
+            border-bottom: none !important;
+        }
+        .left-side {
+            margin-right: 0vh !important;
+        }
+        .footer {
+            padding: 1vh !important;
+        }
+        #footer.column {
+            width: 45% !important;
+        }
+        .lema-position {
+            margin-top: 1vh !important;
+        }
+        .nw,
+        .nw-perfil {
+            width: 100% !important;
+        }
+        .box-white,
+        .box-white-perfil {
+            margin-left: 10% !important;
+            width: 80% !important;
+        }
+        form input[type=submit] {
+            font-size: 1.5em !important;
+        }
     }
-    #date.big_words,
-    #month.big_words {
-        font-size: 7vh !important;
-    }
-    #month.big_words {
-        padding-top: 9vh;
-        margin-left: 15vh !important;
-    }
-    #dates.column {
-        display: inline-block;
-        width: 25% !important;
-    }
-    .column {
-        display: inline-block !important;
-        width: 50% !important;
-        padding: 0 !important;
-    }
-    .about-us {
-        height: 50vh;
-        margin-top: 7vh !important;
-    }
-    .about-image {
-        margin-top: -10vh !important;
-        margin-left: -10vh !important;
-        margin-bottom: 15vh !important;
-    }
-    .icon {
-        height: 3vh !important;
-        width: 3vh !important;
-    }
-    .position-icon {
-        margin-left: -1.50vh !important;
-        margin-right: -2.5vh !important;
-        margin-top: 0.75vh !important;
-    }
-    .arrow-down {
-        display: inline-block;
-        margin-top: -0.4vh;
-        border-left: 2vh solid transparent;
-        border-right: 2vh solid transparent;
-        border-top: 4vh solid #F2F2F2;
-        z-index: 99 !important;
-    }
-    .arrow-downT {
-        display: inline-block;
-        margin-top: -0.4vh;
-        border-left: 2vh solid transparent;
-        border-right: 2vh solid transparent;
-        border-top: 4vh solid transparent;
-    }
-    .image {
-        z-index: -1 !important;
-    }
-    .size-title {
-        font-size: 2.5vh !important;
-    }
-    .size-subtitle {
-        font-size: 1.75vh !important;
-    }
-    .navbar-burger {
-        top: -10.4vh !important;
-    }
-    .navbar-burger span {
-        width: 7vw !important;
-        left: calc(15% - 1px) !important;
-    }
-    .navbar-menu {
-        margin-top: -10.4vh !important;
-        padding: 0 !important;
-        background-color: white !important;
-        float: right;
-        width: 35%;
-        margin-right: -3vh !important;
-    }
-    .menu_title:hover {
-        background-color: #999999 !important;
-    }
-    .navbar-item {
-        line-height: 4!important;
-    }
-    .menu_title {
-        padding: 0 !important;
-        margin: 0 !important;
-        font-size: 0.8em !important;
-        border-bottom: none !important;
-    }
-    .left-side {
-        margin-right: 0vh !important;
-    }
-    .footer {
-        padding: 1vh !important;
-    }
-    #footer.column {
-        width: 45% !important;
-    }
-    .lema-position{
-        margin-top: 1vh !important;
-    }
-    .nw, .nw-perfil {
-        width: 100% !important;
-    }
-    .box-white, .box-white-perfil {
-        margin-left: 17% !important;
-        width: 65% !important;
-    }
-}
 
-@media only screen and (min-width:766px) and (max-width: 1023px) {
-    .menu_title {
-        padding: 0 !important;
-        padding-bottom: 0vh !important;
-        margin-right: 2vh;
-        font-size: 1.5vh;
+    @media only screen and (min-width:766px) and (max-width: 1023px) {
+        .menu_title {
+            padding: 0 !important;
+            padding-bottom: 0vh !important;
+            margin-right: 2vh;
+            font-size: 1.5vh;
+        }
+        .about-us {
+            height: 35vh;
+            margin-top: 0vh;
+        }
+        .about-image {
+            margin-top: 5vh !important;
+            margin-bottom: 1vh !important;
+        }
+        .size-title {
+            font-size: 2.5vh !important;
+        }
+        .size-subtitle {
+            font-size: 1.5vh !important;
+        }
+        .navbar-burger {
+            margin-right: 2vh !important;
+            top: -10.4vh !important;
+        }
+        .navbar-menu {
+            margin-top: -10vh !important;
+            padding: 0 !important;
+            background-color: white !important;
+            float: right;
+            width: 35%;
+            margin-right: -3vh !important;
+        }
+        .menu_title:hover {
+            background-color: #999999 !important;
+        }
+        .navbar-item {
+            line-height: 4!important;
+        }
+        .menu_title {
+            margin: 0 !important;
+            font-size: 0.9em !important;
+            border-bottom: none !important;
+        }
+        .nw {
+            width: 85% !important;
+        }
+        .image {
+            z-index: -1 !important;
+            width: 45vw !important;
+            height: 55vh !important;
+        }
+        .lema-position {
+            margin-top: -4vh !important;
+        }
+        .options-sign {
+            margin-top: 1vh !important;
+        }
+        .box-white {
+            margin-left: 5vh !important;
+            width: 85% !important;
+        }
     }
-    .about-us {
-        height: 35vh;
-        margin-top: 0vh;
-    }
-    .about-image {
-        margin-top: 5vh !important;
-        margin-bottom: 1vh !important;
-    }
-    .size-title {
-        font-size: 2.5vh !important;
-    }
-    .size-subtitle {
-        font-size: 1.5vh !important;
-    }
-    .navbar-burger {
-        margin-right: 2vh !important;
-        top: -10.4vh !important;
-    }
-    .navbar-menu {
-        margin-top: -10vh !important;
-        padding: 0 !important;
-        background-color: white !important;
-        float: right;
-        width: 35%;
-        margin-right: -3vh !important;
-    }
-    .menu_title:hover {
-        background-color: #999999 !important;
-    }
-    .navbar-item {
-        line-height: 4!important;
-    }
-    .menu_title {
-        margin: 0 !important;
-        font-size: 0.9em !important;
-        border-bottom: none !important;
-    }
-    .nw {
-        width: 85% !important;
-    }
-    .image {
-        z-index: -1 !important;
-        width: 45vw !important;
-        height: 55vh !important;
-    }
-    .lema-position {
-        margin-top: -4vh !important;
-    }
-    .options-sign {
-        margin-top: 1vh !important;
-    }
-    .box-white {
-        margin-left: 5vh !important;
-        width: 85% !important;
-    }
-}
 
-@media only screen and (min-width:1024px) {
-    /* and (max-width: 1366px) */
-    .position-text {
-        padding: 4vh !important;
-        padding-top: 10vh !important;
+    @media only screen and (min-width:1024px) {
+        /* and (max-width: 1366px) */
+        .position-text {
+            padding: 4vh !important;
+            padding-top: 10vh !important;
+        }
+        #month.big_words {
+            font-size: 7vh !important;
+        }
+        #date1.big_words,
+        #date2.big_words,
+        #date3.big_words,
+        #date4.big_words {
+            font-size: 7vh !important;
+        }
+        .nw {
+            width: 70% !important;
+        }
+        .lema-position {
+            margin-top: -3vh !important;
+        }
+        .options-sign {
+            margin-top: 2vh !important;
+        }
+        .box-white {
+            margin-left: 17% !important;
+            width: 65% !important;
+        }
     }
-    #month.big_words {
-        font-size: 7vh !important;
-    }
-    #date1.big_words,
-    #date2.big_words,
-    #date3.big_words,
-    #date4.big_words {
-        font-size: 7vh !important;
-    }
-    .nw {
-        width: 70% !important;
-    }
-    .lema-position {
-        margin-top: -3vh !important;
-    }
-    .options-sign {
-        margin-top: 2vh !important;
-    }
-    .box-white {
-        margin-left: 17% !important;
-        width: 65% !important;
-    }
-}
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 736px) {
-    header {
-        padding-top: 3vh !important;
-        padding-left: 3vh !important;
-        padding-right: 3vh !important;
-    }
-    #about.hero-body {
-        padding: 0 !important;
-        padding-top: 5vh !important;
-    }
-    .position-text {
-        padding: 2vh !important;
-        padding-top: 5vh !important;
-    }
-    .column {
-        display: inline-block !important;
-        width: 50% !important;
-        padding: 0 !important;
-        margin-left: 5vh;
-    }
-    .about-us {
-        height: 50vh !important;
-        width: 100%;
-        margin-top: -5vh !important;
-    }
-    .about-image {
-        margin-top: 0 !important;
-        margin-left: -10vh !important;
-        margin-bottom: 10vh !important;
-    }
-    .icon {
-        height: 3vh !important;
-        width: 3vh !important;
-    }
-    .position-icon {
-        margin-left: -1.50vh !important;
-        margin-right: -2.5vh !important;
-        margin-top: 0.75vh !important;
-    }
-    .arrow-down {
-        display: inline-block;
-        margin-top: -0.9vh;
-        border-left: 1.75vh solid transparent;
-        border-right: 1.75vh solid transparent;
-        border-top: 3vh solid #F2F2F2;
-    }
-    .arrow-downT {
-        display: inline-block;
-        margin-top: -0.9vh;
-        border-left: 1.75vh solid transparent;
-        border-right: 1.75vh solid transparent;
-        border-top: 3vh solid transparent;
-    }
-    .image {
-        z-index: -1 !important;
-        width: 45vw !important;
-        height: 55vh !important;
-    }
-    .size-title {
-        font-size: 1.5.5vh !important;
-    }
-    .size-subtitle {
-        font-size: 1.75vh !important;
-    }
-    .navbar-menu {
-        padding: 0 !important;
-        background-color: white !important;
-        float: right;
-        width: 25%;
-        margin-top: -10vh !important;
-        margin-right: -3vh !important;
-    }
-    .menu_title:hover {
-        background-color: #999999 !important;
-    }
-    .navbar-item {
-        line-height: 4!important;
-        padding: 0 !important;
-    }
-    .text-footer {
-        margin-left: -5vh !important;
-    }
-    .navbar-burger span {
-        width: 12.5vw !important;
-        left: calc(15% - 1px) !important;
-    }
-    .navbar-end {
-        margin-top: 0 !important;
-    }
-    .navbar-menu {
-        margin-top: 1.2vh;
-        padding: 0 !important;
-        background-color: white !important;
-        float: right;
-        width: 35%;
-        margin-right: -3vh !important;
-    }
-    .menu_title:hover {
-        background-color: #999999 !important;
-    }
-    .menu_title {
-        padding: 0 !important;
-        margin: 0 !important;
-        font-size: 0.7em !important;
-        border-bottom: none !important;
-    }
-    #month.big_words {
-        font-size: 3.5vh !important;
-        margin-left: 3vh !important;
-    }
-    #date1.big_words,
-    #date2.big_words,
-    #date3.big_words,
-    #date4.big_words {
-        font-size: 3.5vh !important;
-    }
-    #dates.column {
-        width: 25% !important;
-    }
-    #date-column.column {
-        width: 5% !important;
-    }
-    #last-text.column {
-        width: 75% !important;
-    }
-    #footer.column {
-        width: 40% !important;
-    }
-    .footer {
-        padding-top: 0.5vh !important;
-        position: relative !important;
-    }
-    .fa-facebook {
-        margin-left: 2vh !important;
-    }
-    .footer-about {
-        position: fixed !important;
-    }
-    .nw {
-        width: 100%;
-    }
-    .lema-position {
-        margin-top: 0vh !important;
-    }
-    .options-sign {
-        margin-top: 1vh !important;
-    }
-    .box-white {
-        width: 85% !important;
-    }
-    .container-obj {
-        height: calc(100vh - 22.4vh) !important;
-    }
-    #about2.columns {
-        width: 100% !important;
-    }
-    #about2 {
-        margin-left: 0 !important;
-    }
-}
+    @media only screen and (min-device-width: 320px) and (max-device-height: 736px) {
+        header {
+            padding-top: 3vh !important;
+            padding-left: 3vh !important;
+            padding-right: 3vh !important;
+        }
+        #about.hero-body {
+            padding: 0 !important;
+            padding-top: 5vh !important;
+        }
+        .position-text {
+            padding: 2vh !important;
+            padding-top: 5vh !important;
+        }
+        .column {
+            display: inline-block !important;
+            width: 50% !important;
+            padding: 0 !important;
+            margin-left: 5vh;
+        }
+        .about-us {
+            height: 50vh !important;
+            width: 100%;
+            margin-top: 0vh !important;
+        }
+        .about-image {
+            margin-top: 0 !important;
+            margin-left: -10vh !important;
+            margin-bottom: 10vh !important;
+        }
+        .icon {
+            height: 3vh !important;
+            width: 3vh !important;
+        }
+        .position-icon {
+            margin-left: -1.50vh !important;
+            margin-right: -2.5vh !important;
+            margin-top: 0.75vh !important;
+        }
+        .arrow-down {
+            display: inline-block;
+            margin-top: 0.9vh;
+            border-left: 1.75vh solid transparent;
+            border-right: 1.75vh solid transparent;
+            border-top: 3vh solid #F2F2F2;
+        }
+        .arrow-downT {
+            display: inline-block;
+            margin-top: 0.9vh;
+            border-left: 1.75vh solid transparent;
+            border-right: 1.75vh solid transparent;
+            border-top: 3vh solid transparent;
+        }
+        .image {
+            z-index: -1 !important;
+            width: 45vw !important;
+            height: 55vh !important;
+        }
+        .size-title {
+            font-size: 1.5.5vh !important;
+        }
+        .size-subtitle {
+            font-size: 1.75vh !important;
+        }
+        .navbar-menu {
+            padding: 0 !important;
+            background-color: white !important;
+            float: right;
+            width: 25%;
+            margin-top: -10vh !important;
+            margin-right: -3vh !important;
+        }
+        .menu_title:hover {
+            background-color: #999999 !important;
+        }
+        .navbar-item {
+            line-height: 4!important;
+            padding: 0 !important;
+        }
+        .text-footer {
+            margin-left: -5vh !important;
+        }
+        .navbar-burger span {
+            width: 12.5vw !important;
+            left: calc(15% - 1px) !important;
+        }
+        .navbar-end {
+            margin-top: 0 !important;
+        }
+        .navbar-menu {
+            margin-top: 1.2vh;
+            padding: 0 !important;
+            background-color: white !important;
+            float: right;
+            width: 35%;
+            margin-right: -3vh !important;
+        }
+        .menu_title:hover {
+            background-color: #999999 !important;
+        }
+        .menu_title {
+            padding: 0 !important;
+            margin: 0 !important;
+            font-size: 0.7em !important;
+            border-bottom: none !important;
+        }
+        #month.big_words {
+            font-size: 3.5vh !important;
+            margin-left: 3vh !important;
+        }
+        #date1.big_words,
+        #date2.big_words,
+        #date3.big_words,
+        #date4.big_words {
+            font-size: 3.5vh !important;
+        }
+        #dates.column {
+            width: 25% !important;
+        }
+        #date-column.column {
+            width: 5% !important;
+        }
+        #last-text.column {
+            width: 75% !important;
+        }
+        #footer.column {
+            width: 40% !important;
+        }
+        .footer {
+            padding-top: 0.5vh !important;
+            position: relative !important;
+        }
+        .fa-facebook {
+            margin-left: 2vh !important;
+        }
+        .footer-about {
+            position: fixed !important;
+        }
+        .nw {
+            width: 90% !important;
+        }
+        .lema-position {
+            margin-top: -3vh !important;
+        }
+        .options-sign {
+            margin-top: 1vh !important;
+        }
+        .box-white, .box-white-perfil {
+            width: 85% !important;
+            margin-left: 7% !important;
+        }
+        .container-obj {
+            height: calc(100vh - 22.4vh) !important;
+        }
+        #about2.columns {
+            width: 100% !important;
+        }
+        #about2 {
+            margin-left: 0 !important;
+        }
+        .event-date,
+        .event-theme {
+            font-size: 1.2em !important;
+        }
+        .event-name {
+            font-size: 1em !important;
+        }
+        form input[type=submit] {
+            font-size: 1em !important;
+        }
+        .event-desc {
+            margin-left: 5% !important;
+        }
+        .column.is-8 {
+            width: 65% !important;
+            margin-left: 25% !important;
+        }
+        .nw-perfil{
+            width: 65% !important;
+            margin-top: -25% !important;
+        }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
-    .big_words {
-        font-size: 8vh !important;
+        .btn-login{
+            font-size: 1.25em !important;
+            margin-top: -3vh !important;
+            }
     }
-    #month.big_words {
-        font-size: 3.5vh !important;
-        margin-left: 3vh !important;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+        .big_words {
+            font-size: 8vh !important;
+        }
+        #month.big_words {
+            font-size: 3.5vh !important;
+            margin-left: 3vh !important;
+        }
+        #date1.big_words,
+        #date2.big_words,
+        #date3.big_words,
+        #date4.big_words {
+            font-size: 3.5vh !important;
+            height: 5vh !important;
+        }
+        #dates.column {
+            width: 35% !important;
+        }
+        #date-column.column {
+            width: 35% !important;
+        }
+        #last-text.column {
+            width: 75% !important;
+        }
+        .box-white,
+        .box-white-perfil {
+            width: 80% !important;
+            margin-left: 10% !important;
+        }
+        form input[type=submit] {
+            font-size: 1.5em !important;
+        }
+        .lema-position {
+            margin-top: 2vh !important;
+        }
+        .login-lema{
+            font-size: 2em !important; 
+        }
+        .nw {
+            width: 85% !important;
+        }
+        .nw-perfil {
+            width: 55% !important;
+        }
+        /* .column {
+            width: 24% !important;
+        } */
+        .column.is-8 {
+            width: 65% !important;
+        }
+        .event-date {
+            font-size: 1.75em !important;
+        }
+        .event-theme {
+            font-size: 1.5em !important;
+        }
+        .event-name {
+            font-size: 1em !important;
+        }
+        form input[type=submit] {
+            width: 15vh !important;
+        }
+        .event-desc {
+            text-align: justify !important;
+            width: 75% !important;
+        }
     }
-    #date1.big_words,
-    #date2.big_words,
-    #date3.big_words,
-    #date4.big_words {
-        font-size: 3.5vh !important;
-        height: 5vh !important;
-    }
-    #dates.column {
-        width: 35% !important;
-    }
-    #date-column.column {
-        width: 35% !important;
-    }
-    #last-text.column {
-        width: 75% !important;
-    }
-}

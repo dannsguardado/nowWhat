@@ -5,70 +5,73 @@
     <%= render "home/header" %>
 <main>
     <div class="hero-body container has-text-centered">
-            
-        <div class="column is-12 has-text-left box-gray-perfil">
-            <h1 class="email-field">Perfil</h1>
+        <div class="columns has-text-centered">
+            <div class="column is-12 has-text-left box-gray-perfil">
+                <h1 class="email-field">Perfil</h1>
 
-            <div class="between-info-perfil">
-                <strong class="show-perfil">Nome:</strong>
-                <div class="show-content-perfil">
-                    <%= @perfil.nome%>
+                <div class="between-info-perfil">
+                    <strong class="show-perfil">Nome:</strong>
+                    <div class="show-content-perfil">
+                        <%= @perfil.nome%>
+                    </div>
+                </div>
+                <br>
+                <div class="between-info-perfil">
+                    <strong class="show-perfil">Ano Inscrito: </strong>
+                    <div class="show-content-perfil">
+                        <%= @perfil.ano_de_licenciatura %>
+                    </div>
+                </div>
+                <br>
+                <div class="between-info-perfil">
+                    <strong class="show-perfil">Instituto:</strong>
+                    <div class="show-content-perfil">
+                        <%= @perfil.instituto %>
+                    </div>
+                </div>
+                <br>
+                <div class="between-info-perfil">
+                    <strong class="show-perfil">Curso:</strong>
+                    <div class="show-content-perfil">
+                        <%= @perfil.curso %>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="between-info-perfil">
-                <strong class="show-perfil">Ano Inscrito: </strong>
-                <div class="show-content-perfil">
-                    <%= @perfil.ano_de_licenciatura %>
-                </div>
-            </div>
-            <br>
-            <div class="between-info-perfil">
-                <strong class="show-perfil">Instituto:</strong>
-                <div class="show-content-perfil">
-                    <%= @perfil.instituto %>
-                </div>
-            </div>
-            <br>
-            <div class="between-info-perfil">
-                <strong class="show-perfil">Curso:</strong>
-                <div class="show-content-perfil">
-                    <%= @perfil.curso %>
-                </div>
-            </div>
+                    
+        </div>
+        <div class="column is-12 has-text-centered">
+            
+            <%= image_tag("inscricoes.png") %>
         </div>
 
-        <%= image_tag("12_segunda.png") %>
+                <%= image_tag("12_segunda.png") %>
+                
+                    <% @eventos.each do |evento| %>
+                        <ul>
+                            <li class="event-date">
+                                <%= h evento.date -%>
+                            </li>
+                            <li class="event-theme">
+                                <%= h evento.name -%>
+                            </li>
+                            <li class="event-name">
+                                <%= h evento.tipo -%>
+                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %> |
+                
+                            </li>
+                            <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                                <% end %>
+                                    <br>
+                                    <li id="content" class="event-desc">
+                                        <%=h evento.description-%>
+                                    </li>
+                        </ul>
+                
+                        <% end %>
 
-        <% @eventos.each do |evento| %>
-        <ul>
-          <li class="event-date">
-            <%= h evento.date -%>
-          </li>
-          <li class="event-theme">
-            <%= h evento.name -%>
-          </li>
-          <li class="event-name">
-            <%= h evento.tipo -%>
-            <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %> |
-
-          </li>
-            <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-            <% end %>
-          <br>
-          <li id="content" class="event-desc">
-              <%=h evento.description-%>
-          </li>
-      </ul>
-     
-      <% end %>
-
-        
-        <!-- <%= link_to 'Edit', edit_perfil_path(@perfil) %> |
-            
-            <%= link_to 'Back', perfils_path %> -->
-            
+    <%= link_to 'Edit', edit_perfil_path(@perfil) %> |
     </div>
+
 </main>
 </body>
 
