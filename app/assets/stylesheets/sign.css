@@ -17,7 +17,7 @@
 }
 
 .nw {
-    width: 60% !important;
+    width: 60% ;
 }
 
 .lema-position {
@@ -107,8 +107,7 @@ form button {
     font-size: 1.75em;
     font-weight: bold;
     display: inline-block;
-    width: 20vh;
-    -webkit-appearance: none !important;
+        -webkit-appearance: none !important;
     text-decoration: none !important;
     font-family: 'Montserrat', sans-serif !important;
     border-radius: 0 !important;
