@@ -2,220 +2,319 @@
 <html>
 
 <body>
-  <%= render "home/header" %>
+	<%= render "home/header" %>
 
-    <main>
-      <div class="container has-text-centered">
-        <br> 
-        <%= image_tag("12_segunda.png") %>
-          
-
-            <% @eventos.each do |evento| %>
-            <%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
-              <% if evento.date.day == 12 %>
-              <% if evento.name == "coffee break"%>
-              <div class="columns">
-                <div class="column is-2 has-text-left">
-                  <ul>
-                    <li class="event-date">
-                      <%= h evento.date.hour -%>:<%= evento.date.min -%></li>
-                  </ul>
-                    </div>
-                  <div class="column is-8">
-                    <%= image_tag("cb.png") %>
-                  </div>
-                </div>
-
-                <% elsif evento.name == "almoco"%>
-                  <div class="columns">
-                    <div class="column is-2 has-text-left">
-                      <ul>
-                        <li class="event-date">
-                          <%= h evento.date.hour -%>:<%= evento.date.min -%>0</li>
-                      </ul>
-                    </div>
-                    <div class="column is-8">
-                      <%= image_tag("almoco.png") %>
-                    </div>
-                  </div>
-                
-              <% else%>
-                <div class="columns">
-                  <div class="column is-2 has-text-left">
-                    <ul>
-                      <li class="event-date">
-                        <%= h evento.date.hour -%>:<%= evento.date.min -%>0</li>
-                    </ul>
-                  </div>
-                  <div class="column is-4 has-text-left">
-                    <ul>
-                      <li class="event-theme">
-                        <%= h evento.name-%>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="column is-4 has-text-left">
-                    <ul>
-                      <li class="event-name">
-                        <%= h evento.tipo -%>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="column is-2 has-text-left">
-                    <ul>
-                      <%= button_to 'Subscribe', ids: evento.id %>
-                    </ul>
-                  </div>
-                </div>
-
-                <ul>
-                  <li class="event-desc has-text-left" style="margin-left: 8vh;">
-                    <%= h evento.description-%>
-                  </li>
-                </ul>
-                <br>
-                <br>
-                <%end%>
-                  <% end %>
-                  <%end%>
-
-                <%= image_tag("13_terca.png") %>
-                      <% @eventos.each do |evento| %>
-                        <% if evento.date.day == 13 %>
-
-                          <div class="columns">
-                            <div class="column is-2 has-text-left">
-                              <ul>
-                                <li class="event-date">
-                                  <%= h evento.date.hour -%>:
-                                    <%= evento.date.min -%>0 </li>
-                              </ul>
-                            </div>
-                            <div class="column is-4 has-text-left">
-                              <ul>
-                                <li class="event-theme">
-                                  <%= h evento.name-%>
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="column is-4 has-text-left">
-                              <ul>
-                                <li class="event-name">
-                                  <%= h evento.tipo -%>
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="column is-2 has-text-left">
-                              <ul>
-                                <%= submit_tag 'Subscribe' %>
-                              </ul>
-                            </div>
-                          </div>
-
-                          <ul>
-                            <li class="event-desc has-text-left" style="margin-left: 8vh;">
-                              <%= h evento.description-%>
-                            </li>
-                          </ul>
-                          <br>
-                          <br>
-                          <%end%>
-                            <% end %>
-
-                              <%= image_tag("14_quarta.png") %>
-                                <% @eventos.each do |evento| %>
-                                  <% if evento.date.day == 14 %>
-
-                                    <div class="columns">
-                                      <div class="column is-2 has-text-left">
-                                        <ul>
-                                          <li class="event-date">
-                                            <%= h evento.date.hour -%>:
-                                              <%= evento.date.min -%>0 </li>
-                                        </ul>
-                                      </div>
-                                      <div class="column is-4 has-text-left">
-                                        <ul>
-                                          <li class="event-theme">
-                                            <%= h evento.name-%>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <div class="column is-4 has-text-left">
-                                        <ul>
-                                          <li class="event-name">
-                                            <%= h evento.tipo -%>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <div class="column is-2 has-text-left">
-                                        <ul>
-                                          <%= submit_tag 'Subscribe' %>
-                                        </ul>
-                                      </div>
-                                    </div>
-
-                                    <ul>
-                                      <li class="event-desc has-text-left" style="margin-left: 8vh;">
-                                        <%= h evento.description-%>
-                                      </li>
-                                    </ul>
-                                    <br>
-                                    <br>
-                                    <%end%>
-                                      <% end %>
+		<main>
+			<div class="container has-text-centered">
+				<br>
+				<%= image_tag("12_segunda.png") %>
 
 
+					<% @eventos.each do |evento| %>
+						<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
+							<% if evento.date.day == 12 %>
+								<% if evento.name == "coffee break"%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-8">
+											<%= image_tag("cb.png") %>
+										</div>
+									</div>
+
+								<% elsif evento.name == "almoco"%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>0</li>
+											</ul>
+										</div>
+										<div class="column is-8">
+											<%= image_tag("almoco.png") %>
+										</div>
+									</div>
+
+								<% else%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>0</li>
+											</ul>
+										</div>
+										<div class="column is-4 has-text-left">
+											<ul>
+												<li class="event-theme">
+													<%= h evento.name-%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-4 has-text-left">
+											<ul>
+												<li class="event-name">
+													<%= h evento.tipo -%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-2 has-text-left">
+											<ul>
+												<%= button_to 'Subscribe', ids: evento.id %>
+											</ul>
+										</div>
+									</div>
+
+									<ul>
+										<li class="event-desc has-text-left" style="margin-left: 8vh;">
+											<%= h evento.description-%>
+										</li>
+									</ul>
+									<br>
+									<br>
+								<%end%>
+							<% end %>
+						<%end%>
+					<%end%>
+					<%= image_tag("13_terca.png") %>
+						<% @eventos.each do |evento| %>
+							<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
+
+							<% if evento.date.day == 13 %>
+								<% if evento.name == "coffee break"%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-8">
+											<%= image_tag("cb.png") %>
+										</div>
+									</div>
+
+								<% elsif evento.name == "almoco"%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>0</li>
+											</ul>
+										</div>
+										<div class="column is-8">
+											<%= image_tag("almoco.png") %>
+										</div>
+									</div>
+
+								<%else%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>0 </li>
+											</ul>
+										</div>
+										<div class="column is-4 has-text-left">
+											<ul>
+												<li class="event-theme">
+													<%= h evento.name-%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-4 has-text-left">
+											<ul>
+												<li class="event-name">
+													<%= h evento.tipo -%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-2 has-text-left">
+											<ul>
+												<%= button_to 'Subscribe', ids: evento.id %>
+											</ul>
+										</div>
+									</div>
+
+									<ul>
+										<li class="event-desc has-text-left" style="margin-left: 8vh;">
+											<%= h evento.description-%>
+										</li>
+									</ul>
+									<br>
+									<br>
+									<%end%>
+								<%end%>
+							<% end %>
+							<%end%>
+
+					<%= image_tag("14_quarta.png") %>
+						<% @eventos.each do |evento| %>
+						<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
+
+							<% if evento.date.day == 14 %>
+								<% if evento.name == "coffee break"%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-8">
+											<%= image_tag("cb.png") %>
+										</div>
+									</div>
+
+								<% elsif evento.name == "almoco"%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>0</li>
+											</ul>
+										</div>
+										<div class="column is-8">
+											<%= image_tag("almoco.png") %>
+										</div>
+									</div>
+								<%else%>
+									<div class="columns">
+										<div class="column is-2 has-text-left">
+											<ul>
+												<li class="event-date">
+													<%= h evento.date.hour -%>:
+														<%= evento.date.min -%>0 </li>
+											</ul>
+										</div>
+										<div class="column is-4 has-text-left">
+											<ul>
+												<li class="event-theme">
+													<%= h evento.name-%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-4 has-text-left">
+											<ul>
+												<li class="event-name">
+													<%= h evento.tipo -%>
+												</li>
+											</ul>
+										</div>
+										<div class="column is-2 has-text-left">
+											<ul>
+												<%= button_to 'Subscribe', ids: evento.id %>
+											</ul>
+										</div>
+									</div>
+
+									<ul>
+										<li class="event-desc has-text-left" style="margin-left: 8vh;">
+											<%= h evento.description-%>
+										</li>
+									</ul>
+									<br>
+									<br>
+								<%end%>
+							<% end %>
+							<% end %>		
+						<% end %>
 
 
-                                        <%= image_tag("15_quinta.png") %>
-                                          <% @eventos.each do |evento| %>
-                                            <% if evento.date.day == 14 %>
 
-                                              <div class="columns">
-                                                <div class="column is-2 has-text-left">
-                                                  <ul>
-                                                    <li class="event-date">
-                                                      <%= h evento.date.hour -%>:
-                                                        <%= evento.date.min -%>0 </li>
-                                                  </ul>
-                                                </div>
-                                                <div class="column is-4 has-text-left">
-                                                  <ul>
-                                                    <li class="event-theme">
-                                                      <%= h evento.name-%>
-                                                    </li>
-                                                  </ul>
-                                                </div>
-                                                <div class="column is-4 has-text-left">
-                                                  <ul>
-                                                    <li class="event-name">
-                                                      <%= h evento.tipo -%>
-                                                    </li>
-                                                  </ul>
-                                                </div>
-                                                <div class="column is-2 has-text-left">
-                                                  <ul>
-                                                    <%= submit_tag 'Subscribe' %>
-                                                  </ul>
-                                                </div>
-                                              </div>
+				<%= image_tag("15_quinta.png") %>
+					<% @eventos.each do |evento| %>
+						<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 
-                                              <ul>
-                                                <li class="event-desc has-text-left" style="margin-left: 8vh;">
-                                                  <%= h evento.description-%>
-                                                </li>
-                                              </ul>
-                                              <br>
-                                              <br>
-                                              <%end%>
-                                                <% end %>
+						<% if evento.date.day == 15 %>
+							<% if evento.name == "coffee break"%>
+								<div class="columns">
+									<div class="column is-2 has-text-left">
+										<ul>
+											<li class="event-date">
+												<%= h evento.date.hour -%>:
+													<%= evento.date.min -%>
+											</li>
+										</ul>
+									</div>
+									<div class="column is-8">
+										<%= image_tag("cb.png") %>
+									</div>
+								</div>
 
+							<% elsif evento.name == "almoco"%>
+								<div class="columns">
+									<div class="column is-2 has-text-left">
+										<ul>
+											<li class="event-date">
+												<%= h evento.date.hour -%>:
+													<%= evento.date.min -%>0</li>
+										</ul>
+									</div>
+									<div class="column is-8">
+										<%= image_tag("almoco.png") %>
+									</div>
+								</div>
+							<%else%>
 
-                                                  <% end%>
+								<div class="columns">
+									<div class="column is-2 has-text-left">
+										<ul>
+											<li class="event-date">
+												<%= h evento.date.hour -%>:
+													<%= evento.date.min -%>0 </li>
+										</ul>
+									</div>
+									<div class="column is-4 has-text-left">
+										<ul>
+											<li class="event-theme">
+												<%= h evento.name-%>
+											</li>
+										</ul>
+									</div>
+									<div class="column is-4 has-text-left">
+										<ul>
+											<li class="event-name">
+												<%= h evento.tipo -%>
+											</li>
+										</ul>
+									</div>
+									<div class="column is-2 has-text-left">
+										<ul>
+											<%= submit_tag 'Subscribe' %>
+										</ul>
+									</div>
+								</div>
 
-      </div>
-    </main>
+								<ul>
+									<li class="event-desc has-text-left" style="margin-left: 8vh;">
+										<%= h evento.description-%>
+									</li>
+								</ul>
+								<br>
+								<br>
+							<%end%>
+
+						<%end%>
+					<% end %>
+						<%end%>
+
+			</div>
+		</main>
 </body>
 
 </html>

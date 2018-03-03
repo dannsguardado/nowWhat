@@ -1,6 +1,19 @@
-<h1>Editing Perfil</h1>
+<!DOCTYPE html>
+<html>
 
-<%= render 'form', perfil: @perfil %>
+<body>
+    <div class="hero-body container-sign">
+        <br>
+        <br>
+        <div class="container has-text-centered">
+            <%= link_to(image_tag("ComponentNW.png", :class => 'nw-perfil'), "/")%>
+        </div>
+        <div class="column is-5 has-text-centered box-white-perfil">
+            <%= render 'form', perfil: @perfil %>
+            <%= link_to 'Show', @perfil %> |
+            <%= link_to 'Back', perfils_path %>
+        </div>
+    </div>
+</body>
 
-<%= link_to 'Show', @perfil %> |
-<%= link_to 'Back', perfils_path %>
+</html>
