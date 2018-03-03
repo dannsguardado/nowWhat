@@ -6,11 +6,12 @@
 
     <main>
       <div class="container has-text-centered">
-        <br>
+        <br> 
         <%= image_tag("12_segunda.png") %>
-          <%= form_tag('/eventos/subscribe') do %>
+          
 
             <% @eventos.each do |evento| %>
+            <%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
               <% if evento.date.day == 12 %>
               <% if evento.name == "coffee break"%>
               <div class="columns">
@@ -64,7 +65,7 @@
                   </div>
                   <div class="column is-2 has-text-left">
                     <ul>
-                      <%= submit_tag 'Subscribe' %>
+                      <%= button_to 'Subscribe', ids: evento.id %>
                     </ul>
                   </div>
                 </div>

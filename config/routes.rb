@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   resources :eventos do
     get 'unsubscribe'
-  	collection do 
-  		post 'subscribe'
-  	end
+    get 'subscribe'
   end
   resources :perfils, except: ['index', 'destroy']
   get 'applications/apply'

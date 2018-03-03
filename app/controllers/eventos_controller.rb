@@ -38,11 +38,9 @@ class EventosController < ApplicationController
   end
 
   def subscribe
-    eventos = Evento.where(id: params['role_ids'])
 
-    eventos.each do |e|
-      current_user.subscriptions.create(evento_id: e.id)
-    end
+      current_user.subscriptions.create(evento_id: params['evento_id'])
+
     redirect_to :back 
   end
 

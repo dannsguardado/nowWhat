@@ -5,7 +5,13 @@ ActiveAdmin.register Subscription do
 # permit_params :list, :of, :attributes, :on, :model
 #
 # or
-#
+form do |f|
+  f.inputs do
+      f.input :user
+      f.input :evento
+    f.submit
+  end
+end
 # permit_params do
 #   permitted = [:permitted, :attributes]
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
