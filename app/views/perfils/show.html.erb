@@ -53,6 +53,7 @@
                 
                     <% @eventos.each do |evento| %>
                         <% if evento.date.day == 12 %>
+                        <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
                             <% if evento.name == "coffee break"%>
                                 <div class="columns">
                                     <div class="column is-2 has-text-left">
@@ -108,7 +109,7 @@
                                             </div>
                                             <div class="column is-2 has-text-left">
                                                 <ul >
-                                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %>
+                                                    <%= button_to 'Unsubscribe', ids: evento.id %>
                                                 </ul>
                                                 <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                                                     <% end %>
@@ -125,12 +126,14 @@
                                         <%end%>
                                             <% end %>
                                                 <%end%>
+                                                <%end%>
 
 
                                                 <%= image_tag("13_terca.png") %>
                                                 
                                                 
                                                     <% @eventos.each do |evento| %>
+                                                    <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
                                                         <% if evento.date.day == 13 %>
                                                             <% if evento.name == "coffee break"%>
                                                                 <div class="columns">
@@ -187,7 +190,7 @@
                                                                             </div>
                                                                             <div class="column is-2 has-text-left">
                                                                                 <ul>
-                                                                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %>
+                                                                                    <%= button_to 'Unsubscribe', ids: evento.id %>
                                                                                 </ul>
                                                                                 <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                                                                                     <% end %>
@@ -204,10 +207,12 @@
                                                                         <%end%>
                                                                             <% end %>
                                                                                 <%end%>
+                                                                                <%end%>
                                                                                 <%= image_tag("14_quarta.png") %>
                                                                                 
                                                                                 
                                                                                     <% @eventos.each do |evento| %>
+                                                                                    <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
                                                                                         <% if evento.date.day == 14 %>
                                                                                             <% if evento.name == "coffee break"%>
                                                                                                 <div class="columns">
@@ -264,7 +269,7 @@
                                                                                                             </div>
                                                                                                             <div class="column is-2 has-text-left">
                                                                                                                 <ul>
-                                                                                                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %>
+                                                                                                                    <%= button_to 'Unsubscribe', ids: evento.id %>
                                                                                                                 </ul>
                                                                                                                 <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                                                                                                                     <% end %>
@@ -281,10 +286,12 @@
                                                                                                         <%end%>
                                                                                                             <% end %>
                                                                                                                 <%end%>
+                                                                                                                <%end%>
                                                                                                                 <%= image_tag("15_quinta.png") %>
                                                                                                                 
                                                                                                                 
                                                                                                                     <% @eventos.each do |evento| %>
+                                                                                                                    <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
                                                                                                                         <% if evento.date.day == 15 %>
                                                                                                                             <% if evento.name == "coffee break"%>
                                                                                                                                 <div class="columns">
@@ -341,7 +348,7 @@
                                                                                                                                             </div>
                                                                                                                                             <div class="column is-2 has-text-left">
                                                                                                                                                 <ul>
-                                                                                                                                                    <%= link_to 'Unsubscribe', evento_unsubscribe_path(evento) %>
+                                                                                                                                                    <%= button_to 'Unsubscribe', ids: evento.id %>
                                                                                                                                                 </ul>
                                                                                                                                                 <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                                                                                                                                                     <% end %>
@@ -357,6 +364,7 @@
                                                                                                                                         <br>
                                                                                                                                         <%end%>
                                                                                                                                             <% end %>
+                                                                                                                                                <%end%>
                                                                                                                                                 <%end%>
     
     </div>

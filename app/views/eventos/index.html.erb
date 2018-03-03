@@ -67,7 +67,15 @@
 										</div>
 										<div class="column is-2 has-text-left">
 											<ul>
-												<%= button_to 'Subscribe', ids: evento.id %>
+												<% if user_signed_in? %>
+                        <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                         <%= button_to 'Subscribe', ids: evento.id %>
+                  
+                        <% else %>
+                            <%= button_to 'Unsubscribe', ids: evento.id %>
+                        <% end %>
+                  
+                       <% end %>
 											</ul>
 										</div>
 									</div>
@@ -142,7 +150,15 @@
 										</div>
 										<div class="column is-2 has-text-left">
 											<ul>
-												<%= button_to 'Subscribe', ids: evento.id %>
+												<% if user_signed_in? %>
+                        <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                         <%= button_to 'Subscribe', ids: evento.id %>
+                  
+                        <% else %>
+                            <%= button_to 'Unsubscribe', ids: evento.id %>
+                        <% end %>
+                  
+                       <% end %>
 											</ul>
 										</div>
 									</div>
@@ -217,7 +233,23 @@
 										</div>
 										<div class="column is-2 has-text-left">
 											<ul>
-												<%= button_to 'Subscribe', ids: evento.id %>
+												<% if user_signed_in? %>
+													<% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+														<% if user_signed_in? %>
+                        <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                         <%= button_to 'Subscribe', ids: evento.id %>
+                  
+                        <% else %>
+                            <%= button_to 'Unsubscribe', ids: evento.id %>
+                        <% end %>
+                  
+                       <% end %>
+												
+															<% else %>
+																<%= button_to 'Unsubscribe', ids: evento.id %>
+																	<% end %>
+												
+																		<% end %>
 											</ul>
 										</div>
 									</div>
