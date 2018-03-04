@@ -230,9 +230,7 @@
             margin-left: 17% !important;
             width: 65% !important;
         }
-        .container-sign{
-            height: auto !important;
-        }
+
     }
 
     @media only screen and (min-device-width: 320px) and (max-device-height: 736px) {

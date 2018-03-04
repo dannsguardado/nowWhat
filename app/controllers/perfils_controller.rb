@@ -37,13 +37,14 @@ class PerfilsController < ApplicationController
 
     respond_to do |format|
       if @perfil.save
-        redirect_to home_path
+        format.html { redirect_to @perfil, notice: 'Perfil was successfully created.' }
+        format.json { render :show, status: :created, location: @perfil }
       else
         format.html { render :new }
         format.json { render json: @perfil.errors, status: :unprocessable_entity }
       end
     end
-
+    
   end
 
   # PATCH/PUT /perfils/1

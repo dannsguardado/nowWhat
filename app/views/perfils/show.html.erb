@@ -13,28 +13,28 @@
                     </div>
                 
                 <div class="between-info-perfil">
-                    <strong class="show-perfil">Nome:</strong>
+                    <a class="show-perfil">Nome:</a>
                     <div class="show-content-perfil">
                         <%= @perfil.nome%>
                     </div>
                 </div>
                 <br>
                 <div class="between-info-perfil">
-                    <strong class="show-perfil">Ano Inscrito: </strong>
+                    <a class="show-perfil">Data prevista de conclusão: </a>
                     <div class="show-content-perfil">
                         <%= @perfil.ano_de_licenciatura %>
                     </div>
                 </div>
                 <br>
                 <div class="between-info-perfil">
-                    <strong class="show-perfil">Instituto:</strong>
+                    <a class="show-perfil">Instituto:</a>
                     <div class="show-content-perfil">
                         <%= @perfil.instituto %>
                     </div>
                 </div>
                 <br>
                 <div class="between-info-perfil">
-                    <strong class="show-perfil">Curso:</strong>
+                    <a class="show-perfil">Curso:</a>
                     <div class="show-content-perfil">
                         <%= @perfil.curso %>
                     </div>
@@ -47,12 +47,14 @@
             
             <%= image_tag("inscricoes.png") %>
         </div>
-
-                <%= image_tag("12_segunda.png") %>
-                
-                
+            
+                <% count =0 %>
                     <% @eventos.each do |evento| %>
                         <% if evento.date.day == 12 %>
+                        <% if count==0 %>
+                        <%= image_tag("12_segunda.png") %>
+                        <% count =1 %>
+<% end %>
                         <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
                             <% if evento.name == "coffee break"%>
                                 <div class="columns">
@@ -129,12 +131,16 @@
                                                 <%end%>
 
 
-                                                <%= image_tag("13_terca.png") %>
                                                 
                                                 
+                                                <% count = 0 %>
                                                     <% @eventos.each do |evento| %>
                                                     <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
                                                         <% if evento.date.day == 13 %>
+                                                        <% if count==0 %>
+                                                            <%= image_tag("13_terca.png") %>
+                                                            <% count =1 %>
+                                                        <% end %>
                                                             <% if evento.name == "coffee break"%>
                                                                 <div class="columns">
                                                                     <div class="column is-2 has-text-left">
@@ -208,17 +214,21 @@
                                                                             <% end %>
                                                                                 <%end%>
                                                                                 <%end%>
-                                                                                <%= image_tag("14_quarta.png") %>
-                                                                                
-                                                                                
-                                                                                    <% @eventos.each do |evento| %>
-                                                                                    <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
-                                                                                        <% if evento.date.day == 14 %>
-                                                                                            <% if evento.name == "coffee break"%>
-                                                                                                <div class="columns">
-                                                                                                    <div class="column is-2 has-text-left">
-                                                                                                        <ul>
-                                                                                                            <li class="event-date">
+                       
+                        
+                            <% count = 0 %>
+                            <% @eventos.each do |evento| %>
+                            <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
+                                <% if evento.date.day == 14 %>
+                                 <% if count==0 %>
+                                    <%= image_tag("14_quarta.png") %>
+                                    <% count =1 %>
+                                <% end %>
+                                    <% if evento.name == "coffee break"%>
+                                        <div class="columns">
+                                            <div class="column is-2 has-text-left">
+                                                <ul>
+                                                    <li class="event-date">
                                                                                                                 <%= h evento.date.hour -%>:
                                                                                                                     <%= evento.date.min -%>
                                                                                                             </li>
@@ -227,76 +237,80 @@
                                                                                                     <div class="column is-8">
                                                                                                         <%= image_tag("cb.png") %>
                                                                                                     </div>
-                                                                                                </div>
-                                                                                
-                                                                                                <% elsif evento.name == "almoco"%>
-                                                                                                    <div class="columns">
-                                                                                                        <div class="column is-2 has-text-left">
-                                                                                                            <ul>
-                                                                                                                <li class="event-date">
-                                                                                                                    <%= h evento.date.hour -%>:
-                                                                                                                        <%= evento.date.min -%>0</li>
-                                                                                                            </ul>
-                                                                                                        </div>
-                                                                                                        <div class="column is-8">
-                                                                                                            <%= image_tag("almoco.png") %>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                
-                                                                                                    <% else%>
-                                                                                                        <div class="columns">
-                                                                                                            <div class="column is-2 has-text-left">
-                                                                                                                <ul>
-                                                                                                                    <li class="event-date">
-                                                                                                                        <%= h evento.date.hour -%>:
-                                                                                                                            <%= evento.date.min -%>0</li>
-                                                                                                                </ul>
-                                                                                                            </div>
-                                                                                                            <div class="column is-4 has-text-left">
-                                                                                                                <ul>
-                                                                                                                    <li class="event-theme">
-                                                                                                                        <%= h evento.name-%>
-                                                                                                                    </li>
-                                                                                                                </ul>
-                                                                                                            </div>
-                                                                                                            <div class="column is-4 has-text-left">
-                                                                                                                <ul>
-                                                                                                                    <li class="event-name">
-                                                                                                                        <%= h evento.tipo -%>
-                                                                                                                    </li>
-                                                                                
-                                                                                                                </ul>
-                                                                                                            </div>
-                                                                                                            <div class="column is-2 has-text-left">
-                                                                                                                <ul>
-                                                                                                                    <%= button_to 'Unsubscribe', ids: evento.id %>
-                                                                                                                </ul>
-                                                                                                                <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-                                                                                                                    <% end %>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                
-                                                                                                        <ul>
-                                                                                                            <li class="event-desc has-text-left" style="margin-left: 8vh;">
-                                                                                                                <%= h evento.description-%>
-                                                                                                            </li>
-                                                                                                        </ul>
-                                                                                                        <br>
-                                                                                                        <br>
-                                                                                                        <%end%>
-                                                                                                            <% end %>
-                                                                                                                <%end%>
-                                                                                                                <%end%>
-                                                                                                                <%= image_tag("15_quinta.png") %>
-                                                                                                                
-                                                                                                                
-                                                                                                                    <% @eventos.each do |evento| %>
-                                                                                                                    <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
-                                                                                                                        <% if evento.date.day == 15 %>
-                                                                                                                            <% if evento.name == "coffee break"%>
-                                                                                                                                <div class="columns">
-                                                                                                                                    <div class="column is-2 has-text-left">
-                                                                                                                                        <ul>
+                </div>
+
+                <% elsif evento.name == "almoco"%>
+                    <div class="columns">
+                        <div class="column is-2 has-text-left">
+                            <ul>
+                                <li class="event-date">
+                                    <%= h evento.date.hour -%>:
+                                            <%= evento.date.min -%>0</li>
+                                </ul>
+                            </div>
+                            <div class="column is-8">
+                                <%= image_tag("almoco.png") %>
+                            </div>
+                        </div>
+    
+                        <% else%>
+                            <div class="columns">
+                                <div class="column is-2 has-text-left">
+                                    <ul>
+                                <li class="event-date">
+                                    <%= h evento.date.hour -%>:
+                                        <%= evento.date.min -%>0</li>
+                            </ul>
+                        </div>
+                        <div class="column is-4 has-text-left">
+                            <ul>
+                                <li class="event-theme">
+                                    <%= h evento.name-%>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column is-4 has-text-left">
+                            <ul>
+                                <li class="event-name">
+                                    <%= h evento.tipo -%>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="column is-2 has-text-left">
+                    <ul>
+                        <%= button_to 'Unsubscribe', ids: evento.id %>
+                    </ul>
+                    <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+                        <% end %>
+                </div>
+            </div>
+
+            <ul>
+                <li class="event-desc has-text-left" style="margin-left: 8vh;">
+                    <%= h evento.description-%>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <%end%>
+                <% end %>
+                    <%end%>
+                    <%end%>
+                   
+                    
+                    <% count =0 %>
+                        <% @eventos.each do |evento| %>
+                        <%= form_tag("#{evento.id}/unsubscribe", method: :get) do %>
+                                    <% if evento.date.day == 15 %>
+                                     <% if count==0 %>
+                                        <%= image_tag("15_quinta.png") %>
+                                        <% count =1 %>
+                                    <% end %>
+                                        <% if evento.name == "coffee break"%>
+                                            <div class="columns">
+                                                <div class="column is-2 has-text-left">
+                                                                                                <ul>
                                                                                                                                             <li class="event-date">
                                                                                                                                                 <%= h evento.date.hour -%>:
                                                                                                                                                     <%= evento.date.min -%>
