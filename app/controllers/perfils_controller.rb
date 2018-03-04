@@ -16,6 +16,7 @@ class PerfilsController < ApplicationController
   # GET /perfils/new
   def new
     @perfil = Perfil.new
+
   end
   def unsubscribe
     if !params['perfil_id'].blank?
@@ -36,13 +37,13 @@ class PerfilsController < ApplicationController
 
     respond_to do |format|
       if @perfil.save
-        format.html { redirect_to @perfil, notice: 'Perfil was successfully created.' }
-        format.json { render :show, status: :created, location: @perfil }
+        redirect_to home_path
       else
         format.html { render :new }
         format.json { render json: @perfil.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /perfils/1

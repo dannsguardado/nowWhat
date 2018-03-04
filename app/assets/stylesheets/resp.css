@@ -99,20 +99,36 @@
             width: 45% !important;
         }
         .lema-position {
-            margin-top: 1vh !important;
+            margin-top: -2.5vh !important;
         }
-        .nw,
+        /*.nw,
         .nw-perfil {
             width: 100% !important;
-        }
+        }*/
         .box-white,
         .box-white-perfil {
+            margin-top: -2vh !important;
             margin-left: 10% !important;
             width: 80% !important;
+            padding: 4.5vh 4.5vh !important;
         }
+
         form input[type=submit], .un-btn {
             font-size: 1.5em !important;
         }
+
+        .btn-login{
+            font-size: 1.50em !important;
+        }
+
+        .options-sign{
+            margin-top: -2vh !important;
+
+        }
+        .container-sign{
+            height: auto !important;
+        }
+
     }
 
     @media only screen and (min-width:766px) and (max-width: 1023px) {
@@ -160,7 +176,7 @@
             border-bottom: none !important;
         }
         .nw {
-            width: 85% !important;
+            width: 75% !important;
         }
         .image {
             z-index: -1 !important;
@@ -174,8 +190,11 @@
             margin-top: 1vh !important;
         }
         .box-white, .box-white-perfil {
-            margin-left: 5vh !important;
+            margin-left: 7% !important;
             width: 85% !important;
+        }
+        .container-sign{
+            height: auto !important;
         }
     }
 
@@ -195,10 +214,14 @@
             font-size: 7vh !important;
         }
         .nw {
-            width: 70% !important;
+            width: 60% !important;
         }
         .lema-position {
             margin-top: -3vh !important;
+        }
+
+        .login-lema{
+            font-size: 2.75em !important;
         }
         .options-sign {
             margin-top: 2vh !important;
@@ -206,6 +229,9 @@
         .box-white, .box-white-perfil {
             margin-left: 17% !important;
             width: 65% !important;
+        }
+        .container-sign{
+            height: auto !important;
         }
     }
 
@@ -394,7 +420,10 @@
         .btn-login{
             font-size: 1.25em !important;
             margin-top: -3vh !important;
-            }
+        }
+        .container-sign{
+            height: auto !important;
+        }
     }
 
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
@@ -459,5 +488,8 @@
         .event-desc {
             text-align: justify !important;
             width: 75% !important;
+        }
+        .container-sign{
+            height: auto !important;
         }
     }
