@@ -18,7 +18,6 @@ class PerfilsController < ApplicationController
     @perfil = Perfil.new
   end
   def unsubscribe
-      puts params['perfil_id']
     if !params['perfil_id'].blank?
     current_user.subscriptions.find_by(evento_id: params['perfil_id']).destroy
     end
