@@ -43,15 +43,14 @@ li {
 .line-red {
     width: 0vh;
     height: 0vh;
-    border-left: 22vw solid rgb(219, 103, 104);
-    border-right: 22vw solid rgb(219, 103, 104);
+    border-left: 21vw solid rgb(219, 103, 104);
+    border-right: 21vw solid rgb(219, 103, 104);
     border-top: 1vh solid rgb(219, 103, 104);
     margin-left: 4%;
-
 }
 
 .break-red {
-    margin-left: -3%;
+    /* margin-left: -3%; */
     font-size: 2em;
     color: rgb(219, 103, 104);
     font-weight: bold;

@@ -7,7 +7,7 @@ jQuery(document).on('turbolinks:load',function () {
     $("#border").css({"border-bottom": "0.5vh solid #FAD58C"});
     $("#image").attr("src", "<%= image_path 'Component(23).png', :id => 'image' %>");
     
-    $("#icon1").attr("src", " <%= image_path 'red0-00.png', :id => 'icon1' %>");
+    $("#icon1").attr("src", " <%= asset_path 'red0-00.png',:id => 'icon1' %>");
     $("#icon2").attr("src", " <%= image_path 'y1-01.png', :id => 'icon2' %>");
     $("#icon3").attr("src", " <%= image_path 'y2-02.png', :id => 'icon3' %>");
     $("#icon4").attr("src", " <%= image_path 'y3-03.png', :id => 'icon4' %>");

@@ -14,8 +14,8 @@
 						<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 							<% if evento.date.day == 12 %>
 								<% if evento.name == "coffee break"%>
-									<div class="columns">
-										<div class="column is-2 has-text-left">
+									<div class="columns" style="margin-bottom: 1vh; margin-top: 1vh;">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
@@ -30,8 +30,8 @@
 									</div>
 
 								<% elsif evento.name == "almoco"%>
-									<div class="columns">
-										<div class="column is-2 has-text-left">
+									<div class="columns" style="margin-bottom: 2vh; margin-top: 1vh;">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
@@ -46,14 +46,14 @@
 
 								<% else%>
 									<div class="columns">
-										<div class="column is-2 has-text-left">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
 														<%= evento.date.min -%>0</li>
 											</ul>
 										</div>
-										<div class="column is-4 has-text-left">
+										<div class="column is-5 has-text-left">
 											<ul>
 												<li class="event-theme">
 													<%= h evento.name-%>
@@ -99,8 +99,8 @@
 
 							<% if evento.date.day == 13 %>
 								<% if evento.name == "coffee break"%>
-									<div class="columns">
-										<div class="column is-2 has-text-left">
+<div class="columns" style="margin-bottom: 1vh; margin-top: 1vh;">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
@@ -115,8 +115,8 @@
 									</div>
 
 								<% elsif evento.name == "almoco"%>
-									<div class="columns">
-										<div class="column is-2 has-text-left">
+<div class="columns" style="margin-bottom: 2vh; margin-top: 1vh;">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
@@ -131,14 +131,14 @@
 
 								<%else%>
 									<div class="columns">
-										<div class="column is-2 has-text-left">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
 														<%= evento.date.min -%>0 </li>
 											</ul>
 										</div>
-										<div class="column is-4 has-text-left">
+										<div class="column is-5 has-text-left">
 											<ul>
 												<li class="event-theme">
 													<%= h evento.name-%>
@@ -185,8 +185,8 @@
 
 							<% if evento.date.day == 14 %>
 								<% if evento.name == "coffee break"%>
-									<div class="columns">
-										<div class="column is-2 has-text-left">
+<div class="columns" style="margin-bottom: 1vh; margin-top: 1vh;">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
@@ -201,8 +201,8 @@
 									</div>
 
 								<% elsif evento.name == "almoco"%>
-									<div class="columns">
-										<div class="column is-2 has-text-left">
+<div class="columns" style="margin-bottom: 2vh; margin-top: 1vh;">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
@@ -216,14 +216,14 @@
 									</div>
 								<%else%>
 									<div class="columns">
-										<div class="column is-2 has-text-left">
+										<div class="column is-1 has-text-left">
 											<ul>
 												<li class="event-date">
 													<%= h evento.date.hour -%>:
 														<%= evento.date.min -%>0 </li>
 											</ul>
 										</div>
-										<div class="column is-4 has-text-left">
+										<div class="column is-5 has-text-left">
 											<ul>
 												<li class="event-theme">
 													<%= h evento.name-%>
@@ -272,8 +272,8 @@
 
 						<% if evento.date.day == 15 %>
 							<% if evento.name == "coffee break"%>
-								<div class="columns">
-									<div class="column is-2 has-text-left">
+<div class="columns" style="margin-bottom: 1vh; margin-top: 1vh;">
+									<div class="column is-1 has-text-left">
 										<ul>
 											<li class="event-date">
 												<%= h evento.date.hour -%>:
@@ -288,8 +288,8 @@
 								</div>
 
 							<% elsif evento.name == "almoco"%>
-								<div class="columns">
-									<div class="column is-2 has-text-left">
+<div class="columns" style="margin-bottom: 2vh; margin-top: 1vh;">
+									<div class="column is-1 has-text-left">
 										<ul>
 											<li class="event-date">
 												<%= h evento.date.hour -%>:
@@ -304,14 +304,14 @@
 							<%else%>
 
 								<div class="columns">
-									<div class="column is-2 has-text-left">
+									<div class="column is-1 has-text-left">
 										<ul>
 											<li class="event-date">
 												<%= h evento.date.hour -%>:
 													<%= evento.date.min -%>0 </li>
 										</ul>
 									</div>
-									<div class="column is-4 has-text-left">
+									<div class="column is-5 has-text-left">
 										<ul>
 											<li class="event-theme">
 												<%= h evento.name-%>
