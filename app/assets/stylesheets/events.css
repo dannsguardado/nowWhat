@@ -23,26 +23,36 @@ li {
     display: inline-block;
 }
 
-/* #content {
-    width: 800px;
-    clear: both;
-    clip: auto;
-    overflow: hidden;
+.line-yellow {
+    /* display: bl; */
+    width: 0vh;
+    height: 0vh;
+    border-left: 22vw solid #FAD58C;
+    border-right: 22vw solid #FAD58C;
+    border-top: 1vh solid #FAD58C;
+    margin-left: 5%;
 }
 
-.revealText {
-    background: white;
-    /* Strange problem in ie8 where the sliding animation goes too far
-                            if revealText doesn't have a background color!  */
-/* }
-
-.hiddenText {}
-
-.readMore {
-    cursor: pointer;
-    color: blue;
+.break-yellow {
+    margin-left: 3%;
+    font-size: 2em;
+    color: #FAD58C;
+    font-weight: bold;
 }
 
-.ellipsis {
-    color: black;
-} */
+.line-red {
+    width: 0vh;
+    height: 0vh;
+    border-left: 22vw solid rgb(219, 103, 104);
+    border-right: 22vw solid rgb(219, 103, 104);
+    border-top: 1vh solid rgb(219, 103, 104);
+    margin-left: 4%;
+
+}
+
+.break-red {
+    margin-left: -3%;
+    font-size: 2em;
+    color: rgb(219, 103, 104);
+    font-weight: bold;
+}
