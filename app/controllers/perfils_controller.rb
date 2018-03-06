@@ -47,6 +47,7 @@ class PerfilsController < ApplicationController
         format.json { render json: @perfil.errors, status: :unprocessable_entity }
       end
     end
+   
     
   end
 
