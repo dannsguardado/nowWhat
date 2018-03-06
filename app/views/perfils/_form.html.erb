@@ -10,7 +10,7 @@
         </ul>
       </div>
     <% end %>
-
+    <p>Por favor dá-nos mais dados sobre ti para proceder-mos a tua credenciação no evento</p>
     <div class="field">
       <%= f.text_field :nome, class: 'field-perfil', placeholder:'Nome' %>
     </div>
@@ -26,6 +26,10 @@
       <br>
     <div class="field">
       <%= f.text_field :curso, class: 'field-perfil', placeholder:'Curso' %>
+    </div>
+      <p>Deixas-nos partilhar os teu dados com algumas empresas relevantes da nossa area?</p>
+    <div class="field">
+      <%= f.check_box :savedata, checked: true , class: 'field-perfil'%>
     </div>
       <br>
       <br>

@@ -12,6 +12,7 @@ form do |f|
       f.input :ano_de_licenciatura
       f.input :instituto
       f.input :curso
+      f.input :savedata
     f.submit
   end
 end
