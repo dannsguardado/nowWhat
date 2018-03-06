@@ -56,6 +56,22 @@ li {
     font-weight: bold;
 }
 
-.event-14{
+.event-14 {
     font-size: 1.5em;
+}
+
+.break-red-14 {
+    /* margin-left: -3%; */
+    font-size: 1.75em;
+    color: rgb(219, 103, 104);
+    font-weight: bold;
+}
+
+.line-red-14 {
+    width: 0vh;
+    height: 0vh;
+    border-left: 19vw solid rgb(219, 103, 104);
+    border-right: 19vw solid rgb(219, 103, 104);
+    border-top: 1vh solid rgb(219, 103, 104);
+    margin-left: 4%;
 }

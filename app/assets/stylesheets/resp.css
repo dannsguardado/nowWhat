@@ -106,29 +106,32 @@
             width: 100% !important;
         }*/
         .box-white,
-        .box-white-perfil {
+        .box-gray-perfil {
             margin-top: -2vh !important;
             margin-left: 10% !important;
             width: 80% !important;
             padding: 4.5vh 4.5vh !important;
         }
-
-        form input[type=submit], .un-btn {
+        form input[type=submit],
+        .un-btn {
             font-size: 1.5em !important;
         }
-
-        .btn-login{
+        .btn-login {
             font-size: 1.50em !important;
         }
-
-        .options-sign{
+        .options-sign {
             margin-top: -2vh !important;
-
         }
-        .container-sign{
+        .container-sign {
             height: auto !important;
         }
 
+        /* #new{
+            width: 70% !important;
+        }
+        #new2{
+            width: 35% !important;
+        } */
     }
 
     @media only screen and (min-width:766px) and (max-width: 1023px) {
@@ -189,11 +192,12 @@
         .options-sign {
             margin-top: 1vh !important;
         }
-        .box-white, .box-white-perfil {
+        .box-white,
+        .box-gray-perfil {
             margin-left: 7% !important;
             width: 85% !important;
         }
-        .container-sign{
+        .container-sign {
             height: auto !important;
         }
     }
@@ -219,18 +223,17 @@
         .lema-position {
             margin-top: -3vh !important;
         }
-
-        .login-lema{
+        .login-lema {
             font-size: 2.75em !important;
         }
         .options-sign {
             margin-top: 2vh !important;
         }
-        .box-white, .box-white-perfil {
+        .box-white,
+        .box-gray-perfil {
             margin-left: 17% !important;
             width: 65% !important;
         }
-
     }
 
     @media only screen and (min-device-width: 320px) and (max-device-height: 736px) {
@@ -380,7 +383,8 @@
         .options-sign {
             margin-top: 1vh !important;
         }
-        .box-white, .box-white-perfil {
+        .box-white,
+        .box-gray-perfil {
             width: 85% !important;
             margin-left: 7% !important;
         }
@@ -400,7 +404,8 @@
         .event-name {
             font-size: 1em !important;
         }
-        form input[type=submit], .un-btn {
+        form input[type=submit],
+        .un-btn {
             font-size: 1em !important;
         }
         .event-desc {
@@ -410,17 +415,24 @@
             width: 65% !important;
             margin-left: 25% !important;
         }
-        .nw-perfil{
+        .nw-perfil {
             width: 65% !important;
             margin-top: -25% !important;
         }
-
-        .btn-login{
+        .btn-login {
             font-size: 1.25em !important;
             margin-top: -3vh !important;
         }
-        .container-sign{
+        .container-sign {
             height: auto !important;
+        }
+        .show-perfil {
+            padding-right: 1vh !important;
+            font-size: 0.75em;
+            color: rgb(219, 103, 104);
+        }
+        .show-content-perfil {
+            font-size: 0.75em;
         }
     }
 
@@ -449,18 +461,19 @@
             width: 75% !important;
         }
         .box-white,
-        .box-white-perfil {
+        .box-gray-perfil {
             width: 80% !important;
             margin-left: 10% !important;
         }
-        form input[type=submit], .un-btn {
+        form input[type=submit],
+        .un-btn {
             font-size: 1.5em !important;
         }
         .lema-position {
             margin-top: 2vh !important;
         }
-        .login-lema{
-            font-size: 2em !important; 
+        .login-lema {
+            font-size: 2em !important;
         }
         .nw {
             width: 85% !important;
@@ -487,7 +500,7 @@
             text-align: justify !important;
             width: 75% !important;
         }
-        .container-sign{
+        .container-sign {
             height: auto !important;
         }
     }
