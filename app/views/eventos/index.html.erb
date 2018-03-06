@@ -20,11 +20,9 @@
 											<ul>
 												<li class="event-date">
 													<%if evento.date.min == 0%>
-														<%= h evento.date.hour -%>:
-															<%= evento.date.min-%>0
+														<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																<%else%>
-																	<%= h evento.date.hour -%>:
-																		<%= evento.date.min-%>
+																	<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																			<%end%>
 												</li>
 											</ul>
@@ -42,11 +40,9 @@
 												<ul>
 													<li class="event-date">
 														<%if evento.date.min == 0%>
-															<%= h evento.date.hour -%>:
-																<%= evento.date.min-%>0
+															<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																	<%else%>
-																		<%= h evento.date.hour -%>:
-																			<%= evento.date.min-%>
+																		<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																				<%end%>
 													</li>
 												</ul>
@@ -64,11 +60,9 @@
 													<ul>
 														<li class="event-date">
 															<%if evento.date.min == 0%>
-																<%= h evento.date.hour -%>:
-																	<%= evento.date.min-%>0
+																<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																		<%else%>
-																			<%= h evento.date.hour -%>:
-																				<%= evento.date.min-%>
+																			<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																					<%end%>
 														</li>
 													</ul>
@@ -89,7 +83,7 @@
 												</div>
 												<div class="column is-2 has-text-left">
 													<ul>
-														<%if evento.id ==  9%>
+														<%if evento.id == %>
 
 														<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
@@ -107,7 +101,7 @@
 											</div>
 
 											<ul>
-												<li class="event-desc has-text-left" style="margin-left: 8vh;">
+												<li class="event-desc has-text-left" style="margin-left: 12vh;">
 													<%= h evento.description-%>
 												</li>
 											</ul>
@@ -128,11 +122,9 @@
 																						<ul>
 																							<li class="event-date">
 																								<%if evento.date.min == 0%>
-																									<%= h evento.date.hour -%>:
-																										<%= evento.date.min-%>0
+																									<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																											<%else%>
-																												<%= h evento.date.hour -%>:
-																													<%= evento.date.min-%>
+																												<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																														<%end%>
 																							</li>
 																						</ul>
@@ -149,11 +141,9 @@
 																							<ul>
 																								<li class="event-date">
 																									<%if evento.date.min == 0%>
-																										<%= h evento.date.hour -%>:
-																											<%= evento.date.min-%>0
+																										<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																												<%else%>
-																													<%= h evento.date.hour -%>:
-																														<%= evento.date.min-%>
+																													<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																															<%end%>
 																							</ul>
 																						</div>
@@ -169,11 +159,9 @@
 																								<ul>
 																									<li class="event-date">
 																										<%if evento.date.min == 0%>
-																											<%= h evento.date.hour -%>:
-																												<%= evento.date.min-%>0
+																											<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																													<%else%>
-																														<%= h evento.date.hour -%>:
-																															<%= evento.date.min-%>
+																														<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																																<%end%>
 																								</ul>
 																							</div>
@@ -207,7 +195,7 @@
 																						</div>
 
 																						<ul>
-																							<li class="event-desc has-text-left" style="margin-left: 8vh;">
+																							<li class="event-desc has-text-left" style="margin-left: 12vh;">
 																								<%= h evento.description-%>
 																							</li>
 																						</ul>
@@ -229,11 +217,9 @@
 																																	<ul>
 																																		<li class="event-date">
 																																			<%if evento.date.min == 0%>
-																																				<%= h evento.date.hour -%>:
-																																					<%= evento.date.min-%>0
+																																				<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																																						<%else%>
-																																							<%= h evento.date.hour -%>:
-																																								<%= evento.date.min-%>
+																																							<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																																									<%end%>
 																																		</li>
 																																	</ul>
@@ -251,11 +237,9 @@
 						<ul>
 							<li class="event-date">
 								<%if evento.date.min == 0%>
-									<%= h evento.date.hour -%>:
-										<%= evento.date.min-%>0
+									<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 											<%else%>
-												<%= h evento.date.hour -%>:
-													<%= evento.date.min-%>
+												<%= h evento.date.hour -%>:<%= evento.date.min-%>
 														<%end%>
 						</ul>
 					</div>
@@ -271,11 +255,9 @@
 							<ul>
 								<li class="event-date">
 									<%if evento.date.min == 0%>
-										<%= h evento.date.hour -%>:
-											<%= evento.date.min-%>0
+										<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 												<%else%>
-													<%= h evento.date.hour -%>:
-														<%= evento.date.min-%>
+													<%= h evento.date.hour -%>:<%= evento.date.min-%>
 															<%end%>
 							</ul>
 						</div>
@@ -309,7 +291,7 @@
 					</div>
 
 					<ul>
-						<li class="event-desc has-text-left" style="margin-left: 8vh;">
+						<li class="event-desc has-text-left" style="margin-left: 12vh;">
 							<%= h evento.description-%>
 						</li>
 					</ul>
@@ -429,11 +411,9 @@
 								<ul>
 									<li class="event-date">
 										<%if evento.date.min == 0%>
-											<%= h evento.date.hour -%>:
-												<%= evento.date.min-%>0
+											<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 													<%else%>
-														<%= h evento.date.hour -%>:
-															<%= evento.date.min-%>
+														<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																<%end%>
 								</ul>
 							</div>
@@ -466,7 +446,7 @@
 							</div>
 						</div>
 						<ul>
-							<li class="event-desc has-text-left" style="margin-left: 8vh;">
+							<li class="event-desc has-text-left" style="margin-left: 12vh;">
 								<%= h evento.description-%>
 							</li>
 						</ul>
@@ -490,11 +470,9 @@
 																	<ul>
 																		<li class="event-date">
 																			<%if evento.date.min == 0%>
-																				<%= h evento.date.hour -%>:
-																					<%= evento.date.min-%>0
+																				<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																						<%else%>
-																							<%= h evento.date.hour -%>:
-																								<%= evento.date.min-%>
+																							<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																									<%end%>
 																		</li>
 																	</ul>
@@ -511,11 +489,9 @@
 																		<ul>
 																			<li class="event-date">
 																				<%if evento.date.min == 0%>
-																					<%= h evento.date.hour -%>:
-																						<%= evento.date.min-%>0
+																					<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																							<%else%>
-																								<%= h evento.date.hour -%>:
-																									<%= evento.date.min-%>
+																								<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																										<%end%>
 																			</li>
 																		</ul>
@@ -532,11 +508,9 @@
 																			<ul>
 																				<li class="event-date">
 																					<%if evento.date.min == 0%>
-																						<%= h evento.date.hour -%>:
-																							<%= evento.date.min-%>0
+																						<%= h evento.date.hour -%>:<%= evento.date.min-%>0
 																								<%else%>
-																									<%= h evento.date.hour -%>:
-																										<%= evento.date.min-%>
+																									<%= h evento.date.hour -%>:<%= evento.date.min-%>
 																											<%end%>
 																			</ul>
 																		</div>
@@ -556,7 +530,7 @@
 																		</div>
 																		<div class="column is-2 has-text-left">
 																			<ul>
-																				-<% if user_signed_in? %>
+																				<!---<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                          <%= button_to 'Subscribe', ids: evento.id %>
                   
@@ -564,13 +538,13 @@
                             <%= button_to 'Unsubscribe', ids: evento.id %>
                         <% end %>
                   
-                       <% end %>
+                       <% end %>-->
 																			</ul>
 																		</div>
 																	</div>
 
 																	<ul>
-																		<li class="event-desc has-text-left" style="margin-left: 8vh;">
+																		<li class="event-desc has-text-left" style="margin-left: 12vh;">
 																			<%= h evento.description-%>
 																		</li>
 																	</ul>
