@@ -32,6 +32,9 @@ class PerfilsController < ApplicationController
   # POST /perfils
   # POST /perfils.json
   def create
+    if Perfil.find_by(user_id: current_user.id)
+      Perfil.find_by(user_id: current_user.id).destroy
+    end
     @perfil = Perfil.new(perfil_params)
     @perfil.user = current_user
 
