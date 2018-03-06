@@ -468,7 +468,7 @@
         width: 35% !important;
     }
     #date-column.column {
-        width: 35% !important;
+        width: 15% !important;
     }
     #last-text.column {
         width: 75% !important;
@@ -478,13 +478,14 @@
     .box-white-perfil {
         width: 80% !important;
         margin-left: 10% !important;
+        
     }
     form input[type=submit],
     .un-btn {
         font-size: 1.5em !important;
     }
     .lema-position {
-        margin-top: 2vh !important;
+        margin-top: 0 !important;
     }
     .login-lema {
         font-size: 2em !important;
@@ -517,4 +518,5 @@
     /* .container-sign {
         height: auto !important;
     } */
+
 }
