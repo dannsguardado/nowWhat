@@ -11,6 +11,11 @@
     z-index: 99;
     color: black !important;
     display: inline-block;
+
+}
+
+#footer{
+    padding-top: 1% !important;
 }
 
 .first-link {
