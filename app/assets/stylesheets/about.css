@@ -43,7 +43,7 @@
     border-left: 3vh solid transparent;
     border-right: 3vh solid transparent;
     border-top: 6vh solid #F2F2F2;
-    z-index: -1;
+    /* z-index: -1; */
     margin-top: -3vh;
 }
 
@@ -78,6 +78,6 @@
     height: 45vh !important;
 }
 
-#about2{
+#about2 {
     margin-left: 10vh !important;
 }
