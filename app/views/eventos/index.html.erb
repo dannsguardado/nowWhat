@@ -102,8 +102,8 @@
 													</ul>
 												</div>
 												<div class="column is-2">
-											<% if evento.tipo == "WIT Software" %>
-												<%= image_tag("WIT.png") %>
+											<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
+												<%= image_tag("WIT2.png", :class=> "wit2") %>
 													
 														<% elsif evento.tipo == "NOVABASE" %>
 															<%= image_tag("NOVABASE.png") %>
@@ -189,15 +189,17 @@
 																							
 																							<div class="column is-2 has-text-left">
 																								<ul>
-																									<!---<% if user_signed_in? %>
-                        <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-                         <%= button_to 'Inscrever', ids: evento.id %>
-                  
-                        <% else %>
-                            <%= button_to 'Desinscrever', ids: evento.id %>
-                        <% end %>
-                  
-                       <% end %>-->
+																								<%if evento.id == 2%>
+																																											-<% if user_signed_in? %>
+																								<% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
+																								<%= button_to 'Inscrever', ids: evento.id %>
+																						
+																								<% else %>
+																									<%= button_to 'Desinscrever', ids: evento.id %>
+																								<% end %>
+																						
+																							<% end %>
+					  																	<%end %>
 																								</ul>
 																							</div>
 																						</div>
@@ -210,8 +212,8 @@
 																								</ul>
 																							</div>
 																							<div class="column is-2">
-																						<% if evento.tipo == "WIT Software" %>
-																							<%= image_tag("WIT.png") %>
+																						<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
+																							<%= image_tag("WIT2.png", :class=> "wit2") %>
 																								
 																									<% elsif evento.tipo == "NOVABASE" %>
 																										<%= image_tag("NOVABASE.png") %>
@@ -317,8 +319,8 @@
 							</ul>
 						</div>
 						<div class="column is-2">
-				<% if evento.tipo == "WIT Software" %>
-					<%= image_tag("WIT.png") %>
+				<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
+					<%= image_tag("WIT2.png", :class=> "wit2") %>
 							<% elsif evento.tipo == "NOVABASE" %>
 								<%= image_tag("NOVABASE.png") %>
 									<% end%>
@@ -470,8 +472,8 @@
 							</div>
 							<div class="column is-2">
 						
-						<% if evento.tipo == "WIT Software" %>
-							<%= image_tag("WIT.png") %>
+						<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
+							<%= image_tag("WIT2.png", :class=> "wit2") %>
 								
 									<% elsif evento.tipo == "NOVABASE" %>
 										<%= image_tag("NOVABASE.png") %>
@@ -589,8 +591,8 @@
 		</ul>
 	</div>
 	<div class="column is-2">
-		<% if evento.tipo == "WIT Software" %>
-		<%= image_tag("WIT.png") %>
+		<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
+		<%= image_tag("WIT2.png") %>
 		<% elsif evento.tipo == "NOVABASE" %>
 		<%= image_tag("NOVABASE.png") %>
 		<% end%>
