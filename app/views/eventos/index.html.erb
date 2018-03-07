@@ -66,7 +66,7 @@
 														</li>
 													</ul>
 												</div>
-												<div class="column is-6 has-text-left">
+												<div class="column is-8 has-text-left">
 													<ul>
 														<li class="event-theme">
 															<%= h evento.name-%>
@@ -179,7 +179,7 @@
 																																<%end%>
 																								</ul>
 																							</div>
-																							<div class="column is-6 has-text-left">
+																							<div class="column is-8 has-text-left">
 																								<ul>
 																									<li class="event-theme">
 																										<%= h evento.name-%>
@@ -230,30 +230,30 @@
 																								<% end %>
 																									<%end%>
 <div class="hey">
-																									<%= image_tag("14_quarta.png") %>
-																									</div>
-																											<% @eventos.each do |evento| %>
-																												<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
+<%= image_tag("14_quarta.png") %>
+</div>
+	<% @eventos.each do |evento| %>
+<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 
-																													<% if evento.date.day == 14 %>
-																												
-																														<% if evento.name == "coffee break"%>
-																															<div class="columns" style="padding: 2vh;">
-																																<div id="time" class="column is-2 has-text-left">
-																																	<ul>
-																																		<li class="event-date">
-																																			<%if evento.date.min == 0%>
-																																				<%= h evento.date.hour -%>:<%= evento.date.min-%>0
-																																						<%else%>
-																																							<%= h evento.date.hour -%>:<%= evento.date.min-%>
-																																									<%end%>
-																																		</li>
-																																	</ul>
-																																</div>
-																															
-																																<div class="column is-8 break-red" style="display: inline-flex">
-																																	<span style="white-space: nowrap;">COFFEE BREAK</span>
-																																	<div class="line-red"></div>
+<% if evento.date.day == 14 %>
+
+<% if evento.name == "coffee break"%>
+<div class="columns" style="padding: 2vh;">
+<div id="time" class="column is-2 has-text-left">
+							<ul>
+								<li class="event-date">
+									<%if evento.date.min == 0%>
+										<%= h evento.date.hour -%>:<%= evento.date.min-%>0
+										<%else%>
+											<%= h evento.date.hour -%>:<%= evento.date.min-%>
+													<%end%>
+						</li>
+					</ul>
+				</div>
+			
+				<div class="column is-8 break-red" style="display: inline-flex">
+					<span style="white-space: nowrap;">COFFEE BREAK</span>
+					<div class="line-red"></div>
 																																</div>
 			</div>
 
@@ -287,7 +287,7 @@
 															<%end%>
 							</ul>
 						</div>
-						<div class="column is-6 has-text-left">
+						<div class="column is-8 has-text-left">
 							<ul>
 								<li class="event-theme">
 									<%= h evento.name-%>
@@ -440,7 +440,7 @@
 																<%end%>
 								</ul>
 							</div>
-							<div class="column is-6 has-text-left">
+							<div class="column is-8 has-text-left">
 								<ul>
 									<li class="event-theme">
 										<%= h evento.name-%>
@@ -550,7 +550,7 @@
 																											<%end%>
 																			</ul>
 																		</div>
-																		<div class="column is-5 has-text-left">
+																		<div class="column is-8 has-text-left">
 																			<ul>
 																				<li class="event-theme">
 																					<%= h evento.name-%>
