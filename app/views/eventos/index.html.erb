@@ -83,7 +83,7 @@
 												</div>
 												<div class="column is-2 has-text-left">
 													<ul>
-														<%if evento.id == %>
+														<%if evento.id == 9%>
 
 														<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
@@ -530,7 +530,7 @@
 																		</div>
 																		<div class="column is-2 has-text-left">
 																			<ul>
-																				<!---<% if user_signed_in? %>
+																				<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                          <%= button_to 'Subscribe', ids: evento.id %>
                   
@@ -538,7 +538,7 @@
                             <%= button_to 'Unsubscribe', ids: evento.id %>
                         <% end %>
                   
-                       <% end %>-->
+					   <% end %>
 																			</ul>
 																		</div>
 																	</div>
