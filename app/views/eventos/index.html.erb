@@ -6,16 +6,16 @@
 
 		<main>
 			<div class="container has-text-centered">
-				<br>
-				<%= image_tag("12_segunda.png") %>
-
+				<div class="hey">
+					<%= image_tag("12_segunda.png") %>
+				</div>
 
 					<% @eventos.each do |evento| %>
 						<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 							<% if evento.date.day == 12 %>
-
+							
 								<% if evento.name == "coffee break"%>
-									<div class="columns" style="padding:1vh;">
+									<div class="columns" style="padding: 2vh;">
 										<div id="time" class="column is-2 has-text-left">
 											<ul>
 												<li class="event-date">
@@ -32,10 +32,10 @@
 											<div class="line-red"></div>
 										</div>
 									</div>
-									<br>
+									
 
 									<% elsif evento.name == "almoco"%>
-										<div class="columns" style="padding:1vh;">
+										<div class="columns" style="padding: 2vh;">
 											<div id="time" class="column is-2 has-text-left ">
 												<ul>
 													<li class="event-date">
@@ -52,10 +52,9 @@
 												<div class="line-yellow"></div>
 											</div>
 										</div>
-										<br>
-<br>
+
 										<% else%>
-											<div class="columns" style="padding:1vh;">
+											<div class="columns" style="padding: 2vh;">
 												<div class="column is-2 has-text-left">
 													<ul>
 														<li class="event-date">
@@ -67,20 +66,14 @@
 														</li>
 													</ul>
 												</div>
-												<div class="column is-5 has-text-left">
+												<div class="column is-6 has-text-left">
 													<ul>
 														<li class="event-theme">
 															<%= h evento.name-%>
 														</li>
 													</ul>
 												</div>
-												<div class="column is-4 has-text-left">
-													<ul>
-														<li class="event-name">
-															<%= h evento.tipo -%>
-														</li>
-													</ul>
-												</div>
+												
 												<div class="column is-2 has-text-left">
 													<ul>
 														<%if evento.id == 9%>
@@ -93,31 +86,47 @@
                             <%= button_to 'Unsubscribe', ids: evento.id %>
                         <% end %>
                   
+                  
 					   <% end %>
 					   
 					   <%end%>
 													</ul>
 												</div>
 											</div>
+											<div class="columns">
+												<div class="column is-2">
+
+												</div>
+												<div class="column is-5 has-text-left">
+													<ul>
+														<li class="event-name">
+															<%= h evento.tipo -%>
+														</li>
+													</ul>
+												</div>
+											</div>
 
 											<ul>
-												<li class="event-desc has-text-left" style="margin-left: 12vh;">
+												<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
 													<%= h evento.description-%>
 												</li>
 											</ul>
-											<br>
-											<br>
+															
+							
 											<%end%>
 												<% end %>
 													<%end%>
 														<%end%>
+														<div class="hey">
 															<%= image_tag("13_terca.png") %>
+															</div>
 																<% @eventos.each do |evento| %>
 																	<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 
 																		<% if evento.date.day == 13 %>
+																		
 																			<% if evento.name == "coffee break"%>
-																				<div class="columns" style="padding:1vh;">
+																				<div class="columns" style="padding: 2vh;">
 																					<div id="time" class="column is-2 has-text-left">
 																						<ul>
 																							<li class="event-date">
@@ -134,9 +143,9 @@
 																						<div class="line-red"></div>
 																					</div>
 																				</div>
-<br>
+
 																				<% elsif evento.name == "almoco"%>
-																					<div class="columns" style="padding:1vh;">
+																					<div class="columns" style="padding: 2vh;">
 																						<div id="time" class="column is-2 has-text-left">
 																							<ul>
 																								<li class="event-date">
@@ -152,9 +161,9 @@
 																							<div class="line-yellow"></div>
 																						</div>
 																					</div>
-<br>
+
 																					<%else%>
-																						<div class="columns" style="padding:1vh;">
+																						<div class="columns" style="padding: 2vh;">
 																							<div class="column is-2 has-text-left">
 																								<ul>
 																									<li class="event-date">
@@ -165,20 +174,14 @@
 																																<%end%>
 																								</ul>
 																							</div>
-																							<div class="column is-5 has-text-left">
+																							<div class="column is-6 has-text-left">
 																								<ul>
 																									<li class="event-theme">
 																										<%= h evento.name-%>
 																									</li>
 																								</ul>
 																							</div>
-																							<div class="column is-4 has-text-left">
-																								<ul>
-																									<li class="event-name">
-																										<%= h evento.tipo -%>
-																									</li>
-																								</ul>
-																							</div>
+																							
 																							<div class="column is-2 has-text-left">
 																								<ul>
 																									<!---<% if user_signed_in? %>
@@ -193,26 +196,39 @@
 																								</ul>
 																							</div>
 																						</div>
+																						<div class="columns">
+																							<div class="column is-2">
+																						
+																							</div>
+																							<div class="column is-5 has-text-left">
+																								<ul>
+																									<li class="event-name">
+																										<%= h evento.tipo -%>
+																									</li>
+																								</ul>
+																							</div>
+																						</div>
 
 																						<ul>
-																							<li class="event-desc has-text-left" style="margin-left: 12vh;">
+																							<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
 																								<%= h evento.description-%>
 																							</li>
 																						</ul>
-																						<br>
-																						<br>
+																	
 																						<%end%>
 																							<%end%>
 																								<% end %>
 																									<%end%>
-
-																										<%= image_tag("14_quarta.png") %>
+<div class="hey">
+																									<%= image_tag("14_quarta.png") %>
+																									</div>
 																											<% @eventos.each do |evento| %>
 																												<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 
 																													<% if evento.date.day == 14 %>
+																												
 																														<% if evento.name == "coffee break"%>
-																															<div class="columns" style="padding:1vh;">
+																															<div class="columns" style="padding: 2vh;">
 																																<div id="time" class="column is-2 has-text-left">
 																																	<ul>
 																																		<li class="event-date">
@@ -230,9 +246,9 @@
 																																	<div class="line-red"></div>
 																																</div>
 			</div>
-<br>
+
 			<% elsif evento.name == "almoco"%>
-				<div class="columns" style="padding:1vh;">
+				<div class="columns" style="padding: 2vh;">
 					<div id="time" class="column is-2 has-text-left">
 						<ul>
 							<li class="event-date">
@@ -248,9 +264,9 @@
 						<div class="line-yellow"></div>
 					</div>
 				</div>
-				<br>
+			
 				<%elsif evento.name == "Now Work it!"%>
-					<div class="columns" style="padding:1vh;">
+					<div class="columns" style="padding: 2vh;">
 						<div class="column is-2 has-text-left">
 							<ul>
 								<li class="event-date">
@@ -261,20 +277,14 @@
 															<%end%>
 							</ul>
 						</div>
-						<div class="column is-5 has-text-left">
+						<div class="column is-6 has-text-left">
 							<ul>
 								<li class="event-theme">
 									<%= h evento.name-%>
 								</li>
 							</ul>
 						</div>
-						<div class="column is-4 has-text-left">
-							<ul>
-								<li class="event-name">
-									<%= h evento.tipo -%>
-								</li>
-							</ul>
-						</div>
+						
 						<div class="column is-2 has-text-left">
 							<ul>
 								<!---<% if user_signed_in? %>
@@ -289,9 +299,21 @@
 							</ul>
 						</div>
 					</div>
+					<div class="columns">
+						<div class="column is-2">
+					
+						</div>
+						<div class="column is-5 has-text-left">
+							<ul>
+								<li class="event-name">
+									<%= h evento.tipo -%>
+								</li>
+							</ul>
+						</div>
+					</div>
 
 					<ul>
-						<li class="event-desc has-text-left" style="margin-left: 12vh;">
+						<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
 							<%= h evento.description-%>
 						</li>
 					</ul>
@@ -299,10 +321,8 @@
 					<br>
 
 					<div id="quarta" class="columns">
-						<div class="column is-2 has-text-left">
-
-						</div>
-						<div id="time" class="column is-1 has-text-left">
+						
+						<div id="time" class="column is-2 has-text-left">
 							<ul>
 								<li class="event-date">13:30</li>
 							</ul>
@@ -314,10 +334,8 @@
 						</div>
 					</div>
 					<div id="quarta" class="columns">
-						<div class="column is-2 has-text-left">
-
-						</div>
-						<div id="time" class="column is-1 has-text-left">
+						
+						<div id="time" class="column is-2 has-text-left">
 							<ul>
 								<li class="event-date">14:00</li>
 							</ul>
@@ -329,10 +347,8 @@
 						</div>
 					</div>
 					<div id="quarta" class="columns">
-						<div class="column is-2 has-text-left">
-
-						</div>
-						<div id="time" class="column is-1 has-text-left">
+						
+						<div id="time" class="column is-2 has-text-left">
 							<ul>
 								<li class="event-date">15:00</li>
 							</ul>
@@ -344,10 +360,8 @@
 						</div>
 					</div>
 					<div id="quarta" class="columns">
-						<div class="column is-2 has-text-left">
-
-						</div>
-						<div id="time" class="column is-1 has-text-left">
+						
+						<div id="time" class="column is-2 has-text-left">
 							<ul>
 								<li class="event-date">16:00</li>
 							</ul>
@@ -359,10 +373,8 @@
 						</div>
 					</div>
 					<div id="quarta" class="columns">
-						<div class="column is-2 has-text-left">
-
-						</div>
-						<div id="time" class="column is-1 has-text-left">
+						
+						<div id="time" class="column is-2 has-text-left">
 							<ul>
 								<li class="event-date">16:30</li>
 							</ul>
@@ -373,10 +385,8 @@
 						</div>
 					</div>
 					<div id="quarta" class="columns">
-						<div class="column is-2 has-text-left">
-
-						</div>
-						<div id="time" class="column is-1 has-text-left">
+						
+						<div id="time" class="column is-2 has-text-left">
 							<ul>
 								<li class="event-date">17:00</li>
 							</ul>
@@ -388,10 +398,8 @@
 						</div>
 					</div>
 					<div id="quarta" class="columns">
-						<div class="column is-2 has-text-left">
-
-						</div>
-						<div id="time" class="column is-1 has-text-left">
+						
+						<div id="time" class="column is-2 has-text-left">
 							<ul>
 								<li class="event-date">18:00</li>
 							</ul>
@@ -406,7 +414,7 @@
 					<br>
 
 					<%else%>
-						<div class="columns" style="padding:1vh;">
+						<div class="columns" style="padding: 2vh;">
 							<div class="column is-2 has-text-left">
 								<ul>
 									<li class="event-date">
@@ -417,20 +425,14 @@
 																<%end%>
 								</ul>
 							</div>
-							<div class="column is-5 has-text-left">
+							<div class="column is-6 has-text-left">
 								<ul>
 									<li class="event-theme">
 										<%= h evento.name-%>
 									</li>
 								</ul>
 							</div>
-							<div class="column is-4 has-text-left">
-								<ul>
-									<li class="event-name">
-										<%= h evento.tipo -%>
-									</li>
-								</ul>
-							</div>
+						
 							<div class="column is-2 has-text-left">
 								<ul>
 									<!---<% if user_signed_in? %>
@@ -445,27 +447,40 @@
 								</ul>
 							</div>
 						</div>
+						<div class="columns">
+							<div class="column is-2">
+						
+							</div>
+							<div class="column is-5 has-text-left">
+								<ul>
+									<li class="event-name">
+										<%= h evento.tipo -%>
+									</li>
+								</ul>
+							</div>
+						</div>
 						<ul>
-							<li class="event-desc has-text-left" style="margin-left: 12vh;">
+							<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
 								<%= h evento.description-%>
 							</li>
 						</ul>
-						<br>
-						<br>
+																												
 						<%end%>
 							<% end %>
 								<% end %>
 									<% end %>
 
 
-
+<div class="hey">
 										<%= image_tag("15_quinta.png") %>
+										</div>
 											<% @eventos.each do |evento| %>
 												<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 
 													<% if evento.date.day == 15 %>
+													
 														<% if evento.name == "coffee break"%>
-															<div class="columns" style="padding:1vh;">
+															<div class="columns" style="padding: 2vh;">
 																<div id="time" class="column is-2 has-text-left">
 																	<ul>
 																		<li class="event-date">
@@ -484,7 +499,7 @@
 															</div>
 
 															<% elsif evento.name == "almoco"%>
-																<div class="columns" style="padding:1vh;">
+																<div class="columns" style="padding: 2vh;">
 																	<div id="time" class="column is-2 has-text-left">
 																		<ul>
 																			<li class="event-date">
@@ -503,7 +518,7 @@
 																</div>
 																<%else%>
 
-																	<div class="columns" style="padding:1vh;">
+																	<div class="columns" style="padding: 2vh;">
 																		<div class="column is-2 has-text-left">
 																			<ul>
 																				<li class="event-date">
@@ -521,13 +536,7 @@
 																				</li>
 																			</ul>
 																		</div>
-																		<div class="column is-4 has-text-left">
-																			<ul>
-																				<li class="event-name">
-																					<%= h evento.tipo -%>
-																				</li>
-																			</ul>
-																		</div>
+																		
 																		<div class="column is-2 has-text-left">
 																			<ul>
 																				<% if user_signed_in? %>
@@ -542,14 +551,24 @@
 																			</ul>
 																		</div>
 																	</div>
+<div class="columns">
+	<div class="column is-2">
 
+	</div>
+	<div class="column is-5 has-text-left">
+		<ul>
+			<li class="event-name">
+				<%= h evento.tipo -%>
+			</li>
+		</ul>
+	</div>
+</div>
 																	<ul>
-																		<li class="event-desc has-text-left" style="margin-left: 12vh;">
+																		<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
 																			<%= h evento.description-%>
 																		</li>
 																	</ul>
-																	<br>
-																	<br>
+												
 																	<%end%>
 
 																		<%end%>

@@ -14,7 +14,8 @@ ul {
 }
 
 .event-name {
-    font-size: 1.2em;
+    font-weight: 800;
+    margin-left: 1.5%;
 }
 
 .event-desc {}
@@ -35,7 +36,7 @@ li {
 
 .break-yellow {
     margin-left: 3%;
-    font-size: 2em;
+    font-size: 1.75em;
     color: #FAD58C;
     font-weight: bold;
 }
@@ -51,7 +52,7 @@ li {
 
 .break-red {
     /* margin-left: -3%; */
-    font-size: 2em;
+    font-size: 1.75em;
     color: rgb(219, 103, 104);
     font-weight: bold;
 }
@@ -74,4 +75,14 @@ li {
     border-right: 19vw solid rgb(219, 103, 104);
     border-top: 1vh solid rgb(219, 103, 104);
     margin-left: 4%;
+}
+
+#quarta{
+    padding: 0.5vh;
+    padding-left: 2vh;
+}
+
+
+.hey{
+    padding: 2vh;
 }
