@@ -109,17 +109,10 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="column is-5 has-text-left">
+                                            <div class="column is-8 has-text-left">
                                                 <ul>
                                                     <li class="event-theme">
                                                         <%= h evento.name-%>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="column is-4 has-text-left">
-                                                <ul>
-                                                    <li class="event-name">
-                                                        <%= h evento.tipo -%>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -131,6 +124,19 @@
                                                     <% end %>
                                             </div>
                                         </div>
+
+                                        <div class="columns">
+                                                <div class="column is-2">
+
+                                                </div>
+                                                <div class="column is-5 has-text-left">
+                                                    <ul>
+                                                        <li class="event-name">
+                                                            <%= h evento.tipo -%>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                 
                                         <ul>
                                             <li class="event-desc has-text-left" style="margin-left: 12vh;">
@@ -208,20 +214,14 @@
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
-                                                                            <div class="column is-5 has-text-left">
+                                                                            <div class="column is-8 has-text-left">
                                                                                 <ul>
                                                                                     <li class="event-theme">
                                                                                         <%= h evento.name-%>
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
-                                                                            <div class="column is-4 has-text-left">
-                                                                                <ul>
-                                                                                    <li class="event-name">
-                                                                                        <%= h evento.tipo -%>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
+                                                                           
                                                                             <div class="column is-2 has-text-left">
                                                                                 <ul>
                                                                                     <%= button_to 'Desinscrever', ids: evento.id %>
@@ -230,7 +230,18 @@
                                                                                     <% end %>
                                                                             </div>
                                                                         </div>
-                                                            
+                                                            <div class="columns">
+                                                <div class="column is-2">
+
+                                                </div>
+                                                <div class="column is-5 has-text-left">
+                                                    <ul>
+                                                        <li class="event-name">
+                                                            <%= h evento.tipo -%>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                                                         <ul>
                                                                             <li class="event-desc has-text-left" style="margin-left: 12vh;">
                                                                                 <%= h evento.description-%>
@@ -305,20 +316,14 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="column is-5 has-text-left">
+                                                    <div class="column is-8 has-text-left">
                                                         <ul>
                                                             <li class="event-theme">
                                                                 <%= h evento.name-%>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="column is-4 has-text-left">
-                                                        <ul>
-                                                            <li class="event-name">
-                                                                <%= h evento.tipo -%>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    
                                                     <div class="column is-2 has-text-left">
                                                         <ul>
                                                             <%= button_to 'Desinscrever', ids: evento.id %>
@@ -327,7 +332,18 @@
                                                             <% end %>
                                                     </div>
                                                 </div>
-                                    
+                                    <div class="columns">
+                                                <div class="column is-2">
+
+                                                </div>
+                                                <div class="column is-5 has-text-left">
+                                                    <ul>
+                                                        <li class="event-name">
+                                                            <%= h evento.tipo -%>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                                 <ul>
                                                     <li class="event-desc has-text-left" style="margin-left: 12vh;">
                                                         <%= h evento.description-%>
@@ -402,20 +418,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="column is-5 has-text-left">
+                <div class="column is-8 has-text-left">
                     <ul>
                         <li class="event-theme">
                             <%= h evento.name-%>
                         </li>
                     </ul>
                 </div>
-                <div class="column is-4 has-text-left">
-                    <ul>
-                        <li class="event-name">
-                            <%= h evento.tipo -%>
-                        </li>
-                    </ul>
-                </div>
+               
                 <div class="column is-2 has-text-left">
                     <ul>
                         <%= button_to 'Desinscrever', ids: evento.id %>
@@ -424,7 +434,18 @@
                         <% end %>
                 </div>
             </div>
+<div class="columns">
+                                                <div class="column is-2">
 
+                                                </div>
+                                                <div class="column is-5 has-text-left">
+                                                    <ul>
+                                                        <li class="event-name">
+                                                            <%= h evento.tipo -%>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
             <ul>
                 <li class="event-desc has-text-left" style="margin-left: 12vh;">
                     <%= h evento.description-%>
