@@ -18,15 +18,15 @@
 
 .nw {
     margin-top: -3% !important;
-    width: 55% ;
+    width: 55%;
 }
 
 .lema-position {
-    margin-top: -4vh ;
+    margin-top: -4vh;
 }
 
 .options-sign {
-    margin-top: 2vh ;
+    margin-top: 2vh;
 }
 
 .login-lema {
@@ -44,7 +44,8 @@
     color: #555555 !important;
 }
 
-.email-field, .field-with-errors {
+.email-field,
+.field-with-errors {
     width: 100%;
     /* font-size: 3.4vh; */
     font-weight: 300;
@@ -108,7 +109,7 @@ form button {
     font-size: 1.75em;
     font-weight: 400 !important;
     display: inline-block;
-        -webkit-appearance: none !important;
+    -webkit-appearance: none !important;
     text-decoration: none !important;
     font-family: 'Montserrat', sans-serif !important;
     border-radius: 0 !important;
@@ -117,7 +118,8 @@ form button {
     box-shadow: none !important
 }
 
-input[type=email] {
+input[type=email],
+input[type=password] {
     font-size: 1.75em !important;
 }
 
@@ -133,7 +135,7 @@ a:visite {
     display: inline-flex !important;
 }
 
-.field_with_errors{
+.field_with_errors {
     background-color: transparent !important;
     width: 100% !important;
 }
