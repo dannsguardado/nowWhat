@@ -104,7 +104,7 @@
 												<div class="column is-2">
 											<% if evento.tipo == "WIT Software" %>
 												<%= image_tag("WIT.png") %>
-													<%end%>
+													
 														<% elsif evento.tipo == "NOVABASE" %>
 															<%= image_tag("NOVABASE.png") %>
 																<% end%>
@@ -212,7 +212,7 @@
 																							<div class="column is-2">
 																						<% if evento.tipo == "WIT Software" %>
 																							<%= image_tag("WIT.png") %>
-																								<%end%>
+																								
 																									<% elsif evento.tipo == "NOVABASE" %>
 																										<%= image_tag("NOVABASE.png") %>
 																											<% end%>
@@ -236,7 +236,6 @@
 <%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 
 <% if evento.date.day == 14 %>
-
 <% if evento.name == "coffee break"%>
 <div class="columns" style="padding: 2vh;">
 <div id="time" class="column is-2 has-text-left">
@@ -287,7 +286,7 @@
 															<%end%>
 							</ul>
 						</div>
-						<div class="column is-8 has-text-left">
+						<div class="column is-4 has-text-left">
 							<ul>
 								<li class="event-theme">
 									<%= h evento.name-%>
@@ -320,7 +319,6 @@
 						<div class="column is-2">
 				<% if evento.tipo == "WIT Software" %>
 					<%= image_tag("WIT.png") %>
-						<%end%>
 							<% elsif evento.tipo == "NOVABASE" %>
 								<%= image_tag("NOVABASE.png") %>
 									<% end%>
@@ -474,7 +472,7 @@
 						
 						<% if evento.tipo == "WIT Software" %>
 							<%= image_tag("WIT.png") %>
-								<%end%>
+								
 									<% elsif evento.tipo == "NOVABASE" %>
 										<%= image_tag("NOVABASE.png") %>
 											<% end%>
@@ -494,6 +492,16 @@
 
 <div class="hey">
 										<%= image_tag("15_quinta.png") %>
+										</div>
+										<div class="columns">
+											<div class="column is-6" style="margin-left: 15%">
+													<p>Inserido no Now What decorrerá o Oh, Shift... Coimbra!</p>
+											</div>
+											<div class="column is-3 has-text-left" >
+												
+													<%= image_tag("BEST-no-text.png", :class=> "shift") %>
+										
+											</div>
 										</div>
 											<% @eventos.each do |evento| %>
 												<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
@@ -583,7 +591,6 @@
 	<div class="column is-2">
 		<% if evento.tipo == "WIT Software" %>
 		<%= image_tag("WIT.png") %>
-		<%end%>
 		<% elsif evento.tipo == "NOVABASE" %>
 		<%= image_tag("NOVABASE.png") %>
 		<% end%>

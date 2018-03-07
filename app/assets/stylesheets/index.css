@@ -147,8 +147,20 @@ section {
     height: 40% !important;
 }
 
+.wit {
+    width: 30% !important;
+    height: 30% !important;
+    margin-left: 3%;
+}
+
+.novabase {
+    width: 40% !important;
+    height: 40% !important;
+    margin-top: 1%;
+}
+
 a,
 a:link,
-a:visited{
+a:visited {
     text-decoration: none !important;
 }
