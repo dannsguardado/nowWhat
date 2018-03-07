@@ -103,10 +103,10 @@
 												</div>
 												<div class="column is-2">
 											<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-												<%= image_tag("WIT2.png", :class=> "wit2") %>
+												<%= link_to(image_tag("WIT2.png", :class=> "wit2"), "https://wit-software.com/" ) %>
 													
 														<% elsif evento.tipo == "NOVABASE" %>
-															<%= image_tag("NOVABASE.png") %>
+															<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
 																<% end%>
 												</div>
 											</div>
@@ -213,10 +213,10 @@
 																							</div>
 																							<div class="column is-2">
 																						<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-																							<%= image_tag("WIT2.png", :class=> "wit2") %>
+																							<%= link_to(image_tag("WIT2.png", :class=> "wit2"), "https://wit-software.com/" ) %>
 																								
 																									<% elsif evento.tipo == "NOVABASE" %>
-																										<%= image_tag("NOVABASE.png") %>
+																										<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
 																											<% end%>
 																							</div>
 																						</div>
@@ -320,9 +320,9 @@
 						</div>
 						<div class="column is-2">
 				<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-					<%= image_tag("WIT2.png", :class=> "wit2") %>
+					<%= link_to(image_tag("WIT2.png", :class=> "wit2"), "https://wit-software.com/" ) %>
 							<% elsif evento.tipo == "NOVABASE" %>
-								<%= image_tag("NOVABASE.png") %>
+								<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
 									<% end%>
 						</div>
 					</div>
@@ -472,10 +472,10 @@
 							<div class="column is-2">
 						
 						<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-							<%= image_tag("WIT2.png", :class=> "wit2") %>
+							<%= link_to(image_tag("WIT2.png", :class=> "wit2"), "https://wit-software.com/" ) %>
 								
 									<% elsif evento.tipo == "NOVABASE" %>
-										<%= image_tag("NOVABASE.png") %>
+										<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
 											<% end%>
 							</div>
 						</div>
@@ -500,7 +500,7 @@
 											</div>
 											<div class="column is-3 has-text-left" >
 												
-													<%= image_tag("SA-black.png", :class=> "shift") %>
+													<%= link_to(image_tag("SA.png", :class=> "shift"), "https://shiftappens.com" )%>
 										
 											</div>
 										</div>
@@ -591,9 +591,9 @@
 	</div>
 	<div class="column is-2">
 		<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-		<%= image_tag("WIT2.png") %>
+		<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/" ) %>
 		<% elsif evento.tipo == "NOVABASE" %>
-		<%= image_tag("NOVABASE.png") %>
+		<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
 		<% end%>
 	</div>
 </div>
