@@ -94,20 +94,25 @@
 												</div>
 											</div>
 											<div class="columns">
-												<div class="column is-2">
-
-												</div>
-												<div class="column is-5 has-text-left">
+												<div class="column is-5 has-text-left" style="margin-left: 18%">
 													<ul>
 														<li class="event-name">
 															<%= h evento.tipo -%>
 														</li>
 													</ul>
 												</div>
+												<div class="column is-2">
+											<% if evento.tipo == "WIT Software" %>
+												<%= image_tag("WIT.png") %>
+													<%end%>
+														<% elsif evento.tipo == "NOVABASE" %>
+															<%= image_tag("NOVABASE.png") %>
+																<% end%>
+												</div>
 											</div>
 
 											<ul>
-												<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
+												<li class="event-desc has-text-left" style="margin-left: 10%; padding-bottom: 2vh;">
 													<%= h evento.description-%>
 												</li>
 											</ul>
@@ -197,20 +202,25 @@
 																							</div>
 																						</div>
 																						<div class="columns">
-																							<div class="column is-2">
-																						
-																							</div>
-																							<div class="column is-5 has-text-left">
+																							<div class="column is-5 has-text-left" style="margin-left: 18%">
 																								<ul>
 																									<li class="event-name">
 																										<%= h evento.tipo -%>
 																									</li>
 																								</ul>
 																							</div>
+																							<div class="column is-2">
+																						<% if evento.tipo == "WIT Software" %>
+																							<%= image_tag("WIT.png") %>
+																								<%end%>
+																									<% elsif evento.tipo == "NOVABASE" %>
+																										<%= image_tag("NOVABASE.png") %>
+																											<% end%>
+																							</div>
 																						</div>
 
 																						<ul>
-																							<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
+																							<li class="event-desc has-text-left" style="margin-left: 10%; padding-bottom: 2vh;">
 																								<%= h evento.description-%>
 																							</li>
 																						</ul>
@@ -300,20 +310,25 @@
 						</div>
 					</div>
 					<div class="columns">
-						<div class="column is-2">
-					
-						</div>
-						<div class="column is-5 has-text-left">
+						<div class="column is-5 has-text-left" style="margin-left: 18%">
 							<ul>
 								<li class="event-name">
 									<%= h evento.tipo -%>
 								</li>
 							</ul>
 						</div>
+						<div class="column is-2">
+				<% if evento.tipo == "WIT Software" %>
+					<%= image_tag("WIT.png") %>
+						<%end%>
+							<% elsif evento.tipo == "NOVABASE" %>
+								<%= image_tag("NOVABASE.png") %>
+									<% end%>
+						</div>
 					</div>
 
 					<ul>
-						<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
+						<li class="event-desc has-text-left" style="margin-left: 10%; padding-bottom: 2vh;">
 							<%= h evento.description-%>
 						</li>
 					</ul>
@@ -448,19 +463,25 @@
 							</div>
 						</div>
 						<div class="columns">
-							<div class="column is-2">
-						
-							</div>
-							<div class="column is-5 has-text-left">
+							<div class="column is-5 has-text-left" style="margin-left: 18%">
 								<ul>
 									<li class="event-name">
 										<%= h evento.tipo -%>
 									</li>
 								</ul>
 							</div>
+							<div class="column is-2">
+						
+						<% if evento.tipo == "WIT Software" %>
+							<%= image_tag("WIT.png") %>
+								<%end%>
+									<% elsif evento.tipo == "NOVABASE" %>
+										<%= image_tag("NOVABASE.png") %>
+											<% end%>
+							</div>
 						</div>
 						<ul>
-							<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
+							<li class="event-desc has-text-left" style="margin-left: 10%; padding-bottom: 2vh;">
 								<%= h evento.description-%>
 							</li>
 						</ul>
@@ -552,19 +573,24 @@
 																		</div>
 																	</div>
 <div class="columns">
-	<div class="column is-2">
-
-	</div>
-	<div class="column is-5 has-text-left">
+	<div class="column is-5 has-text-left" style="margin-left: 18%">
 		<ul>
 			<li class="event-name">
 				<%= h evento.tipo -%>
 			</li>
 		</ul>
 	</div>
+	<div class="column is-2">
+		<% if evento.tipo == "WIT Software" %>
+		<%= image_tag("WIT.png") %>
+		<%end%>
+		<% elsif evento.tipo == "NOVABASE" %>
+		<%= image_tag("NOVABASE.png") %>
+		<% end%>
+	</div>
 </div>
 																	<ul>
-																		<li class="event-desc has-text-left" style="margin-left: 12vh; padding-bottom: 2vh;">
+																		<li class="event-desc has-text-left" style="margin-left: 10%; padding-bottom: 2vh;">
 																			<%= h evento.description-%>
 																		</li>
 																	</ul>
