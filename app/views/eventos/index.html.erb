@@ -80,10 +80,10 @@
 
 														<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-                         <%= button_to 'Subscribe', ids: evento.id %>
+                         <%= button_to 'Inscrever', ids: evento.id %>
                   
                         <% else %>
-                            <%= button_to 'Unsubscribe', ids: evento.id %>
+                            <%= button_to 'Desinscrever', ids: evento.id %>
                         <% end %>
                   
                   
@@ -186,10 +186,10 @@
 																								<ul>
 																									<!---<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-                         <%= button_to 'Subscribe', ids: evento.id %>
+                         <%= button_to 'Inscrever', ids: evento.id %>
                   
                         <% else %>
-                            <%= button_to 'Unsubscribe', ids: evento.id %>
+                            <%= button_to 'Desinscrever', ids: evento.id %>
                         <% end %>
                   
                        <% end %>-->
@@ -289,10 +289,10 @@
 							<ul>
 								<!---<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-                         <%= button_to 'Subscribe', ids: evento.id %>
+                         <%= button_to 'Inscrever', ids: evento.id %>
                   
                         <% else %>
-                            <%= button_to 'Unsubscribe', ids: evento.id %>
+                            <%= button_to 'Desinscrever', ids: evento.id %>
                         <% end %>
                   
                        <% end %>-->
@@ -437,10 +437,10 @@
 								<ul>
 									<!---<% if user_signed_in? %>
 																<% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-																<%= button_to 'Subscribe', ids: evento.id %>
+																<%= button_to 'Inscrever', ids: evento.id %>
 														
 																<% else %>
-																	<%= button_to 'Unsubscribe', ids: evento.id %>
+																	<%= button_to 'Desinscrever', ids: evento.id %>
 																<% end %>
 														
 															<% end %>-->
@@ -541,10 +541,10 @@
 																			<ul>
 																				<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
-                         <%= button_to 'Subscribe', ids: evento.id %>
+                         <%= button_to 'Inscrever', ids: evento.id %>
                   
                         <% else %>
-                            <%= button_to 'Unsubscribe', ids: evento.id %>
+                            <%= button_to 'Desinscrever', ids: evento.id %>
                         <% end %>
                   
 					   <% end %>

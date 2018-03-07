@@ -25,12 +25,12 @@
 									
 									<% if user_signed_in? %>
 									<a class="navbar-item menu_title" href="/eventos">Inscrições</a>
-									<%= link_to_if(current_user.present?, 'Profile', perfil_path(current_user.perfil), class: 'navbar-item menu_title') %>
-									<%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'navbar-item menu_title') %>
+									<%= link_to_if(current_user.present?, 'Perfil', perfil_path(current_user.perfil), class: 'navbar-item menu_title') %>
+									<%= link_to('Sair', destroy_user_session_path, method: :delete, class: 'navbar-item menu_title') %>
 									<% else %>
 									<a class="navbar-item menu_title" href="/eventos">Calendário</a>
-									<a class="navbar-item menu_title" href="/users/sign_in">Login</a>
-									<a class="navbar-item menu_title" href="/users/sign_up">Register</a>
+									<a class="navbar-item menu_title" href="/users/sign_in">Entrar</a>
+									<a class="navbar-item menu_title" href="/users/sign_up">Registar</a>
 									<% end %>
 								</div>
 							</div>

@@ -18,7 +18,7 @@
 			<a class="btn-login border" href="/users/sign_up">Register</a>
 		</div>
 
-		<div class="column is-4 is-offset-4 has-text-centered box-white">
+		<div class="column is-4 has-text-centered box-white">
 			<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
 				<%= devise_error_messages! %>
 				

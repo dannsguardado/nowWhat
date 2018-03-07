@@ -7,34 +7,34 @@
     <div class="hero-body container has-text-centered">
         <div class="columns has-text-centered">
             <div class="column is-12 has-text-left box-gray-perfil">
-                <div class="email-field">Perfil</div>
+                <div class="email-field" style="font-size: 2.5em">Perfil</div>
                     <div class="has-text-right">
-                        <%= link_to 'Edit', edit_perfil_path(@perfil) %>
+                        <%= link_to 'Editar', edit_perfil_path(@perfil) %>
                     </div>
                 
                 <div class="between-info-perfil">
-                    <a class="show-perfil">Nome:</a>
+                    <span class="show-perfil">Nome:</span>
                     <div class="show-content-perfil">
                         <%= @perfil.nome%>
                     </div>
                 </div>
                 <br>
                 <div class="between-info-perfil">
-                    <a class="show-perfil">Data prevista de conclusão: </a>
+                    <span class="show-perfil">Data prevista de conclusão: </span>
                     <div class="show-content-perfil">
                         <%= @perfil.ano_de_licenciatura %>
                     </div>
                 </div>
                 <br>
                 <div class="between-info-perfil">
-                    <a class="show-perfil">Instituto:</a>
+                    <span class="show-perfil">Instituto:</span>
                     <div class="show-content-perfil">
                         <%= @perfil.instituto %>
                     </div>
                 </div>
                 <br>
                 <div class="between-info-perfil">
-                    <a class="show-perfil">Curso:</a>
+                    <span class="show-perfil">Curso:</span>
                     <div class="show-content-perfil">
                         <%= @perfil.curso %>
                     </div>
@@ -125,7 +125,7 @@
                                             </div>
                                             <div class="column is-2 has-text-left">
                                                 <ul>
-                                                    <%= button_to 'Unsubscribe', ids: evento.id %>
+                                                    <%= button_to 'Desinscrever', ids: evento.id %>
                                                 </ul>
                                                 <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                                                     <% end %>
@@ -224,7 +224,7 @@
                                                                             </div>
                                                                             <div class="column is-2 has-text-left">
                                                                                 <ul>
-                                                                                    <%= button_to 'Unsubscribe', ids: evento.id %>
+                                                                                    <%= button_to 'Desinscrever', ids: evento.id %>
                                                                                 </ul>
                                                                                 <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                                                                                     <% end %>
@@ -321,7 +321,7 @@
                                                     </div>
                                                     <div class="column is-2 has-text-left">
                                                         <ul>
-                                                            <%= button_to 'Unsubscribe', ids: evento.id %>
+                                                            <%= button_to 'Desinscrever', ids: evento.id %>
                                                         </ul>
                                                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                                                             <% end %>
@@ -418,7 +418,7 @@
                 </div>
                 <div class="column is-2 has-text-left">
                     <ul>
-                        <%= button_to 'Unsubscribe', ids: evento.id %>
+                        <%= button_to 'Desinscrever', ids: evento.id %>
                     </ul>
                     <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                         <% end %>
@@ -436,7 +436,9 @@
                 <% end %>
                     <%end%>
                         <%end%>
-    
+    <% if count==0 %>
+    <p >Ainda não tens inscrições!</p>
+    <%end%>
     </div>
 
 

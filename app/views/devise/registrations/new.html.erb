@@ -14,8 +14,8 @@
     </div>
   <br>
     <div class="container has-text-centered options-sign">
-      <a class="btn-login " href="/users/sign_in">Login</a>
-      <a class="btn-login border" href="/users/sign_up">Register</a>
+      <a class="btn-login " href="/users/sign_in">Entrar</a>
+      <a class="btn-login border" href="/users/sign_up">Registar</a>
     </div>
 <br>
 <br>
@@ -27,15 +27,15 @@
         <div class="field">
           <% if @minimum_password_length %>
             <% end %>
-            <p>Minimo 6 caracteres</p>
-          <%= f.password_field :password, autocomplete: "off", class: 'email-field',placeholder:'Password' %>
-        </div>
-        <div class="field">
-          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'email-field',placeholder:'Password Confirmation' %>
-        </div>
+            <%= f.password_field :password, autocomplete: "off", class: 'email-field',placeholder:'Password' %>
+          </div>
+          <div class="field">
+            <%= f.password_field :password_confirmation, autocomplete: "off", class: 'email-field',placeholder:'Password Confirmation' %>
+          </div>
+          <p>Minimo 6 caracteres</p>
 
         <div class="actions">
-          <%= f.submit "Sign up", class: 'btn-login' %>
+          <%= f.submit "Registar", class: 'btn-login' %>
         </div>
       <% end %>
     </div>
