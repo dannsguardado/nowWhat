@@ -82,7 +82,7 @@
 .remember-text {
     font-size: 1.9vh;
     font-weight: 300;
-    color: rgb(219, 103, 104);
+    color: rgb(219, 103, 104) !important;
     margin-left: 1vh;
 }
 
