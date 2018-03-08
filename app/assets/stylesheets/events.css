@@ -77,18 +77,45 @@ li {
     margin-left: 4%;
 }
 
-#quarta{
+#quarta {
     padding: 0.5vh;
     padding-left: 2vh;
 }
 
-
-.hey{
+.hey {
     padding: 2vh;
 }
 
-.shift{
+.shift {
     width: 25%;
     height: 55%;
 }
 
+.day-evento {
+    font-size: 7em;
+    color: rgb(219, 103, 104);
+    font-weight: bold;
+}
+
+.line-evento {
+    width: 0vh;
+    height: 0vh;
+    border-left: 20vw solid rgb(219, 103, 104);
+    border-right: 20vw solid rgb(219, 103, 104);
+    border-bottom: 0.1vh solid rgb(219, 103, 104);
+    margin-top: 6em;
+}
+
+.week-day {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-left:2.5vh;
+    margin-right: 0;
+    margin-bottom: 0;
+    /* margin: 0.5vh !important; */
+
+}
+
+.week-day-container{
+}
