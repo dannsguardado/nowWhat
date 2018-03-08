@@ -87,8 +87,8 @@ li {
 }
 
 .shift {
-    width: 25%;
-    height: 55%;
+    height: auto;
+    max-width: 30%;
 }
 
 .day-evento {
@@ -110,12 +110,10 @@ li {
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 2em;
-    margin-left:2.5vh;
+    margin-left: 2.5vh;
     margin-right: 0;
     margin-bottom: 0;
     /* margin: 0.5vh !important; */
-
 }
 
-.week-day-container{
-}
+.week-day-container {}
