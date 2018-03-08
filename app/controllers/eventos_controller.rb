@@ -38,9 +38,20 @@ class EventosController < ApplicationController
   end
 
   def subscribe
-    if current_user.subscriptions.find_by(evento_id: params['evento_id']).blank?
-      current_user.subscriptions.create(evento_id: params['evento_id'])
 
+    if current_user.subscriptions.find_by(evento_id: params['evento_id']).blank?
+      if params['evento_id'] == '5'
+        if current_user.subscriptions.find_by(evento_id: 6).blank?
+          current_user.subscriptions.create(evento_id: params['evento_id'])
+        end
+      elsif params['evento_id'] == '6'
+        if current_user.subscriptions.find_by(evento_id: 5).blank?
+
+          current_user.subscriptions.create(evento_id: params['evento_id'])
+        end
+      else
+      current_user.subscriptions.create(evento_id: params['evento_id'])
+      end
     else
       current_user.subscriptions.find_by(evento_id: params['evento_id']).destroy
     
