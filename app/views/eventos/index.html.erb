@@ -9,7 +9,6 @@
 				<div class="hey">
 					<%= image_tag("12_segunda.png") %>
 				</div>
-
 					<% @eventos.each do |evento| %>
 						<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
 							<% if evento.date.day == 12 %>
@@ -310,22 +309,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="columns">
-						<div class="column is-5 has-text-left" style="margin-left: 18%">
-							<ul>
-								<li class="event-name">
-									<%= h evento.tipo -%>
-								</li>
-							</ul>
-						</div>
-						<div class="column is-2">
-				<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-					<%= link_to(image_tag("WIT2.png", :class=> "wit2"), "https://wit-software.com/" ) %>
-							<% elsif evento.tipo == "NOVABASE" %>
-								<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
-									<% end%>
-						</div>
-					</div>
+					
 
 					<ul>
 						<li class="event-desc has-text-left" style="margin-left: 10%; padding-bottom: 2vh;">
@@ -609,7 +593,15 @@
 								<% end %>
 									<%end%>
 
+
 										</div>
+																					</div>
+																					<br>
+																					<br>
+																					<br>
+																					<section class="footer-about">
+																						<%= render "home/footer" %>
+																					</section>
 		</main>
 </body>
 
