@@ -75,7 +75,7 @@
 												
 												<div class="column is-2 has-text-left">
 													<ul>
-														<%if evento.id == 9%>
+														
 
 														<% if user_signed_in? %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
@@ -88,7 +88,6 @@
                   
 					   <% end %>
 					   
-				   <%end%>
 						</ul>
 					</div>
 				</div>
@@ -101,12 +100,12 @@
 						</ul>
 					</div>
 					<div class="column is-2">
-				<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
+				<% if evento.tipo == "UBIWHERE" %>
 					<%= link_to(image_tag("WIT2.png", :class=> "wit2"), "https://wit-software.com/" ) %>
 						
-							<% elsif evento.tipo == "NOVABASE" %>
-								<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
-									<% end%>
+				<% elsif evento.tipo == "OUTSYSTEMS" %>
+					<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+				<% end%>
 					</div>
 				</div>
 
