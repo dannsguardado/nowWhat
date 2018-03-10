@@ -8,6 +8,22 @@
 			<div class="container has-text-centered">
 				<div class="hey">
 					<%= image_tag("12_segunda.png") %>
+				
+					<!-- <div class="date-evento" style="display: inline-flex;">
+						<div class="week-day-container">
+							<span class="week-day">segunda- </span>
+							<br>
+							<span class="week-day-feira">feira</span>
+					
+						</div>
+						<div>
+							<div style="display: inline-flex">
+								<p class="day-evento-red">12</p>
+								<div class="line-evento-yellow"></div>
+					
+							</div>
+						</div>
+					</div> -->
 				</div>
 					<% @eventos.each do |evento| %>
 						<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
@@ -106,6 +122,10 @@
 													
 														<% elsif evento.tipo == "NOVABASE" %>
 															<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+														<% elsif evento.tipo == "Ubiwhere" || evento.tipo == "André Duarte" %>
+															<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "https://ubiwhere.com/" ) %>
+														<% elsif evento.tipo == "Outsystems" %>
+															<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" ) %>
 																<% end%>
 												</div>
 											</div>
@@ -123,6 +143,21 @@
 														<%end%>
 														<div class="hey">
 															<%= image_tag("13_terca.png") %>
+															<!-- <div class="date-evento" style="display: inline-flex;">
+																<div class="week-day-container">
+																	<span class="week-day" >terça- </span>
+																	<br>
+																	<span class="week-day-feira" style="margin-right: -15%;">feira</span>
+															
+																</div>
+																<div>
+																	<div style="display: inline-flex">
+																		<p class="day-evento-yellow">13</p>
+																		<div class="line-evento-red"></div>
+															
+																	</div>
+																</div>
+															</div> -->
 															</div>
 																<% @eventos.each do |evento| %>
 																	<%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
@@ -216,6 +251,10 @@
 																								
 																									<% elsif evento.tipo == "NOVABASE" %>
 																										<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+																									<% elsif evento.tipo == "Ubiwhere" || evento.tipo == "André Duarte"%>
+																										<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "https://ubiwhere.com/" ) %>
+																											<% elsif evento.tipo == "Outsystems" %>
+																												<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" ) %>
 																											<% end%>
 																							</div>
 																						</div>
@@ -232,6 +271,21 @@
 																									<%end%>
 <div class="hey">
 <%= image_tag("14_quarta.png") %>
+<!-- <div class="date-evento" style="display: inline-flex;">
+	<div class="week-day-container">
+		<span class="week-day">quarta- </span>
+		<br>
+		<span class="week-day-feira" style="margin-right: -30%;">feira</span>
+
+	</div>
+	<div>
+		<div style="display: inline-flex">
+			<p class="day-evento-red">14</p>
+			<div class="line-evento-yellow"></div>
+
+		</div>
+	</div>
+</div> -->
 </div>
 	<% @eventos.each do |evento| %>
 <%= form_tag("eventos/#{evento.id}/subscribe", method: :get) do %>
@@ -460,6 +514,10 @@
 								
 									<% elsif evento.tipo == "NOVABASE" %>
 										<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+<% elsif evento.tipo == "Ubiwhere" || evento.tipo == "André Duarte"%>
+	<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "https://ubiwhere.com/" ) %>
+		<% elsif evento.tipo == "Outsystems" %>
+			<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" ) %>
 											<% end%>
 							</div>
 						</div>
@@ -477,6 +535,21 @@
 
 <div class="hey">
 										<%= image_tag("15_quinta.png") %>
+										<!-- <div class="date-evento" style="display: inline-flex;">
+											<div class="week-day-container">
+												<span class="week-day">quinta- </span>
+												<br>
+												<span class="week-day-feira" style="margin-right: -30%;">feira</span>
+										
+											</div>
+											<div>
+												<div style="display: inline-flex">
+													<p class="day-evento-yellow">15</p>
+													<div class="line-evento-red"></div>
+										
+												</div>
+											</div>
+										</div> -->
 										</div>
 										<div class="columns">
 											<div class="column is-4" style="margin-left: 27%">
@@ -578,6 +651,10 @@
 		<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/" ) %>
 		<% elsif evento.tipo == "NOVABASE" %>
 		<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+<% elsif evento.tipo == "Ubiwhere" || evento.tipo == "André Duarte" %>
+	<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "https://ubiwhere.com/" ) %>
+		<% elsif evento.tipo == "Outsystems" %>
+			<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" ) %>
 		<% end%>
 	</div>
 </div>

@@ -148,23 +148,32 @@ section {
 }
 
 .wit {
-    width: 100% !important;
+    width: 90% !important;
     height: 80% !important;
     margin-left: 4%;
-    margin-top: -13%;
+    margin-top: -5%;
 }
 
 .novabase {
     width: 100% !important;
-    height: 30% !important;
+    height: 40% !important;
     margin-top: 5%;
 }
 
 .startuc {
-    width: 100% !important;
+    width: 50% !important;
     height: 80% !important;
     /* margin-top: -15%; */
     margin-left: 3%;
+}
+
+.out{
+    margin-top: 8%;
+}
+
+.ubi{
+    width: 50%;
+    height: 100%;
 }
 
 a,
