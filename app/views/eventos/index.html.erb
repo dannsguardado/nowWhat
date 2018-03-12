@@ -117,13 +117,13 @@
 					</div>
 					<div class="column is-2">
 						<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-							<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/" ) %>
+							<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/", target: :_blank ) %>
 								<% elsif evento.tipo == "NOVABASE" %>
-									<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+									<%= link_to(image_tag("NOVABASE.png"), "http://www.novabase.pt/", target: :_blank ) %>
 										<% elsif evento.tipo == "Ubiwhere" || evento.tipo == "André Duarte" %>
-											<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "https://ubiwhere.com/" ) %>
+											<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "http://www.ubiwhere.com/en/", target: :_blank ) %>
 												<% elsif evento.tipo == "Outsystems" %>
-													<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" ) %>
+													<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" , target: :_blank ) %>
 														<% end%>
 					</div>
 				</div>
@@ -230,13 +230,13 @@
 											</div>
 											<div class="column is-2">
 												<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-													<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/" ) %>
+													<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/", target: :_blank ) %>
 														<% elsif evento.tipo == "NOVABASE" %>
-															<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+															<%= link_to(image_tag("NOVABASE.png"), "http://www.novabase.pt/", target: :_blank ) %>
 																<% elsif evento.tipo == "Ubiwhere" || evento.tipo == "André Duarte" %>
-																	<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "https://ubiwhere.com/" ) %>
+																	<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "http://www.ubiwhere.com/en/", target: :_blank ) %>
 																		<% elsif evento.tipo == "Ooutsystems" %>
-																			<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" ) %>
+																			<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" , target: :_blank ) %>
 																				<% end%>
 											</div>
 										</div>
@@ -491,13 +491,13 @@
 							</div>
 							<div class="column is-2">
 								<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-									<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/" ) %>
+									<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/", target: :_blank ) %>
 										<% elsif evento.tipo == "NOVABASE" %>
-											<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+											<%= link_to(image_tag("NOVABASE.png"), "http://www.novabase.pt/", target: :_blank ) %>
 												<% elsif evento.tipo == "Ubiwhere" || evento.tipo == "André Duarte" %>
-													<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "https://ubiwhere.com/" ) %>
+													<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "http://www.ubiwhere.com/en/", target: :_blank ) %>
 														<% elsif evento.tipo == "Ooutsystems" %>
-															<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" ) %>
+															<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" , target: :_blank ) %>
 																<% end%>
 							</div>
 						</div>
@@ -537,7 +537,7 @@
 											</div>
 											<div class="column is-3 has-text-left" >
 												
-													<%= link_to(image_tag("SA.png", :class=> "shift"), "https://shiftappens.com" )%>
+													<%= link_to(image_tag("SA.png", :class=> "shift"), "https://shiftappens.com", target: :_blank )%>
 										
 											</div>
 										</div>
@@ -607,14 +607,13 @@
 																		<div class="column is-2 has-text-left">
 																			<ul>
 																				<% if user_signed_in? %>
-																				<% if evento.id != 6 %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                          <%= button_to 'Inscrever', ids: evento.id %>
                   
                         <% else %>
                             <%= button_to 'Desinscrever', ids: evento.id %>
                         <% end %>
-                  <% end %>
+                  
 					   <% end %>
 																			</ul>
 																		</div>
@@ -629,13 +628,13 @@
 	</div>
 	<div class="column is-2">
 		<% if evento.tipo == "WIT Software" || evento.tipo == "António Mendes" %>
-			<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/" ) %>
+			<%= link_to(image_tag("WIT2.png"), "https://wit-software.com/", target: :_blank ) %>
 				<% elsif evento.tipo == "NOVABASE" %>
-					<%= link_to(image_tag("NOVABASE.png"), "https://novabase.pt/" ) %>
+					<%= link_to(image_tag("NOVABASE.png"), "http://www.novabase.pt/", target: :_blank ) %>
 						<% elsif evento.tipo == "Ubiwhere" || evento.tipo == "André Duarte" %>
-							<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "https://ubiwhere.com/" ) %>
+							<%= link_to(image_tag("UBIWHERE.png", :class=> "ubiout"), "http://www.ubiwhere.com/en/", target: :_blank ) %>
 								<% elsif evento.tipo == "Ooutsystems" %>
-									<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" ) %>
+									<%= link_to(image_tag("OUTSYSTEMS.png", :class=> "ubiout"), "https://outsystems.com/" , target: :_blank ) %>
 										<% end%>
 	</div>
 </div>
