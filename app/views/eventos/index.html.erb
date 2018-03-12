@@ -607,13 +607,14 @@
 																		<div class="column is-2 has-text-left">
 																			<ul>
 																				<% if user_signed_in? %>
+																				<% if evento.id != 6 %>
                         <% if current_user.subscriptions.find_by(evento_id: evento.id).blank? %>
                          <%= button_to 'Inscrever', ids: evento.id %>
                   
                         <% else %>
                             <%= button_to 'Desinscrever', ids: evento.id %>
                         <% end %>
-                  
+                  <% end %>
 					   <% end %>
 																			</ul>
 																		</div>
